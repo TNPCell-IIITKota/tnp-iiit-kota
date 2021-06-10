@@ -106,7 +106,7 @@
 }
 
 .ctr {
-  @apply container flex relative flex-col justify-center items-center self-center py-24 mx-auto h-full text-center text-white;
+  @apply container flex flex-col justify-center items-center self-center py-24 px-5 mx-auto h-full text-center text-white;
 }
 
 .logo {
@@ -118,5 +118,5 @@
 }
 
 .about {
-  @apply pt-3 mb-6 w-3/5 text-lg font-light tracking-wide md:pt-4;
+  @apply pt-3 mb-6 text-lg font-light tracking-wide lg:w-3/5 md:pt-4;
 }

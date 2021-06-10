@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Hero from '@components/Hero';
+import Pitch from '@components/Pitch';
 import Preload from '@components/Preload';
 
 const IndexPage: NextPage = () => (
@@ -18,6 +19,7 @@ const IndexPage: NextPage = () => (
       <Preload font="open-sans-latin-600-normal" />
     </Head>
     <Hero />
+    <Pitch />
   </>
 );
 

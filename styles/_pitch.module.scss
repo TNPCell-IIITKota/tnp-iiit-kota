@@ -1,0 +1,15 @@
+.ctr {
+  @apply container py-24 px-5 mx-auto text-justify lg:w-2/3 text-martinique-900;
+}
+
+.main-heading {
+  @apply mb-16 text-3xl font-semibold text-center text-martinique-500;
+}
+
+.sub-heading {
+  @apply text-2xl font-semibold text-martinique-700;
+}
+
+.desc {
+  @apply mt-4 mb-12;
+}
