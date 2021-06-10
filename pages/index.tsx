@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 
+import Hero from '@components/Hero';
 import Preload from '@components/Preload';
 
 const IndexPage: NextPage = () => (
@@ -11,10 +12,12 @@ const IndexPage: NextPage = () => (
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Training and Placement Cell - IIIT Kota</title>
+
       <Preload font="open-sans-latin-300-normal" />
       <Preload font="open-sans-latin-400-normal" />
       <Preload font="open-sans-latin-600-normal" />
     </Head>
+    <Hero />
   </>
 );
 

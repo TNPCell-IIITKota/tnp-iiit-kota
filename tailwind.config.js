@@ -8,14 +8,8 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      colors: {
-        green: { 200: '#C9FFF8', 500: '#00BFA6', 600: '#00917E' },
-        gray: { 900: '#011014' },
-      },
-      fontFamily: {
-        display: ['Ubuntu', ...defaultTheme.fontFamily.sans],
-        body: ['Quicksand', ...defaultTheme.fontFamily.sans],
-      },
+      colors: {},
+      fontFamily: { sans: ['Open Sans', ...defaultTheme.fontFamily.sans] },
     },
   },
   variants: { extend: {} },
