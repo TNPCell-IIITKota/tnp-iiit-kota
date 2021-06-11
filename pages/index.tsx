@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Hero from '@components/Hero';
 import Pitch from '@components/Pitch';
 import Preload from '@components/Preload';
+import Stats from '@components/Stats';
 
 const IndexPage: NextPage = () => (
   <>
@@ -20,6 +21,7 @@ const IndexPage: NextPage = () => (
     </Head>
     <Hero />
     <Pitch />
+    <Stats />
   </>
 );
 

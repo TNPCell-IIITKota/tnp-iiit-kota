@@ -1,0 +1,27 @@
+.sect {
+  @apply text-gray-600;
+}
+
+.ctr {
+  @apply container px-5 pt-24 pb-8 mx-auto;
+}
+
+.wrapper {
+  @apply flex flex-col mx-auto lg:w-3/5;
+}
+
+.separator-wrapper {
+  @apply overflow-hidden h-1 bg-gray-200 rounded;
+}
+
+.separator {
+  @apply w-24 h-full bg-indigo-500;
+}
+
+.title-wrapper {
+  @apply flex flex-col flex-wrap py-6 mb-12 sm:flex-row;
+}
+
+.title {
+  @apply mb-2 text-2xl font-semibold text-gray-900 sm:w-2/5 sm:mb-0;
+}

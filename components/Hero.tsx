@@ -1,7 +1,7 @@
 import Logo from '@assets/logo.svg';
 
 const Hero: React.FC = () => (
-  <section cx="section">
+  <section cx="sect">
     <div cx="shapes">
       <span cx="span-150" />
       <span cx="span-50" />
@@ -15,7 +15,7 @@ const Hero: React.FC = () => (
       <span cx="span-100" />
     </div>
     <div cx="ctr">
-      <Logo cx="logo" />
+      <Logo cx="logo" role="img" aria-label="IIIT Kota Logo" />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
       <div cx="about">
         We act as a facilitator for training and placement, and work enthusiastically towards the
@@ -30,6 +30,8 @@ const Hero: React.FC = () => (
         viewBox="0 0 2560 100"
         x="0"
         y="0"
+        role="img"
+        aria-label="separator"
       >
         <polygon fill="#fff" points="2560 0 2560 100 0 100" />
       </svg>
