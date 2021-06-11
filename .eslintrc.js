@@ -20,7 +20,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'simple-import-sort', 'prettier'],
   root: true,
   rules: {
-    '@typescript-eslint/array-type': 'error',
+    '@typescript-eslint/array-type': ['error', { default: 'generic' }],
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-tslint-comment': 'error',
     '@typescript-eslint/consistent-indexed-object-style': 'error',
@@ -91,20 +91,11 @@ module.exports = {
       {
         groups: [
           // Type imports.
-          [
-            '^next.*\\u0000$',
-            '^@?\\w.*\\u0000$',
-            '^@(components|interfaces|pages|utils)?/.*\\u0000$',
-          ],
+          ['^next.*\\u0000$', '^@?\\w.*\\u0000$', '^@(components|pages|types|utils)?/.*\\u0000$'],
           // Packages. `next` related packages come first.
           ['^react$', '^next', '^@?\\w'],
           // Internal packages, fonts, svgs and style imports.
-          [
-            '^@(components|interfaces|pages|utils)?(/.*|$)',
-            '^.+\\.woff2?$',
-            '^.+\\.svg$',
-            '^.+\\.s?css$',
-          ],
+          ['^@(components|pages|utils)?(/.*|$)', '^.+\\.woff2?$', '^.+\\.svg$', '^.+\\.s?css$'],
         ],
       },
     ],

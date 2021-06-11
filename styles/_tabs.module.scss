@@ -10,10 +10,10 @@
   @apply flex-auto mb-2 text-center md:mr-2 md:-mb-px last:mr-0;
 
   &-link {
-    @apply block py-3 px-5 text-xs font-bold leading-normal uppercase rounded shadow-lg;
+    @apply block py-3 px-5 text-xs font-bold leading-normal uppercase rounded shadow-md;
   }
 
   &-content {
-    @apply flex relative flex-col py-5 px-4 mb-6 w-full min-w-0 break-words bg-white rounded shadow-lg;
+    @apply flex relative flex-col py-5 px-4 mb-6 w-full min-w-0 break-words bg-white rounded shadow-md;
   }
 }
