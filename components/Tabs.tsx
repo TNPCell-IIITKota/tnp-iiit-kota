@@ -7,7 +7,7 @@ import summaries from '@utils/summaries';
 
 const Tabs: React.FC = () => {
   const now = 2021;
-  const [openTab, setOpenTab] = useState(1);
+  const [openTab, setOpenTab] = useState(0);
 
   return (
     <div cx="wrapper">

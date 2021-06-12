@@ -7,11 +7,11 @@
 }
 
 .title-wrapper {
-  @apply mb-20 text-center;
+  @apply mb-12 text-center;
 }
 
 .wrapper {
-  @apply flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 lg:w-3/5 sm:flex-row last:pb-0 last:mb-0 last:border-none;
+  @apply flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 xl:w-3/5 sm:flex-row last:pb-0 last:mb-0 last:border-none;
 }
 
 .title {

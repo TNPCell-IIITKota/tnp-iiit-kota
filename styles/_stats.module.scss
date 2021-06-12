@@ -7,7 +7,7 @@
 }
 
 .wrapper {
-  @apply flex flex-col mx-auto lg:w-3/5;
+  @apply flex flex-col mx-auto xl:w-3/5;
 }
 
 .separator-wrapper {
@@ -19,9 +19,9 @@
 }
 
 .title-wrapper {
-  @apply flex flex-col flex-wrap py-6 mb-12 sm:flex-row;
+  @apply flex flex-col flex-wrap py-6 mb-4 sm:flex-row;
 }
 
 .title {
-  @apply mb-2 text-2xl font-semibold text-gray-900 sm:w-2/5 sm:mb-0;
+  @apply mb-2 text-2xl font-semibold text-gray-900 sm:mb-0;
 }

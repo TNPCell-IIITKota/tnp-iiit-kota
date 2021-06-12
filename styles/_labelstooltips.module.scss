@@ -1,0 +1,27 @@
+.tooltip {
+  @apply p-3 m-0 w-48 leading-normal whitespace-nowrap bg-white border border-gray-100 border-solid;
+}
+
+.label {
+  @apply m-0 font-semibold text-gray-600;
+}
+
+.intro {
+  @apply m-0 border-t border-gray-100 border-solid;
+
+  span {
+    @apply block my-1;
+
+    &:nth-child(1) {
+      @apply text-green-500;
+    }
+
+    &:nth-child(2) {
+      @apply text-blue-500;
+    }
+
+    &:nth-child(3) {
+      @apply text-indigo-500;
+    }
+  }
+}
