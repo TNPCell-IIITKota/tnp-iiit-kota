@@ -7,7 +7,10 @@ module.exports = {
   purge: { content: ['./pages/**/*.tsx', './components/**/*.tsx'], options: { keyframes: true } },
   darkMode: false,
   theme: {
-    extend: { colors: {}, fontFamily: { sans: ['Open Sans', ...defaultTheme.fontFamily.sans] } },
+    extend: {
+      colors: { indigo: { 800: '#283593' } },
+      fontFamily: { sans: ['Open Sans', ...defaultTheme.fontFamily.sans] },
+    },
   },
   variants: { extend: {} },
   corePlugins: { container: false },

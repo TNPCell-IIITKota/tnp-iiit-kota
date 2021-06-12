@@ -3,7 +3,7 @@ import type { Year } from '@types';
 import { useState } from 'react';
 
 import Charts from '@components/Charts';
-import summaries from '@utils/summaries';
+import Table from '@components/Table';
 
 const Tabs: React.FC = () => {
   const now = 2021;
@@ -18,8 +18,8 @@ const Tabs: React.FC = () => {
               cx="tab-link"
               style={
                 openTab === i
-                  ? { color: '#fff', background: '#4F46E5' }
-                  : { background: '#fff', color: '#4F46E5' }
+                  ? { color: '#fff', background: '#0e407c' }
+                  : { background: '#fff', color: '#0e407c' }
               }
               onClick={(e): void => {
                 e.preventDefault();
@@ -39,7 +39,7 @@ const Tabs: React.FC = () => {
             id={`placement-stats-${now - i}`}
             key={`placement-content-${i}`}
           >
-            <p>{summaries[(now - i) as Year]}</p>
+            <Table year={(now - i) as Year} />
             <Charts year={(now - i) as Year} />
           </div>
         ))}

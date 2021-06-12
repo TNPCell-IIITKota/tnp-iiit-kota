@@ -1,21 +1,5 @@
 import type { Branch, Year } from '@types';
 
-const eligibleVsOffers = {
-  2020: [
-    { branch: 'CSE', 'Eligible Students': 40, 'Number of Offers': 41 },
-    { branch: 'ECE', 'Eligible Students': 36, 'Number of Offers': 33 },
-    { branch: 'Total', 'Eligible Students': 76, 'Number of Offers': 74 },
-  ],
-  2021: [
-    { branch: 'CSE', 'Eligible Students': 46, 'Number of Offers': 63 },
-    { branch: 'ECE', 'Eligible Students': 32, 'Number of Offers': 35 },
-    { branch: 'Total', 'Eligible Students': 78, 'Number of Offers': 98 },
-  ],
-} as Record<
-  Year,
-  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number }>
->;
-
 const branchWiseData = {
   2020: {
     CSE: { Strength: 47, Eligible: 40, Placed: 38 },
@@ -31,22 +15,44 @@ const branchWiseData = {
 
 const placementPC = {} as Record<Year, Array<{ branch: Branch; 'Placement %': number }>>;
 
+const eligibleVsOffers = {
+  2020: [
+    { branch: 'CSE', 'Number of Offers': 41 },
+    { branch: 'ECE', 'Number of Offers': 33 },
+    { branch: 'Total', 'Number of Offers': 74 },
+  ],
+  2021: [
+    { branch: 'CSE', 'Number of Offers': 63 },
+    { branch: 'ECE', 'Number of Offers': 35 },
+    { branch: 'Total', 'Number of Offers': 98 },
+  ],
+} as Record<
+  Year,
+  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number }>
+>;
+
 Object.entries(branchWiseData).forEach(([key, value]) => {
   const year = parseInt(key, 10) as Year;
   placementPC[year] = [];
 
-  Object.entries(value).forEach(([branch, { Eligible, Placed }]) => {
-    placementPC[year].push({
-      branch: branch as Branch,
-
-      'Placement %': Math.round((Placed * 1e4) / Eligible) / 1e2,
-    });
+  Object.entries(value).forEach(([br, { Eligible, Placed }]) => {
+    const branch = br as Branch;
+    placementPC[year].push({ branch, 'Placement %': Math.round((Placed * 1e4) / Eligible) / 1e2 });
+    eligibleVsOffers[year].find((x) => x.branch === branch)!['Eligible Students'] = Eligible;
   });
 });
 
 const aggregateData = {
-  2020: { CSE: { Average: 11.7, Maximum: 29.0 }, ECE: { Average: 8.9, Maximum: 29.0 } },
-  2021: { CSE: { Average: 10.6, Maximum: 43.0 }, ECE: { Average: 7.4, Maximum: 15.5 } },
-} as Record<Year, Record<Branch, { Average: number; Maximum: number }>>;
+  2020: [
+    { branch: 'CSE', Average: 11.7, Maximum: 29.0 },
+    { branch: 'ECE', Average: 8.9, Maximum: 29.0 },
+    { branch: 'Total', Average: 10.4, Maximum: 29.0 },
+  ],
+  2021: [
+    { branch: 'CSE', Average: 10.6, Maximum: 43.0 },
+    { branch: 'ECE', Average: 7.4, Maximum: 15.5 },
+    { branch: 'Total', Average: 9.0, Maximum: 43.0 },
+  ],
+} as Record<Year, Array<{ branch: Branch; Average: number; Maximum: number }>>;
 
 export { aggregateData, branchWiseData, eligibleVsOffers, placementPC };

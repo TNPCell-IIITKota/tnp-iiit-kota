@@ -1,0 +1,31 @@
+.ctr {
+  @apply flex overflow-x-auto flex-col -my-2 sm:-mx-6 lg:-mx-8;
+}
+
+.table {
+  @apply overflow-hidden min-w-full border-b border-gray-200 divide-y divide-gray-200 shadow sm:rounded-lg;
+}
+
+.wrapper {
+  @apply inline-block py-2 min-w-full align-middle sm:px-6 lg:px-8;
+}
+
+.head {
+  @apply bg-gray-50;
+}
+
+.body {
+  @apply text-sm text-gray-900 bg-white divide-y divide-gray-200;
+}
+
+.col-th {
+  @apply py-3 px-6 text-xs font-semibold tracking-wider text-left text-gray-500 uppercase;
+}
+
+.row-th {
+  @apply py-4 px-6 font-semibold text-left uppercase whitespace-nowrap;
+}
+
+.data {
+  @apply py-4 px-6 whitespace-nowrap;
+}

@@ -15,7 +15,7 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
   return (
     <div cx="wrapper" ref={ref}>
       <div>
-        <h3>Eligible Students and Number of Offers</h3>
+        <h2>Eligible Students and Number of Offers</h2>
 
         <BarChart
           width={480}
@@ -29,13 +29,13 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
           <YAxis />
           <Tooltip content={CustomTooltip} />
           <Legend wrapperStyle={{ left: 18 }} />
-          <Bar dataKey="Eligible Students" fill="#34D399" isAnimationActive={isVisible} />
-          <Bar dataKey="Number of Offers" fill="#60A5FA" isAnimationActive={isVisible} />
+          <Bar dataKey="Eligible Students" fill="#60A5FA" isAnimationActive={isVisible} />
+          <Bar dataKey="Number of Offers" fill="#34D399" isAnimationActive={isVisible} />
         </BarChart>
       </div>
 
       <div>
-        <h3>Placement Percentage of Registered Students</h3>
+        <h2>Placement Percentage of Registered Students</h2>
 
         <BarChart
           width={480}
