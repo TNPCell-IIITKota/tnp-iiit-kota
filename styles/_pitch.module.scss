@@ -3,15 +3,11 @@
 }
 
 .ctr {
-  @apply container px-5 pt-24 pb-8 mx-auto;
+  @apply container px-5 pt-24 mx-auto;
 }
 
 .title-wrapper {
   @apply mb-12 text-center;
-}
-
-.wrapper {
-  @apply flex flex-col items-center pb-10 mx-auto mb-10 border-b border-gray-200 xl:w-3/5 sm:flex-row last:pb-0 last:mb-0 last:border-none;
 }
 
 .title {
@@ -24,16 +20,4 @@
 
 .hr {
   @apply inline-flex w-24 h-1 bg-indigo-800 rounded-full;
-}
-
-.feature {
-  @apply flex-grow mt-6 text-center sm:text-justify sm:mt-0;
-}
-
-.lead {
-  @apply mb-4 text-lg font-semibold text-gray-900;
-}
-
-.desc {
-  @apply text-base leading-relaxed;
 }

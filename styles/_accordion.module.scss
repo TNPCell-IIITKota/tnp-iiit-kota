@@ -1,0 +1,27 @@
+.content {
+  @apply overflow-hidden max-h-0 transition-all duration-500 ease-in-out;
+
+  &[aria-expanded='true'] {
+    @apply max-h-screen delay-200;
+  }
+}
+
+.desc {
+  @apply m-4 mb-10 text-gray-700;
+}
+
+.chevron {
+  @apply w-3 text-gray-600 transition-transform duration-200;
+}
+
+.lead {
+  @apply text-lg font-semibold text-gray-900 sm:text-xl;
+}
+
+.accordion {
+  @apply flex justify-between items-center p-4 w-full focus:outline-none;
+}
+
+.wrapper {
+  @apply flex flex-col items-center mx-auto border-b border-gray-200 xl:w-3/5 last:border-none;
+}
