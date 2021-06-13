@@ -1,7 +1,7 @@
 const content = [
   {
     lead: 'Institute Background',
-    desc: 'Indian Institute of Information Technology, Kota (भारतीय सूचना प्रौद्योगिकी संस्थान, कोटा) is one of the IIITs established in 2013 as a joint venture of the Ministry of Education (MoE), Govt. of India and Govt. of Rajasthan with industry partners in Public-Private-Partnership (PPP) model. In 2017, the Institute was declared an "Institute of National Importance" under the Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017.',
+    desc: 'Indian Institute of Information Technology, Kota (भारतीय सूचना प्रौद्योगिकी संस्थान, कोटा) is one of the IIITs established in 2013 as a joint venture of the Ministry of Education (MoE), Govt. of India and Govt. of Rajasthan with industry partners in Public-Private-Partnership (PPP) model. In 2017, the Institute was declared an “Institute of National Importance” under the Indian Institutes of Information Technology (Public-Private Partnership) Act, 2017.',
   },
   {
     lead: 'Finest Curriculum',

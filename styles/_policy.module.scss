@@ -1,0 +1,31 @@
+.sect {
+  @apply text-gray-600;
+}
+
+.ctr {
+  @apply container flex flex-col px-5 pt-24 pb-4 mx-auto;
+}
+
+.title {
+  @apply mb-12 text-xl font-semibold tracking-wider text-center text-indigo-800 uppercase sm:text-2xl;
+}
+
+.content {
+  @apply mx-auto text-base leading-relaxed text-justify xl:w-3/5;
+
+  a {
+    @apply font-semibold;
+
+    &:first-of-type {
+      @apply text-[#32325d] underline;
+    }
+  }
+}
+
+.note {
+  @apply relative -top-px -left-px text-xs font-semibold text-gray-900 uppercase;
+}
+
+.list {
+  @apply my-4 ml-8 list-disc list-outside;
+}

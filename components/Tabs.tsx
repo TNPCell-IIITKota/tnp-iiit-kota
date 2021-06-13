@@ -27,7 +27,7 @@ const Tabs: React.FC = () => {
               }}
               href={`#placement-stats-${now - i}`}
             >
-              {now - i - 1} &ndash; {now - i}
+              {now - i - 1} – {now - i}
             </a>
           </li>
         ))}
