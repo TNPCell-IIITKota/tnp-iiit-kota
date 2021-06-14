@@ -1,0 +1,35 @@
+.footer {
+  @apply text-gray-400 bg-gray-900;
+}
+
+.ctr {
+  @apply container flex flex-col items-center py-8 px-5 mx-auto sm:flex-row;
+}
+
+.logo-wrapper {
+  @apply flex justify-center items-center font-semibold text-white md:justify-start;
+}
+
+.logo {
+  @apply w-10 h-10;
+}
+
+.copyright {
+  @apply mt-4 text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0;
+}
+
+.institute {
+  @apply ml-1 text-gray-500;
+}
+
+.social {
+  @apply inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start;
+
+  a {
+    @apply ml-3 text-gray-400 hover:text-gray-300 first:ml-0;
+  }
+
+  svg {
+    @apply w-5 h-5;
+  }
+}

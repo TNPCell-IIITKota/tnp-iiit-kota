@@ -1,0 +1,56 @@
+.sect {
+  @apply container relative pb-16 mx-auto mt-8 text-gray-600 xl:w-3/5;
+}
+
+.ctr {
+  @apply flex flex-wrap px-5 pt-16 mx-auto mb-8 w-full border-t border-gray-200;
+}
+
+.title {
+  @apply mb-8 w-full text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
+}
+
+.cards {
+  @apply grid gap-y-5 gap-8 w-full lg:grid-cols-2;
+}
+
+.card {
+  @apply overflow-hidden relative p-px rounded border shadow-sm transition duration-300 transform hover:scale-105 hover:shadow-xl;
+}
+
+.borders {
+  @apply absolute duration-300 transform;
+
+  &:nth-child(1) {
+    @apply bottom-0 left-0 w-full h-1 origin-left scale-x-0 group-hover:scale-x-100;
+  }
+  &:nth-child(2) {
+    @apply bottom-0 left-0 w-1 h-full origin-bottom scale-y-0 group-hover:scale-y-100;
+  }
+  &:nth-child(3) {
+    @apply top-0 left-0 w-full h-1 origin-right scale-x-0 group-hover:scale-x-100;
+  }
+  &:nth-child(4) {
+    @apply right-0 bottom-0 w-1 h-full origin-top scale-y-0 group-hover:scale-y-100;
+  }
+}
+
+.content {
+  @apply relative p-5 bg-white rounded-sm;
+}
+
+.name {
+  @apply mb-2 font-semibold leading-5;
+}
+
+.address {
+  @apply my-5 text-sm leading-normal text-gray-900;
+}
+
+.email {
+  @apply leading-relaxed text-indigo-500;
+}
+
+.phone {
+  @apply leading-relaxed;
+}

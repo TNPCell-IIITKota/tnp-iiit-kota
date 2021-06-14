@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 
+import Contact from '@components/Contact';
+import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Pitch from '@components/Pitch';
 import Policy from '@components/Policy';
@@ -21,11 +23,14 @@ const IndexPage: NextPage = () => (
       <Preload font="open-sans-latin-400-normal" />
       <Preload font="open-sans-latin-600-normal" />
     </Head>
+
     <Hero />
     <Pitch />
     <Stats />
     <Slider />
     <Policy />
+    <Contact />
+    <Footer />
   </>
 );
 
