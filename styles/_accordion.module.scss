@@ -2,7 +2,7 @@
   @apply overflow-hidden max-h-0 transition-all duration-500 ease-in-out;
 
   &[aria-expanded='true'] {
-    @apply max-h-screen delay-200;
+    @apply max-h-screen delay-150;
   }
 }
 
