@@ -4,11 +4,17 @@ const Footer: React.FC = () => (
   <footer cx="footer">
     <div cx="ctr">
       <a cx="logo-wrapper" href="/">
-        <Logo cx="logo" />
+        <Logo cx="logo" role="img" aria-label="IIIT Kota" />
       </a>
       <p cx="copyright">
         © 2021 Training &amp; Placement Cell —
-        <a href="https://iiitkota.ac.in" cx="institute" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://iiitkota.ac.in"
+          cx="institute"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit IIIT Kota"
+        >
           IIIT Kota
         </a>
       </p>
@@ -17,6 +23,7 @@ const Footer: React.FC = () => (
           href="https://www.facebook.com/placementsiiitkota"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Facebook Page"
         >
           <svg
             fill="currentColor"
@@ -28,7 +35,12 @@ const Footer: React.FC = () => (
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
           </svg>
         </a>
-        <a href="https://twitter.com/IIITKotaOffice" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://twitter.com/IIITKotaOffice"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Twitter Handle"
+        >
           <svg
             fill="currentColor"
             strokeLinecap="round"
@@ -43,6 +55,7 @@ const Footer: React.FC = () => (
           href="https://www.instagram.com/iiitkotaoffice"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit Instagram Account"
         >
           <svg
             fill="none"
@@ -60,6 +73,7 @@ const Footer: React.FC = () => (
           href="https://www.linkedin.com/company/training-placement-cell-iiit-kota/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Visit LinkedIn Page"
         >
           <svg
             fill="currentColor"

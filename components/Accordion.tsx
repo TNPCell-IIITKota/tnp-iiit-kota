@@ -6,7 +6,13 @@ const Accordion: React.FC<{
   <div cx="wrapper">
     <button type="button" cx="accordion" onClick={onClick}>
       <p cx="lead">{title}</p>
-      <svg viewBox="0 0 24 24" cx="chevron" style={isOpen ? { transform: 'rotate(-180deg)' } : {}}>
+      <svg
+        viewBox="0 0 24 24"
+        cx="chevron"
+        style={isOpen ? { transform: 'rotate(-180deg)' } : {}}
+        role="img"
+        aria-label="chevron"
+      >
         <polyline
           fill="none"
           stroke="currentColor"
