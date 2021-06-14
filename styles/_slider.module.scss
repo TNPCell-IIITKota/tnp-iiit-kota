@@ -1,0 +1,38 @@
+.sect {
+  @apply overflow-hidden mt-24 w-full max-w-full;
+}
+
+.title {
+  @apply mb-16 text-3xl font-semibold text-center text-gray-900;
+}
+
+.ctr {
+  @apply my-8;
+}
+
+.slider {
+  @apply inline-block overflow-hidden whitespace-nowrap;
+
+  animation: slide 64s linear infinite;
+}
+
+.wrapper {
+  @apply inline-block whitespace-nowrap;
+}
+
+.slide {
+  @apply inline-block px-10 align-middle opacity-70 transition duration-200 cursor-default outline-none grayscale filter contrast-200 hover:opacity-80 hover:filter-none;
+
+  svg {
+    @apply block w-auto h-10;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

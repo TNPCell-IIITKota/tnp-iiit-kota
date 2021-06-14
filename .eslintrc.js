@@ -91,11 +91,20 @@ module.exports = {
       {
         groups: [
           // Type imports.
-          ['^next.*\\u0000$', '^@?\\w.*\\u0000$', '^@(components|pages|types|utils)?/.*\\u0000$'],
+          [
+            '^next.*\\u0000$',
+            '^@?\\w.*\\u0000$',
+            '^@(assets|components|pages|types|utils)?/.*\\u0000$',
+          ],
           // Packages. `next` related packages come first.
           ['^react$', '^next', '^@?\\w'],
           // Internal packages, fonts, svgs and style imports.
-          ['^@(components|pages|utils)?(/.*|$)', '^.+\\.woff2?$', '^.+\\.svg$', '^.+\\.s?css$'],
+          [
+            '^@(assets|components|pages|utils)?(/.*|$)',
+            '^.+\\.woff2?$',
+            '^.+\\.svg$',
+            '^.+\\.s?css$',
+          ],
         ],
       },
     ],

@@ -1,6 +1,9 @@
 import type { Branch, Year } from '@types';
 
-const branchWiseData = {
+const branchWiseData: Record<
+  Year,
+  Record<Branch, { Strength: number; Eligible: number; Placed: number }>
+> = {
   2020: {
     CSE: { Strength: 47, Eligible: 40, Placed: 38 },
     ECE: { Strength: 48, Eligible: 36, Placed: 31 },
@@ -11,7 +14,7 @@ const branchWiseData = {
     ECE: { Strength: 46, Eligible: 32, Placed: 30 },
     Total: { Strength: 98, Eligible: 78, Placed: 74 },
   },
-} as Record<Year, Record<Branch, { Strength: number; Eligible: number; Placed: number }>>;
+};
 
 const placementPC = {} as Record<Year, Array<{ branch: Branch; 'Placement %': number }>>;
 
@@ -42,7 +45,7 @@ Object.entries(branchWiseData).forEach(([key, value]) => {
   });
 });
 
-const aggregateData = {
+const aggregateData: Record<Year, Array<{ branch: Branch; Average: number; Maximum: number }>> = {
   2020: [
     { branch: 'CSE', Average: 11.7, Maximum: 29.0 },
     { branch: 'ECE', Average: 8.9, Maximum: 29.0 },
@@ -53,6 +56,6 @@ const aggregateData = {
     { branch: 'ECE', Average: 7.4, Maximum: 15.5 },
     { branch: 'Total', Average: 9.0, Maximum: 43.0 },
   ],
-} as Record<Year, Array<{ branch: Branch; Average: number; Maximum: number }>>;
+};
 
 export { aggregateData, branchWiseData, eligibleVsOffers, placementPC };

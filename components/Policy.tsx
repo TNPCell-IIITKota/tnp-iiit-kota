@@ -2,7 +2,7 @@ const Policy: React.FC = () => (
   <section cx="sect">
     <div cx="ctr">
       <h1 cx="title">Placement&ensp;Policy</h1>
-      <p cx="content">
+      <div cx="content">
         The placement season in IIIT Kota runs throughout the year, commencing from the first week
         of July through to May. The Training &amp; Placement (TNP) Cell oversees the placement
         process, following the&nbsp;
@@ -43,7 +43,7 @@ const Policy: React.FC = () => (
           Section 5.2 – Section 5.7
         </a>
         &nbsp;of the policy or contact us in case of queries.
-      </p>
+      </div>
     </div>
   </section>
 );
