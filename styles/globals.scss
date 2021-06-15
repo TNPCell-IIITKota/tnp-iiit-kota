@@ -39,3 +39,11 @@
     font-family: monospace;
   }
 }
+
+.legend-item-0 > span {
+  @apply text-blue-600 #{!important};
+}
+
+.legend-item-1 > span {
+  @apply text-green-700 #{!important};
+}
