@@ -1,9 +1,9 @@
 .sect {
-  @apply container relative pb-16 mx-auto mt-8 text-gray-600 xl:w-3/5;
+  @apply container relative pb-16 mx-auto mt-4 text-gray-600 xl:w-3/5;
 }
 
 .ctr {
-  @apply flex flex-wrap px-5 pt-16 mx-auto mb-8 w-full border-t border-gray-200;
+  @apply flex flex-wrap px-5 pt-20 mx-auto mb-8 w-full border-t border-gray-200;
 }
 
 .title {
