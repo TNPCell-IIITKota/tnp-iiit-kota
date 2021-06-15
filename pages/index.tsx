@@ -9,6 +9,7 @@ import Pitch from '@components/Pitch';
 import Policy from '@components/Policy';
 import Preload from '@components/Preload';
 import Slider from '@components/Slider';
+import Stars from '@components/Stars';
 import Stats from '@components/Stats';
 import Team from '@components/Team';
 
@@ -28,6 +29,7 @@ const IndexPage: NextPage = () => (
     <Hero />
     <Pitch />
     <Stats />
+    <Stars />
     <Slider />
     <Team />
     <Policy />

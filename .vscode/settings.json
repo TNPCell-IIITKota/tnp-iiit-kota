@@ -1,6 +1,8 @@
 {
   "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
   "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
   "eslint.packageManager": "yarn",
   "eslint.probe": ["typescript", "typescriptreact"],
   "headwind.classRegex": { "scss": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);" },

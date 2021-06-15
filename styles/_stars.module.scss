@@ -1,0 +1,55 @@
+.sect {
+  @apply text-gray-600;
+}
+
+.ctr {
+  @apply container px-5 pt-20 mx-auto -mb-4;
+}
+
+.title-wrapper {
+  @apply flex flex-col mb-8 w-full text-center;
+}
+
+.title {
+  @apply mb-4 text-2xl font-semibold text-gray-900 sm:text-3xl;
+}
+
+.desc {
+  @apply mx-auto text-lg leading-relaxed lg:w-2/3;
+}
+
+.stars {
+  @apply flex flex-wrap justify-center -m-2 mx-auto xl:w-4/5;
+}
+
+.star {
+  @apply p-2 py-8 w-full xl:w-1/5 lg:w-1/4 md:w-1/3 sm:w-1/2;
+}
+
+.wrapper {
+  @apply flex relative flex-col items-center p-4 h-40;
+}
+
+.image-wrapper {
+  @apply overflow-hidden absolute inset-0 mx-auto w-40 h-40;
+}
+
+.image {
+  @apply object-cover object-center flex-shrink-0 w-24 h-24;
+}
+
+.overlay-wrapper {
+  @apply flex overflow-hidden absolute inset-0 z-10 flex-col justify-center py-6 px-6 mx-auto w-40 h-40 bg-black border border-gray-200 opacity-0 duration-300 hover:opacity-90;
+}
+
+.name {
+  @apply mb-1 text-sm font-semibold tracking-widest text-indigo-500 uppercase;
+}
+
+.company {
+  @apply mb-2 text-sm font-semibold tracking-wide text-gray-50;
+}
+
+.lpa {
+  @apply leading-relaxed text-gray-400;
+}
