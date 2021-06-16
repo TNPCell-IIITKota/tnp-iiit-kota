@@ -6,6 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'plugin:eslint-comments/recommended',
+    'next',
     'prettier',
   ],
   overrides: [{ files: 'pages/api/*.ts', rules: { 'no-console': 'off' } }],

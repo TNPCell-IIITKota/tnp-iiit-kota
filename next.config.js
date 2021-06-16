@@ -1,7 +1,7 @@
 module.exports = {
   i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
   optimizeFonts: false,
-  future: { webpack5: true },
+  images: { disableStaticImages: true },
 
   webpack(config, { dev, isServer }) {
     const rules = config.module.rules
