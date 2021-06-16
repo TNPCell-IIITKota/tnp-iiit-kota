@@ -23,12 +23,12 @@ const Navbar: React.FC = () => {
         setIsMenuOpen(false);
     };
 
-    ['scroll', 'touchend', 'mousedown'].forEach((event) => {
+    ['scroll', 'click'].forEach((event) => {
       document.addEventListener(event, handleClickOutside);
     });
 
     return (): void => {
-      ['scroll', 'touchend', 'mousedown'].forEach((event) => {
+      ['scroll', 'click'].forEach((event) => {
         document.removeEventListener(event, handleClickOutside);
       });
     };
@@ -82,6 +82,7 @@ const Navbar: React.FC = () => {
             cx="menu"
             type="button"
             aria-expanded={isMenuOpen}
+            aria-label="Toggle Menu"
             onClick={(e): void => {
               e.preventDefault();
               setIsMenuOpen(!isMenuOpen);
