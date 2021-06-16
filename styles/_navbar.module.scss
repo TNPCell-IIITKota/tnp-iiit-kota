@@ -1,5 +1,5 @@
 .navbar {
-  @apply fixed top-0 z-50 w-full bg-gray-900 bg-opacity-95 transition-colors duration-500 ease-in-out;
+  @apply fixed top-0 z-50 w-full bg-gray-900 bg-opacity-95;
 
   @media (max-width: 1023.9999px) {
     @apply shadow-lg top-0 #{!important};
@@ -8,6 +8,8 @@
   &[data-clear='true'] {
     @apply bg-transparent shadow-none #{!important};
   }
+
+  transition: background-color 0.5s ease-in-out, top 0.5s ease-in-out;
 }
 
 .wrapper {
@@ -16,6 +18,10 @@
 
 .logo-wrapper {
   @apply inline-flex items-center lg:mr-12;
+
+  @screen lg {
+    padding-right: 811.8px;
+  }
 }
 
 .logo {
@@ -27,11 +33,11 @@
 }
 
 .sm-wrapper {
-  @apply flex justify-between w-full;
+  @apply flex justify-between w-full lg:justify-center;
 }
 
 .links {
-  @apply flex overflow-hidden absolute right-0 flex-col items-start p-0 mr-8 space-y-4 max-w-0 max-h-0 bg-white rounded transition-all duration-500 ease-in-out lg:p-0 lg:space-y-0 lg:items-center lg:flex-row lg:space-x-8 lg:bg-transparent lg:rounded-none lg:-mt-8 lg:max-h-screen lg:max-w-none;
+  @apply flex overflow-hidden absolute right-0 flex-col items-start p-0 mr-8 space-y-4 max-w-0 max-h-0 bg-white rounded transition-all duration-500 ease-in-out lg:mr-0 lg:right-auto lg:p-0 lg:space-y-0 lg:items-center lg:flex-row lg:space-x-8 lg:bg-transparent lg:rounded-none lg:-mt-8 lg:max-h-screen lg:max-w-none;
 
   top: 60px;
 
@@ -39,6 +45,10 @@
     @apply p-6 max-h-screen border-2;
 
     max-width: 100vw;
+  }
+
+  @screen lg {
+    padding-left: 88px;
   }
 }
 
