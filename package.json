@@ -7,7 +7,7 @@
   "license": "MIT",
   "author": "Divyansh Singh <divyansh.singh@ikcb.org> (https://github.com/brc-dd)",
   "scripts": {
-    "audit:fix": "yarn upgrade-interactive --latest && yarn upgrade",
+    "audit:fix": "npm i --package-lock-only && npm update && npm audit fix && rm yarn.lock && yarn import && rm package-lock.json",
     "build": "next build",
     "dev": "next",
     "lint:code": "eslint . --ext .ts,.tsx --fix",
