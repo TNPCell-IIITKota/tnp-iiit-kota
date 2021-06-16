@@ -4,7 +4,7 @@ import cyrb53 from '@utils/hash-string';
 import members from '@utils/members';
 
 const Team: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="our-team">
     <div cx="ctr">
       <div cx="title-wrapper">
         <h1 cx="title">Our Team</h1>

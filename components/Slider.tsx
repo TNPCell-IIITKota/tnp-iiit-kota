@@ -2,7 +2,7 @@ import companies from '@assets/companies';
 import cyrb53 from '@utils/hash-string';
 
 const Slider: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="past-recruiters">
     <h1 cx="title">Past Recruiters</h1>
 
     <div cx="ctr">

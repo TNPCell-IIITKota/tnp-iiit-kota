@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Contact from '@components/Contact';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
+import Navbar from '@components/Navbar';
 import Pitch from '@components/Pitch';
 import Policy from '@components/Policy';
 import Preload from '@components/Preload';
@@ -26,6 +27,7 @@ const IndexPage: NextPage = () => (
       <Preload font="open-sans-latin-600-normal" />
     </Head>
 
+    <Navbar />
     <Hero />
     <Pitch />
     <Stats />

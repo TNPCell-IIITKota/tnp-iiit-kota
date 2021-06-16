@@ -15,7 +15,7 @@ const Hero: React.FC = () => (
       <span cx="span-100" />
     </div>
     <div cx="ctr">
-      <Logo cx="logo" role="img" aria-label="IIIT Kota Logo" />
+      <Logo cx="logo" role="img" aria-label="IIIT Kota" />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
       <div cx="about">
         We act as a facilitator for training and placement, and work enthusiastically towards the

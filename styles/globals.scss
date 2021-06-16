@@ -38,6 +38,10 @@
   samp {
     font-family: monospace;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .legend-item-0 > span {

@@ -8,7 +8,7 @@ const WhyRecruit: React.FC = () => {
   const [current, setCurrent] = useState(1);
 
   return (
-    <section cx="sect">
+    <section cx="sect" id="why-recruit">
       <div cx="ctr">
         <div cx="title-wrapper">
           <h1 cx="title">Why Recruit?</h1>

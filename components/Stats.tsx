@@ -1,7 +1,7 @@
 import Tabs from '@components/Tabs';
 
 const Stats: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="statistics">
     <div cx="ctr">
       <div cx="wrapper">
         <div cx="separator-wrapper">

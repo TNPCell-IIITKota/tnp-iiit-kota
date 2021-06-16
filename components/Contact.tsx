@@ -51,7 +51,7 @@ const Cards: React.FC = () => (
 );
 
 const Contact: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="contact-us">
     <div cx="ctr">
       <h1 cx="title">Contact Information</h1>
       <Cards />

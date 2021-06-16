@@ -1,0 +1,23 @@
+.navbar {
+  @apply fixed top-0 z-50 w-full bg-gray-900 bg-opacity-95 transition-all duration-500 ease-in-out;
+}
+
+.wrapper {
+  @apply container hidden relative flex-row justify-center items-center py-5 px-8 mx-auto lg:flex;
+}
+
+.logo-wrapper {
+  @apply inline-flex items-center mr-12;
+}
+
+.logo {
+  @apply w-10 h-10;
+}
+
+.nav-link {
+  @apply text-sm tracking-wide text-gray-200 uppercase whitespace-nowrap transition-colors duration-200 hover:text-gray-50;
+}
+
+.links {
+  @apply hidden items-center space-x-8 lg:flex;
+}

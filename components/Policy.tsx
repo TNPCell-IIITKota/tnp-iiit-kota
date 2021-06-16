@@ -1,5 +1,5 @@
 const Policy: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="policy">
     <div cx="ctr">
       <h1 cx="title">Placement&ensp;Policy</h1>
       <div cx="content">

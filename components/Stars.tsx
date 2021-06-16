@@ -4,7 +4,7 @@ import cyrb53 from '@utils/hash-string';
 import topPerformers from '@utils/star-perf';
 
 const Stars: React.FC = () => (
-  <section cx="sect">
+  <section cx="sect" id="featured-stars">
     <div cx="ctr">
       <div cx="title-wrapper">
         <h1 cx="title">Featured Stars</h1>

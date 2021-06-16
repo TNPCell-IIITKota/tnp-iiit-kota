@@ -7,7 +7,14 @@ const Footer: React.FC = () => (
     <div cx="ctr">
       <Link href="/">
         <a cx="logo-wrapper">
-          <Logo cx="logo" role="img" aria-label="IIIT Kota" />
+          <Logo
+            cx="logo"
+            role="img"
+            aria-label="IIIT Kota"
+            onClick={(): void => {
+              window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+            }}
+          />
         </a>
       </Link>
 
