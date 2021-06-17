@@ -23,7 +23,19 @@
 }
 
 .wrapper {
-  @apply flex flex-col items-center p-4 h-full text-center;
+  @apply flex relative flex-col items-center p-4 h-full text-center;
+}
+
+.lead {
+  @apply mt-8 mb-3 font-semibold text-center first:mt-0;
+}
+
+.overlay {
+  @apply flex absolute top-4 justify-center items-center p-8 w-24 h-24 bg-black bg-opacity-60 rounded-full opacity-0 transition-all duration-500;
+
+  .wrapper:hover & {
+    @apply opacity-100;
+  }
 }
 
 .image {
@@ -31,7 +43,7 @@
 }
 
 .content {
-  @apply flex-grow;
+  @apply flex-grow mt-2;
 }
 
 .name {
