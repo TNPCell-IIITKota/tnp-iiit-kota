@@ -21,7 +21,7 @@
 }
 
 .slide {
-  @apply inline-block px-10 align-middle opacity-70 transition duration-200 cursor-default outline-none grayscale filter contrast-200 hover:opacity-80 hover:filter-none;
+  @apply inline-block px-10 align-middle opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
 
   svg {
     @apply block w-auto h-10;

@@ -29,7 +29,7 @@
 
       .recharts-legend-wrapper {
         @apply w-[25rem] bottom-auto left-1/2 #{!important};
-        @apply pl-4 mx-auto transform -translate-x-1/2;
+        @apply pl-4 mx-auto -translate-x-1/2;
       }
     }
   }

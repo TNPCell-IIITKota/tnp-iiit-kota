@@ -15,11 +15,11 @@
 }
 
 .card {
-  @apply overflow-hidden relative p-px rounded border shadow-sm transition duration-300 transform hover:scale-105 hover:shadow-xl;
+  @apply overflow-hidden relative p-px rounded border shadow-sm transition duration-300 hover:scale-105 hover:shadow-xl;
 }
 
 .borders {
-  @apply absolute duration-300 transform;
+  @apply absolute duration-300;
 
   &:nth-child(1) {
     @apply bottom-0 left-0 w-full h-1 origin-left scale-x-0 group-hover:scale-x-100;
