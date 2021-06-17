@@ -1,5 +1,5 @@
 const members: Record<
-  'faculty' | 2020 | 2021 | 2022 | 2023,
+  '2020' | '2021' | '2022' | '2023' | 'faculty',
   Array<{ name: string; linkedIn: string }>
 > = {
   faculty: [{ name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' }],
