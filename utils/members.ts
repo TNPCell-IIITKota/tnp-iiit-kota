@@ -1,5 +1,5 @@
 const members: Record<
-  '2020' | '2021' | '2022' | '2023' | 'faculty',
+  '2020' | '2021' | '2022' | 'faculty' | 'webmaster',
   Array<{ name: string; linkedIn: string }>
 > = {
   faculty: [{ name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' }],
@@ -12,13 +12,13 @@ const members: Record<
     { name: 'Shashwat Singh', linkedIn: 's10singh97' },
   ],
   2022: [
-    { name: 'Anushka Joshi', linkedIn: '' },
+    { name: 'Anushka Joshi', linkedIn: 'anushka4joshi' },
     { name: 'Inderjeet', linkedIn: 'inderjeet-816b88176' },
     { name: 'Mayank Goyal', linkedIn: 'mayankkgoyal' },
     { name: 'Rajkumar Pareek', linkedIn: 'rajkumar-pareek-06a573170' },
     { name: 'Sanatan Shrivastava', linkedIn: 'sanatan-shrivastava-04a327171' },
   ],
-  2023: [{ name: 'Divyansh Singh', linkedIn: 'brc-dd' }],
+  webmaster: [{ name: 'Divyansh Singh', linkedIn: 'brc-dd' }],
 };
 
 export default members;
