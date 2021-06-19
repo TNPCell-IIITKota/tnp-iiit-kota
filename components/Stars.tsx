@@ -54,9 +54,7 @@ const Stars: React.FC = () => (
             </div>
           </div>
         ))}
-      </div>
 
-      <div cx="stars">
         {academia.map(({ name, college, year }) => (
           <div cx="star" key={cyrb53(name)}>
             <div cx="wrapper">
