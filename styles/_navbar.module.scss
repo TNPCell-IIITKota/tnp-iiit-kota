@@ -42,7 +42,7 @@
   top: 60px;
 
   &[data-toggle='true'] {
-    @apply p-6 max-h-[768px] border-2;
+    @apply p-6 max-h-[768px] border;
 
     max-width: 100vw;
   }

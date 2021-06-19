@@ -46,8 +46,14 @@
   @apply mb-1 text-sm font-semibold tracking-widest text-indigo-500 uppercase;
 }
 
-.company {
+.company,
+.college,
+.service {
   @apply mb-2 text-sm font-semibold tracking-wide text-gray-50;
+}
+
+.college {
+  @apply text-xs font-normal;
 }
 
 .lpa {

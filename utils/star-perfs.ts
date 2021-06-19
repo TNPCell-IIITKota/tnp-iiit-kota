@@ -1,4 +1,24 @@
-const topPerformers: Record<
+const iaf = [
+  { name: 'Priya Sharma', service: 'Indian Air Force', rank: 'Flying Officer', year: 17 },
+  { name: 'Navneet Poonia', service: 'Indian Air Force', rank: 'Flying Officer', year: 19 },
+];
+
+const academia = [
+  {
+    name: 'Shashwat Singh',
+    college: 'Columbia University in the City of New York',
+    degree: 'MS (Data Science)',
+    year: 21,
+  },
+  {
+    name: 'Joey Pinto',
+    college: 'Carnegie Mellon University Silicon Valley',
+    degree: 'MS (Software Engineering)',
+    year: 17,
+  },
+];
+
+const corporate: Record<
   '17' | '18' | '19' | '20' | '21',
   Array<{ name: string; company: string; lpa: number }>
 > = {
@@ -35,4 +55,4 @@ const topPerformers: Record<
   17: [{ name: 'Arushi Gupta', company: 'Amazon', lpa: 26 }],
 };
 
-export default topPerformers;
+export { academia, corporate, iaf };
