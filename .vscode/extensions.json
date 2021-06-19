@@ -1,18 +1,19 @@
 {
   "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "cssho.vscode-svgviewer",
+    "dbaeumer.vscode-eslint",
+    "dotjoshjohnson.xml",
+    "dsznajder.es7-react-js-snippets",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
-    "dbaeumer.vscode-eslint",
-    "zengxingxin.sort-js-object-keys",
-    "visualstudioexptteam.vscodeintellicode",
-    "ms-vscode.vscode-typescript-next",
-    "dsznajder.es7-react-js-snippets",
-    "streetsidesoftware.code-spell-checker",
     "foxundermoon.shell-format",
-    "bradlc.vscode-tailwindcss",
     "heybourn.headwind",
     "mikestead.dotenv",
-    "dotjoshjohnson.xml",
-    "cssho.vscode-svgviewer"
+    "ms-vscode.vscode-typescript-next",
+    "streetsidesoftware.code-spell-checker",
+    "visualstudioexptteam.vscodeintellicode",
+    "wayou.vscode-todo-highlight",
+    "zengxingxin.sort-js-object-keys"
   ]
 }

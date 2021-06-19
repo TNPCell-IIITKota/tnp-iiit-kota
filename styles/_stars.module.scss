@@ -51,5 +51,9 @@
 }
 
 .lpa {
-  @apply leading-relaxed text-gray-400;
+  @apply leading-relaxed text-gray-300;
+}
+
+.year {
+  @apply absolute top-0 right-0 pt-4 pr-4 text-xs text-gray-400;
 }
