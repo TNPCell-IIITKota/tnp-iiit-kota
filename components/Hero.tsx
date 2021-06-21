@@ -1,4 +1,4 @@
-import Logo from '@assets/logo.svg';
+import Image from 'next/image';
 
 const Hero: React.FC = () => (
   <section cx="sect">
@@ -15,7 +15,18 @@ const Hero: React.FC = () => (
       <span cx="span-100" />
     </div>
     <div cx="ctr">
-      <Logo cx="logo" role="img" aria-label="IIIT Kota" />
+      <Image
+        cx="logo"
+        src="/logo.svg"
+        height="192"
+        width="192"
+        layout="fixed"
+        quality="100"
+        priority
+        unoptimized
+        role="img"
+        aria-label="IIIT Kota"
+      />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
       <div cx="about">
         We act as a facilitator for training and placement, and work enthusiastically towards the

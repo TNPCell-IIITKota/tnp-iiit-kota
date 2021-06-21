@@ -1,14 +1,20 @@
+import Image from 'next/image';
 import Link from 'next/link';
-
-import Logo from '@assets/logo.svg';
 
 const Footer: React.FC = () => (
   <footer cx="footer">
     <div cx="ctr">
       <Link href="/">
         <a cx="logo-wrapper">
-          <Logo
+          <Image
             cx="logo"
+            src="/logo.svg"
+            height="40"
+            width="40"
+            layout="fixed"
+            quality="100"
+            priority
+            unoptimized
             role="img"
             aria-label="IIIT Kota"
             onClick={(): void => {

@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 MD041 -->
 <p align="center">
-  <img src="assets/logo.svg" width="100" />
+  <img src="public/logo.svg" width="100" />
 </p>
 <h1 align="center">
   Training &amp; Placement Cell
