@@ -1,6 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
-// const withAnimations = require('animated-tailwindcss');
 
 module.exports = {
   mode: 'jit',

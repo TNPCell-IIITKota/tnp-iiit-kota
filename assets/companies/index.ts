@@ -37,7 +37,7 @@ import Virtusa from './virtusa.svg';
 import Xebia from './xebia.svg';
 import Yamaha from './yamaha.svg';
 
-const companies: Record<0 | 1, Record<string, React.FC<React.SVGProps<SVGSVGElement>>>> = {
+const companies: Record<0 | 1, Record<string, StaticImageData>> = {
   0: {
     Microsoft,
     Amazon,

@@ -11,9 +11,7 @@ const WrappedImage: React.FC<{ name: string }> = ({ name }) => (
       width="160"
       height="160"
       cx="image"
-      role="img"
       alt={name}
-      aria-label={name}
     />
   </div>
 );
@@ -44,7 +42,7 @@ const Stars: React.FC = () => (
 
       <div cx="stars">
         {iaf.map(({ name, service, year }) => (
-          <div cx="star" key={cyrb53(name)}>
+          <div cx="star-i" key={cyrb53(name)}>
             <div cx="wrapper">
               <WrappedImage name={name} />
 
@@ -56,7 +54,7 @@ const Stars: React.FC = () => (
         ))}
 
         {academia.map(({ name, college, year }) => (
-          <div cx="star" key={cyrb53(name)}>
+          <div cx="star-a" key={cyrb53(name)}>
             <div cx="wrapper">
               <WrappedImage name={name} />
 
@@ -75,7 +73,7 @@ const Stars: React.FC = () => (
           .map((year) => (
             <React.Fragment key={cyrb53(`stars-y'${year}`)}>
               {corporate[year as keyof typeof corporate].map(({ name, company, lpa }) => (
-                <div cx="star" key={cyrb53(name)}>
+                <div cx="star-c" key={cyrb53(name)}>
                   <div cx="wrapper">
                     <WrappedImage name={name} />
 

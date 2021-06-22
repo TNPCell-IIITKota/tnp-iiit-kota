@@ -1,9 +1,8 @@
 module.exports = {
   i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
   optimizeFonts: false,
-  images: { disableStaticImages: true },
 
-  webpack(config, { dev, isServer }) {
+  webpack(config, { isServer }) {
     const rules = config.module.rules
       .find((rule) => typeof rule.oneOf === 'object')
       .oneOf.filter((rule) => Array.isArray(rule.use));
@@ -34,22 +33,6 @@ module.exports = {
         }),
       );
     }
-
-    config.module.rules.push({
-      test: /\.svg$/i,
-      issuer: { and: [/\.(js|ts|md)x?$/] },
-      use: [
-        {
-          loader: '@svgr/webpack',
-          options: {
-            prettier: false,
-            svgo: true,
-            svgoConfig: { plugins: [{ removeViewBox: false }] },
-            titleProp: true,
-          },
-        },
-      ],
-    });
 
     return config;
   },

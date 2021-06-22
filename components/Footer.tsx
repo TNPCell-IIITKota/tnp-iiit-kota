@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import logo from '@assets/logo.svg';
+
 const Footer: React.FC = () => (
   <footer cx="footer">
     <div cx="ctr">
@@ -8,15 +10,11 @@ const Footer: React.FC = () => (
         <a cx="logo-wrapper">
           <Image
             cx="logo"
-            src="/logo.svg"
             height="40"
             width="40"
-            layout="fixed"
-            quality="100"
+            src={logo}
             priority
-            unoptimized
-            role="img"
-            aria-label="IIIT Kota"
+            alt="IIIT Kota"
             onClick={(): void => {
               window.scroll({ top: 0, left: 0, behavior: 'smooth' });
             }}

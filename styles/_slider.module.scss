@@ -6,25 +6,16 @@
   @apply mb-16 text-3xl font-semibold text-center text-gray-900;
 }
 
-.ctr {
-  @apply my-8;
-}
-
 .slider {
-  @apply inline-block overflow-hidden whitespace-nowrap;
-
+  @apply flex my-8 w-max;
   animation: slide 64s linear infinite;
 }
 
-.wrapper {
-  @apply inline-block whitespace-nowrap;
-}
-
 .slide {
-  @apply inline-block px-10 align-middle opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
+  @apply px-10 opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
 
-  svg {
-    @apply block w-auto h-10;
+  img {
+    @apply h-10;
   }
 }
 

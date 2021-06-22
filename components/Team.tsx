@@ -13,9 +13,7 @@ const Members: React.FC<{ level: keyof typeof members }> = ({ level }) => (
             width="96"
             height="96"
             cx="image"
-            role="img"
             alt={name}
-            aria-label={name}
           />
 
           <a

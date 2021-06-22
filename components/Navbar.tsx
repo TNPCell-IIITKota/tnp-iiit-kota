@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import logo from '@assets/logo.svg';
 import cyrb53 from '@utils/hash-string';
 
 const Navbar: React.FC = () => {
@@ -69,15 +70,11 @@ const Navbar: React.FC = () => {
             <a cx="logo-wrapper">
               <Image
                 cx="logo"
-                src="/logo.svg"
+                src={logo}
                 height="40"
                 width="40"
-                layout="fixed"
-                quality="100"
                 priority
-                unoptimized
-                role="img"
-                aria-label="IIIT Kota"
+                alt="IIIT Kota"
                 onClick={(): void => {
                   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
                 }}
