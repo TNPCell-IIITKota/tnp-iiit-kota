@@ -12,10 +12,9 @@
 }
 
 .slide {
-  @apply px-10 opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
-
   img {
-    @apply h-10;
+    @apply h-10 opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
+    @apply mx-10 #{!important};
   }
 }
 
