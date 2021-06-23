@@ -1,6 +1,8 @@
 module.exports = {
   i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
   optimizeFonts: false,
+  poweredByHeader: false,
+  reactStrictMode: true,
 
   webpack(config, { isServer }) {
     const rules = config.module.rules
