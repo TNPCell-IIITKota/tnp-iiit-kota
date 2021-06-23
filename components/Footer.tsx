@@ -12,7 +12,7 @@ const Footer: React.FC = () => (
             cx="logo"
             height="40"
             width="40"
-            src={logo}
+            src={logo as StaticImageData}
             priority
             alt="IIIT Kota"
             onClick={(): void => {

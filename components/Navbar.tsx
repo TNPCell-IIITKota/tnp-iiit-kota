@@ -70,7 +70,7 @@ const Navbar: React.FC = () => {
             <a cx="logo-wrapper">
               <Image
                 cx="logo"
-                src={logo}
+                src={logo as StaticImageData}
                 height="40"
                 width="40"
                 priority

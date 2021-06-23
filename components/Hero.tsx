@@ -17,7 +17,14 @@ const Hero: React.FC = () => (
       <span cx="span-100" />
     </div>
     <div cx="ctr">
-      <Image cx="logo" src={logo} height="192" width="192" priority alt="IIIT Kota" />
+      <Image
+        cx="logo"
+        src={logo as StaticImageData}
+        height="192"
+        width="192"
+        priority
+        alt="IIIT Kota"
+      />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
       <div cx="about">
         We act as a facilitator for training and placement, and work enthusiastically towards the
