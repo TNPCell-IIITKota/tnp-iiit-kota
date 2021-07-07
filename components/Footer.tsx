@@ -15,6 +15,9 @@ const Footer: React.FC = () => (
             src={logo as StaticImageData}
             priority
             alt="IIIT Kota"
+            layout="fixed"
+            quality="100"
+            unoptimized
             onClick={(): void => {
               window.scroll({ top: 0, left: 0, behavior: 'smooth' });
             }}

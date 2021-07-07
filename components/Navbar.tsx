@@ -75,6 +75,9 @@ const Navbar: React.FC = () => {
                 width="40"
                 priority
                 alt="IIIT Kota"
+                layout="fixed"
+                quality="100"
+                unoptimized
                 onClick={(): void => {
                   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
                 }}

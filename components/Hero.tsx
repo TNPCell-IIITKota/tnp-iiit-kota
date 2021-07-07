@@ -24,6 +24,9 @@ const Hero: React.FC = () => (
         width="192"
         priority
         alt="IIIT Kota"
+        layout="fixed"
+        quality="100"
+        unoptimized
       />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
       <div cx="about">
