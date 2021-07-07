@@ -31,10 +31,18 @@
 
 ---
 
-This repository is the landing page of TNP Cell, IIIT Kota. You can access the website at [tpcell.iiitkota.ac.in](https://tpcell.iiitkota.ac.in/).
+This repository is the landing page of TNP Cell, IIIT Kota. You can access the website at [tpcell.iiitkota.ac.in][1].
 
 ## Contributors
 
-| ![Divyansh Singh](https://avatars1.githubusercontent.com/u/40380293?v=4&s=100) | ![Sanatan Shrivastava](https://avatars1.githubusercontent.com/u/45680718?v=4&s=100) |
-| :----------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
-|           [Divyansh Singh](https://github.com/brc-dd) <br /> Author            |   [Sanatan Shrivastava](https://github.com/sanatan-shrivastava) <br /> Maintainer   |
+|       ![Divyansh Singh][2]        |         ![Sanatan Shrivastava][4]          |          ![Pavnesh Chaturvedi][6]           |
+| :-------------------------------: | :----------------------------------------: | :-----------------------------------------: |
+| [Divyansh Singh][3] <br /> Author | [Sanatan Shrivastava][5] <br /> Maintainer | [Pavnesh Chaturvedi][7] <br /> Collaborator |
+
+[1]: https://tpcell.iiitkota.ac.in
+[2]: https://images.weserv.nl/?url=raw.githubusercontent.com/brc-dd/tnp-iiit-kota/main/public/members/divyansh-singh.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[3]: https://github.com/brc-dd
+[4]: https://images.weserv.nl/?url=raw.githubusercontent.com/brc-dd/tnp-iiit-kota/main/public/members/sanatan-shrivastava.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[5]: https://github.com/sanatan-shrivastava
+[6]: https://images.weserv.nl/?url=raw.githubusercontent.com/brc-dd/tnp-iiit-kota/main/public/members/pavnesh-chaturvedi.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[7]: https://github.com/pc-beast

@@ -18,7 +18,10 @@ const members: Record<
     { name: 'Rajkumar Pareek', linkedIn: 'rajkumar-pareek-06a573170' },
     { name: 'Sanatan Shrivastava', linkedIn: 'sanatan-shrivastava-04a327171' },
   ],
-  webmaster: [{ name: 'Divyansh Singh', linkedIn: 'brc-dd' }],
+  webmaster: [
+    { name: 'Divyansh Singh', linkedIn: 'brc-dd' },
+    { name: 'Pavnesh Chaturvedi', linkedIn: 'pavnesh-chaturvedi-208b15197' },
+  ],
 };
 
 export default members;
