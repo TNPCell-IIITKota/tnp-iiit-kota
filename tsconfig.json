@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "allowJs": false,
     "alwaysStrict": true,
     "baseUrl": ".",
     "esModuleInterop": true,
@@ -18,8 +18,8 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "paths": { "@/*": ["*"], "@*": ["node_modules/@*", "*"] }
+    "paths": { "@*": ["node_modules/@*", "*"] }
   },
-  "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "exclude": ["node_modules", "next-env.d.ts"],
+  "include": ["**/*"]
 }

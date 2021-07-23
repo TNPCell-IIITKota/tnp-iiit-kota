@@ -19,7 +19,7 @@ const Hero: React.FC = () => (
     <div cx="ctr">
       <Image
         cx="logo"
-        src={logo as StaticImageData}
+        src={logo}
         height="192"
         width="192"
         priority

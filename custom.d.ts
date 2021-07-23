@@ -1,3 +1,6 @@
+/// <reference types="next" />
+/// <reference types="next/types/global" />
+
 import type * as React from 'react';
 
 declare module 'react' {
