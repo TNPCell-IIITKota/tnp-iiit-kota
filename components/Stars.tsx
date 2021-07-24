@@ -35,7 +35,7 @@ const Stars: React.FC = () => (
       <div cx="title-wrapper">
         <h1 cx="title">Featured Stars</h1>
         <p cx="desc">
-          The alumni of IIIT Kota have made their mark on the various government, academia &amp;
+          The alumni of IIIT Kota have made their mark on various government, academia &amp;
           corporate fronts. Meet some of our alumni who we are proud of producing.
         </p>
       </div>
