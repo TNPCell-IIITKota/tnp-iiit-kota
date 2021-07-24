@@ -3,7 +3,7 @@
 }
 
 .ctr {
-  @apply container px-5 pt-28 mx-auto;
+  @apply container px-5 pt-24 mx-auto;
 }
 
 .wrapper {
@@ -19,7 +19,7 @@
 }
 
 .title-wrapper {
-  @apply flex flex-col flex-wrap py-6 mb-4 sm:flex-row;
+  @apply flex flex-col flex-wrap py-6 mb-6 sm:flex-row;
 }
 
 .title {

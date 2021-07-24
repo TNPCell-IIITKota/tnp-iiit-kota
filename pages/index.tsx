@@ -3,6 +3,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Contact from '@components/Contact';
+import FAQs from '@components/FAQs';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Navbar from '@components/Navbar';
@@ -39,6 +40,7 @@ const IndexPage: NextPage = () => (
     <Slider />
     <Team />
     <Policy />
+    <FAQs />
     <Contact />
     <Footer />
   </>

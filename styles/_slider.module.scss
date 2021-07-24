@@ -1,9 +1,9 @@
 .sect {
-  @apply overflow-hidden pt-24 w-full max-w-full;
+  @apply overflow-hidden pt-20 mt-2 w-full max-w-full;
 }
 
 .title {
-  @apply mb-16 text-3xl font-semibold text-center text-gray-900;
+  @apply mb-16 text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
 }
 
 .slider {

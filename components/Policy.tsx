@@ -29,8 +29,8 @@ const Policy: React.FC = () => (
             (TNP) Cell, IIIT Kota” throughout the document.
           </li>
           <li>
-            The contact information given in the next section shall be used for all communications
-            instead of the info provided in the document.
+            The contact information given below shall be used for all communications instead of the
+            info provided in the policy document.
           </li>
         </ul>
         <span cx="note">Note:&ensp;</span>
