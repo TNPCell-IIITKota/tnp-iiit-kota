@@ -17,19 +17,3 @@
 .desc {
   @apply mx-auto mt-4 text-sm leading-relaxed text-center;
 }
-
-.wrapper {
-  @apply p-2 w-full lg:w-1/2;
-}
-
-.btn {
-  @apply flex relative items-center p-4 w-full h-full bg-gray-100 rounded;
-}
-
-.question {
-  @apply font-semibold;
-}
-
-.icon {
-  @apply absolute right-0 flex-shrink-0 mr-4 w-6 h-6 text-indigo-500;
-}
