@@ -1,0 +1,35 @@
+.sect {
+  @apply mx-auto mt-4 text-gray-600 xl:w-3/5;
+}
+
+.ctr {
+  @apply container px-5 pt-16 mx-auto border-t border-gray-200;
+}
+
+.title {
+  @apply mt-2 mb-14 text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
+}
+
+.questions {
+  @apply flex flex-wrap -mx-2 sm:mx-auto sm:mb-2;
+}
+
+.desc {
+  @apply mx-auto mt-4 text-sm leading-relaxed text-center;
+}
+
+.wrapper {
+  @apply p-2 w-full lg:w-1/2;
+}
+
+.btn {
+  @apply flex relative items-center p-4 w-full h-full bg-gray-100 rounded;
+}
+
+.question {
+  @apply font-semibold;
+}
+
+.icon {
+  @apply absolute right-0 flex-shrink-0 mr-4 w-6 h-6 text-indigo-500;
+}
