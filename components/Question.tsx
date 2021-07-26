@@ -1,13 +1,9 @@
-const Question: React.FC<{ answer: string }> = ({ answer, children }) => (
+const Question: React.FC<{ onClick: React.MouseEventHandler<HTMLButtonElement> }> = ({
+  children,
+  onClick: handleClick,
+}) => (
   <div cx="wrapper">
-    <button
-      type="button"
-      cx="btn"
-      onClick={(): void => {
-        // eslint-disable-next-line no-console
-        console.log(answer);
-      }}
-    >
+    <button type="button" cx="btn" onClick={handleClick}>
       <span cx="question">{children}</span>
       <svg
         fill="none"

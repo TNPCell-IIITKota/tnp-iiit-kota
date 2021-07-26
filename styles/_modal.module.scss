@@ -1,0 +1,31 @@
+.modal {
+  @apply overflow-y-auto fixed inset-0 z-10;
+}
+
+.ctr {
+  @apply flex justify-center items-end px-4 pt-4 pb-20 min-h-screen text-center sm:block sm:p-0;
+}
+
+.overlay {
+  @apply fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity;
+}
+
+.fake {
+  @apply hidden sm:inline-block sm:align-middle sm:h-screen;
+}
+
+.wrapper {
+  @apply inline-block overflow-hidden text-left align-bottom bg-white rounded-lg shadow-xl transition-all transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full;
+}
+
+.ans {
+  @apply px-4 pt-5 pb-4 mt-3 text-sm text-center text-gray-500 bg-white sm:p-6 sm:pb-0 sm:flex sm:items-start sm:mt-0 sm:ml-4 sm:text-left;
+}
+
+.btn-wrapper {
+  @apply py-3 px-4 bg-white sm:px-6 sm:flex sm:flex-row-reverse;
+}
+
+.btn {
+  @apply inline-flex justify-center py-2 px-4 w-full text-base font-semibold text-blue-900 bg-blue-100 rounded-md border border-transparent shadow-sm transition-all hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm;
+}
