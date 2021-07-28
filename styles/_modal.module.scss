@@ -19,7 +19,11 @@
 }
 
 .ans {
-  @apply p-4 text-sm text-center text-gray-500 sm:p-6 sm:pb-0 sm:text-left;
+  @apply p-4 text-sm text-center text-gray-500 sm:p-6 sm:pb-0 sm:text-justify;
+
+  ul {
+    @apply ml-4 list-disc;
+  }
 }
 
 .btn-wrapper {

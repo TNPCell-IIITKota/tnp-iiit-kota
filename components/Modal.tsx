@@ -60,7 +60,8 @@ const Modal: React.ForwardRefRenderFunction<{
             leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
           >
             <div cx="wrapper">
-              <div cx="ans">{answer}</div>
+              {/* eslint-disable-next-line react/no-danger */}
+              <div cx="ans" dangerouslySetInnerHTML={{ __html: answer }} />
 
               <div cx="btn-wrapper">
                 <button
