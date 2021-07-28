@@ -31,9 +31,22 @@ const Modal: React.ForwardRefRenderFunction<{
     };
   }, []);
 
+  const adjustPadding = (): void => {
+    const fake = document.createElement('span');
+    const okBtn = document.querySelector<HTMLElement>('#ok-btn')!;
+
+    Array.from(document.querySelectorAll<HTMLElement>('#ans *'))
+      .reverse()
+      .concat([document.querySelector<HTMLElement>('#ans')!])
+      .find((el) => el.innerText.replace(/s/g, '').length > 0)
+      ?.appendChild(fake);
+
+    if (fake.offsetLeft + 32 < okBtn.offsetLeft) okBtn.style.marginTop = '-1rem';
+  };
+
   return (
-    <Transition appear show={open} as={Fragment}>
-      <Dialog as="div" cx="modal" onClose={setOpen} initialFocus={btnRef}>
+    <Transition as={Fragment} show={open} appear>
+      <Dialog as="div" cx="modal" initialFocus={btnRef} onClose={setOpen}>
         <div cx="ctr">
           <Transition.Child
             as={Fragment}
@@ -47,7 +60,7 @@ const Modal: React.ForwardRefRenderFunction<{
             <Dialog.Overlay cx="overlay" />
           </Transition.Child>
 
-          <span cx="fake" aria-hidden="true">
+          <span aria-hidden="true" cx="fake">
             &#8203;
           </span>
           <Transition.Child
@@ -61,16 +74,19 @@ const Modal: React.ForwardRefRenderFunction<{
           >
             <div cx="wrapper">
               {/* eslint-disable-next-line react/no-danger */}
-              <div cx="ans" dangerouslySetInnerHTML={{ __html: answer }} />
+              <div cx="ans" dangerouslySetInnerHTML={{ __html: answer }} id="ans" />
+              {/* eslint-disable-next-line @next/next/no-img-element,jsx-a11y/alt-text */}
+              <img src="" onError={adjustPadding} />
 
               <div cx="btn-wrapper">
                 <button
-                  type="button"
+                  ref={btnRef}
                   cx="btn"
+                  id="ok-btn"
+                  type="button"
                   onClick={(): void => {
                     setOpen(false);
                   }}
-                  ref={btnRef}
                 >
                   OK
                 </button>
