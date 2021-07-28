@@ -8,11 +8,11 @@ const Slider: React.FC = () => (
     <h1 cx="title">Past Recruiters</h1>
 
     {[0, 1].map((level) => (
-      <div cx="slider" key={cyrb53(`recruiters-${level}`)}>
+      <div key={cyrb53(`recruiters-${level}`)} cx="slider">
         {[0, 1].map((i) =>
           Object.entries(companies[level as keyof typeof companies]).map(([name, src]) => (
-            <div cx="slide" key={cyrb53(`${level}${i}-${name}`)}>
-              <Image src={src} priority alt={name} />
+            <div key={cyrb53(`${level}${i}-${name}`)} cx="slide">
+              <Image alt={name} src={src} priority />
             </div>
           )),
         )}

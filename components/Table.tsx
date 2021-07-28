@@ -10,7 +10,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
         <thead cx="head">
           <tr>
             {['Branch', 'Maximum Package', 'Average Package', 'Placement %'].map((header) => (
-              <th scope="col" cx="col-th" key={cyrb53(header)}>
+              <th key={cyrb53(header)} cx="col-th" scope="col">
                 {header}
               </th>
             ))}
@@ -22,7 +22,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
               key={cyrb53(row.branch)}
               style={row.branch.toLowerCase() === 'total' ? { fontWeight: 600 } : {}}
             >
-              <th scope="row" cx="row-th">
+              <th cx="row-th" scope="row">
                 {row.branch}
               </th>
               <td cx="data">{row.Maximum} LPA</td>

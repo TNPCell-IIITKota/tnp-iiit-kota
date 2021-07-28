@@ -19,11 +19,11 @@ const IndexPage: NextPage = () => (
   <>
     <Head>
       <meta charSet="UTF-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta content="IE=edge" httpEquiv="X-UA-Compatible" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
       <meta
-        name="description"
         content="The TNP Cell of IIIT Kota acts as a facilitator for training and placement, and works enthusiastically towards the overall development of the students, helping them connect with industries."
+        name="description"
       />
       <title>Training and Placement Cell - IIIT Kota</title>
 

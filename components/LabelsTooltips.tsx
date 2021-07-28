@@ -28,11 +28,11 @@ const CustomTooltip = ({
 
 const CustomizedLabel = ({ x, y, width, height, value }: LabelProps): React.ReactElement => (
   <text
-    x={(x as number) + (width as number) - 40}
-    y={(y as number) + (height as number) / 2}
+    dominantBaseline="middle"
     fill="#fff"
     textAnchor="middle"
-    dominantBaseline="middle"
+    x={(x as number) + (width as number) - 40}
+    y={(y as number) + (height as number) / 2}
   >
     {(value as number).toFixed(2)} %
   </text>

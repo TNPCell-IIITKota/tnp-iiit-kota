@@ -8,8 +8,8 @@ const Policy: React.FC = () => (
         process, following the&nbsp;
         <a
           href="https://mnit.ac.in/cms/uploads/2018/07/Institute_Placement_Policy-MNIT.pdf"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
           title="Institute Placement Policy – MNIT"
         >
           placement policy
@@ -37,8 +37,8 @@ const Policy: React.FC = () => (
         &nbsp;Companies may refer to&nbsp;
         <a
           href="https://mnit.ac.in/cms/uploads/2018/07/Institute_Placement_Policy-MNIT.pdf#page=6"
-          target="_blank"
           rel="noopener noreferrer"
+          target="_blank"
         >
           Section 5.2 – Section 5.7
         </a>
