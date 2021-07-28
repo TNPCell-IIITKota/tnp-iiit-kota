@@ -19,10 +19,10 @@
 }
 
 .ans {
-  @apply p-4 text-sm text-center text-gray-500 sm:p-6 sm:pb-0 sm:text-justify;
+  @apply p-4 pb-1 text-sm text-justify text-gray-500 sm:p-6 sm:pb-0;
 
   ul {
-    @apply ml-4 list-disc;
+    @apply mt-2 ml-4 list-disc;
   }
 }
 
