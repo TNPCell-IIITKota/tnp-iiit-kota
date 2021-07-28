@@ -10,7 +10,7 @@ const FAQs: React.FC = () => {
 
   return (
     <>
-      <section cx="sect">
+      <section cx="sect" id="faqs">
         <div cx="ctr">
           <h1 cx="title">Frequently Asked Questions</h1>
 
