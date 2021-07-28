@@ -67,7 +67,7 @@ const questions: Array<{ question: string; answer: string }> = [
     question:
       'Are there multiple companies recruiting in the same slot? How is the case of multiple offers resolved?',
     answer:
-      '<b>Yes</b>, there are multiple companies recruiting in the same slot. The results of all the companies are announced at the end of the slot. If a student gets multiple offers, they can choose between them and inform the office of their decision before the next slot.',
+      '<b>Yes</b>, there are multiple companies recruiting in the same slot. The results of all the companies are announced at the end of the slot. If a student gets multiple offers, they can choose between them and inform the office of their decision before next slot.',
   },
 ];
 
