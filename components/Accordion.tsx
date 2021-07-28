@@ -7,10 +7,10 @@ const Accordion: React.FC<{
     <button cx="accordion" type="button" onClick={onClick}>
       <p cx="lead">{title}</p>
       <svg
+        aria-expanded={isOpen}
         aria-label="chevron"
         cx="chevron"
-        role="img"
-        style={isOpen ? { transform: 'rotate(-180deg)' } : {}}
+        role="button"
         viewBox="0 0 24 24"
       >
         <polyline

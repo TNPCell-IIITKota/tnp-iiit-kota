@@ -52,18 +52,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <header
-      cx="navbar"
-      data-clear={transparent}
-      style={
-        isScrollingUp
-          ? {
-              boxShadow:
-                '0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-            }
-          : { top: '-6rem' }
-      }
-    >
+    <header aria-hidden={!isScrollingUp} cx="navbar" data-clear={transparent}>
       <nav cx="wrapper">
         <div cx="sm-wrapper">
           <Link href="/">
