@@ -22,6 +22,10 @@
   @apply py-3 px-6 text-xs font-semibold tracking-wider text-left text-gray-500 uppercase;
 }
 
+.branch {
+  @apply last:font-semibold;
+}
+
 .row-th {
   @apply py-4 px-6 font-semibold text-left uppercase whitespace-nowrap;
 }

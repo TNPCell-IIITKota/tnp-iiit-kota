@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import Charts from '@components/Charts';
 import Table from '@components/Table';
+import cyrb53 from '@utils/hash-string';
 
 const Tabs: React.FC = () => {
   const now = 2021;
@@ -13,15 +14,12 @@ const Tabs: React.FC = () => {
     <div cx="wrapper">
       <ul cx="list-wrapper">
         {[0, 1].map((i) => (
-          <li key={`placement-tab-${i}`} cx="tab">
+          <li key={cyrb53(`placement-tab-${i}`)} cx="tab">
             <a
+              aria-selected={openTab === i}
               cx="tab-link"
               href={`#placement-stats-${now - i}`}
-              style={
-                openTab === i
-                  ? { color: '#fff', background: '#0e407c' }
-                  : { background: '#fff', color: '#0e407c' }
-              }
+              role="tab"
               onClick={(e): void => {
                 e.preventDefault();
                 setOpenTab(i);
@@ -35,9 +33,9 @@ const Tabs: React.FC = () => {
       <div cx="tab-content">
         {[0, 1].map((i) => (
           <div
-            key={`placement-content-${i}`}
+            key={cyrb53(`placement-content-${i}`)}
+            aria-hidden={openTab !== i}
             id={`placement-stats-${now - i}`}
-            style={{ display: openTab === i ? 'block' : 'none' }}
           >
             <Table year={(now - i) as Year} />
             <Charts year={(now - i) as Year} />

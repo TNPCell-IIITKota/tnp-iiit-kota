@@ -12,6 +12,10 @@
 
 .chevron {
   @apply w-3 text-gray-600 transition-transform duration-200;
+
+  &[aria-expanded='true'] {
+    @apply -rotate-180;
+  }
 }
 
 .lead {

@@ -18,10 +18,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
         </thead>
         <tbody cx="body">
           {aggregateData[year].map((row) => (
-            <tr
-              key={cyrb53(row.branch)}
-              style={row.branch.toLowerCase() === 'total' ? { fontWeight: 600 } : {}}
-            >
+            <tr key={cyrb53(row.branch)} cx="branch">
               <th cx="row-th" scope="row">
                 {row.branch}
               </th>
