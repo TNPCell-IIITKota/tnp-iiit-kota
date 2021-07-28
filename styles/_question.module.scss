@@ -7,7 +7,8 @@
 }
 
 .question {
-  @apply mr-8 font-semibold;
+  @apply font-semibold;
+  width: calc(100% - 2rem);
 }
 
 .icon {

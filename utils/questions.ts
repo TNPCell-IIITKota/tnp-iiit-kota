@@ -1,33 +1,73 @@
 const questions: Array<{ question: string; answer: string }> = [
   {
-    question: 'How much damage could your best friend do to you if you ever had a falling out?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus vitae nibh quis laoreet.',
+    question: 'What are the different ways a company can hire students from the campus?',
+    answer: `The different ways of recruiting students are:<br>
+<ul>
+  <li>Campus Recruitment Program in which final year students take part.</li>
+  <li>Summer Internship Program for pre-final year students, which can be converted into a pre-placement offer.</li>
+</ul>`,
   },
   {
-    question: "What's the most amount of money you've ever found? What was the situation?",
+    question: 'How can a company register itself for the campus recruitment program?',
     answer:
-      'Nunc efficitur augue ac fringilla venenatis. Maecenas libero nunc, imperdiet quis pulvinar ac, placerat non magna.',
+      'To participate in the campus recruitment program, a company must first contact the Training and Placement Cell and submit a job notification form (JNF). You can also find the detailed placement procedure in the policy linked above.',
   },
   {
-    question: "What's a situation when you look back you should have gone ahead and done it?",
+    question: 'Is there any fee associated with the process?',
     answer:
-      'Duis pretium felis erat. Mauris lobortis ullamcorper luctus. Vestibulum ac imperdiet ipsum. Ut sit amet aliquam ante.',
+      '<b>No.</b> There are no fees associated with the registration or the placement process.',
   },
   {
-    question: 'What were you most afraid of when you were younger? Do you still have that fear?',
-    answer:
-      'Praesent odio turpis, euismod vitae tincidunt sit amet, euismod non felis. Aliquam a facilisis neque.',
+    question: 'When does the recruitment program start?',
+    answer: 'The recruitment season runs throughout the year (from July to May).',
   },
   {
-    question: "What's something that you recently learned that everyone else already knew?",
+    question: 'What is the procedure to schedule a pre-placement talk (PPT)?',
     answer:
-      'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi eros dolor, sollicitudin in odio eget, posuere convallis purus.',
+      'A company will only be allowed to hold its PPT after filling up the job notification form.  The session is scheduled between 6 PM to 9 PM on weekdays and between 10 AM and 5 PM hours on Saturdays and Sundays. Student volunteers will get in touch with the company to fix a mutually convenient time for the session.',
   },
   {
-    question: "What do you consider to be the smartest thing you've ever done in your life so far?",
+    question: 'What kind of information do the students expect in PPTs?',
+    answer: `The pre-placement talk is a platform for interaction between the company and the students. The presentation is followed by a Q&A session where students interact with company officials to better understand the company and potential roles. The crucial insights that the students expect from the PPT are:
+<ul>
+  <li>Profile and reputation of the corporation</li>
+  <li>Career roles and responsibilities offered in different types of profiles</li>
+  <li>Locations where the student is likely to be posted</li>
+  <li>Compensation packages</li>
+</ul>`,
+  },
+  {
+    question: 'On what basis is the slot allotted to a company for the final placement?',
+    answer: `Slotting is done subject to the following parameters:
+<ul>
+  <li>Student preferences</li>
+  <li>Work profile</li>
+  <li>Compensation package</li>
+  <li>Career prospects</li>
+  <li>Student intake</li>
+  <li>Past relationship with IIIT Kota</li>
+</ul>`,
+  },
+  {
+    question: 'Can a company interview the students already placed in another company?',
     answer:
-      'Vivamus maximus nisl lectus, id maximus lectus faucibus id. Phasellus fermentum vulputate augue, at molestie metus commodo sed.',
+      'IIIT Kota follows a <i>"One Student; One Job"</i> policy. Once a job is registered against a student, they are not entitled to sit for any other company.',
+  },
+  {
+    question:
+      'What are the infrastructural facilities available on the campus for the placement process?',
+    answer: `The campus is equipped with state of the art communication, computing, and presentation facilities to facilitate a smooth placement process:
+<ul>
+  <li>Teleconferencing and video conferencing facility</li>
+  <li>Linux and Windows lab for online tests</li>
+  <li>Centrally air-conditioned auditorium, lecture halls, seminar and conference rooms for presentations, group discussions, and interviews</li>
+</ul>`,
+  },
+  {
+    question:
+      'Are there multiple companies recruiting in the same slot? How is the case of multiple offers resolved?',
+    answer:
+      '<b>Yes</b>, there are multiple companies recruiting in the same slot. The results of all the companies are announced at the end of the slot. If a student gets multiple offers, they can choose between them and inform the office of their decision before the next slot.',
   },
 ];
 
