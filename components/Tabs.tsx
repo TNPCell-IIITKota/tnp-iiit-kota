@@ -13,9 +13,10 @@ const Tabs: React.FC = () => {
     <div cx="wrapper">
       <ul cx="list-wrapper">
         {[0, 1].map((i) => (
-          <li cx="tab" key={`placement-tab-${i}`}>
+          <li key={`placement-tab-${i}`} cx="tab">
             <a
               cx="tab-link"
+              href={`#placement-stats-${now - i}`}
               style={
                 openTab === i
                   ? { color: '#fff', background: '#0e407c' }
@@ -25,7 +26,6 @@ const Tabs: React.FC = () => {
                 e.preventDefault();
                 setOpenTab(i);
               }}
-              href={`#placement-stats-${now - i}`}
             >
               {now - i - 1} – {now - i}
             </a>
@@ -35,9 +35,9 @@ const Tabs: React.FC = () => {
       <div cx="tab-content">
         {[0, 1].map((i) => (
           <div
-            style={{ display: openTab === i ? 'block' : 'none' }}
-            id={`placement-stats-${now - i}`}
             key={`placement-content-${i}`}
+            id={`placement-stats-${now - i}`}
+            style={{ display: openTab === i ? 'block' : 'none' }}
           >
             <Table year={(now - i) as Year} />
             <Charts year={(now - i) as Year} />

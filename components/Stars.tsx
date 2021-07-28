@@ -7,11 +7,11 @@ import { academia, corporate, iaf } from '@utils/star-perfs';
 const WrappedImage: React.FC<{ name: string }> = ({ name }) => (
   <div cx="image-wrapper">
     <Image
+      alt={name}
+      cx="image"
+      height="160"
       src={`/stars/${name.toLowerCase().replace(/\.?\s+/g, '-')}.jpg`}
       width="160"
-      height="160"
-      cx="image"
-      alt={name}
     />
   </div>
 );
@@ -42,7 +42,7 @@ const Stars: React.FC = () => (
 
       <div cx="stars">
         {iaf.map(({ name, service, year }) => (
-          <div cx="star-i" key={cyrb53(name)}>
+          <div key={cyrb53(name)} cx="star-i">
             <div cx="wrapper">
               <WrappedImage name={name} />
 
@@ -54,7 +54,7 @@ const Stars: React.FC = () => (
         ))}
 
         {academia.map(({ name, college, year }) => (
-          <div cx="star-a" key={cyrb53(name)}>
+          <div key={cyrb53(name)} cx="star-a">
             <div cx="wrapper">
               <WrappedImage name={name} />
 
@@ -73,7 +73,7 @@ const Stars: React.FC = () => (
           .map((year) => (
             <React.Fragment key={cyrb53(`stars-y'${year}`)}>
               {corporate[year as keyof typeof corporate].map(({ name, company, lpa }) => (
-                <div cx="star-c" key={cyrb53(name)}>
+                <div key={cyrb53(name)} cx="star-c">
                   <div cx="wrapper">
                     <WrappedImage name={name} />
 

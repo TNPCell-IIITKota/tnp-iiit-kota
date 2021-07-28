@@ -6,35 +6,35 @@ import members from '@utils/members';
 const Members: React.FC<{ level: keyof typeof members }> = ({ level }) => (
   <>
     {members[level].map(({ name, linkedIn }) => (
-      <div cx="member" key={cyrb53(name)}>
+      <div key={cyrb53(name)} cx="member">
         <div cx="wrapper">
           <Image
+            alt={name}
+            cx="image"
+            height="96"
             src={`/members/${name.toLowerCase().replace(/\.?\s+/g, '-')}.jpg`}
             width="96"
-            height="96"
-            cx="image"
-            alt={name}
           />
 
           <a
             cx="overlay"
             href={`https://www.linkedin.com/in/${linkedIn}`}
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             <svg
+              aria-label="linkedin"
               fill="white"
+              role="img"
               stroke="white"
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="0"
               viewBox="0 0 24 24"
-              role="img"
-              aria-label="linkedin"
             >
               <path
-                stroke="none"
                 d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                stroke="none"
               />
               <circle cx="4" cy="4" r="2" stroke="none" />
             </svg>

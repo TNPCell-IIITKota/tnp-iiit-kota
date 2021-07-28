@@ -69,14 +69,14 @@ const Navbar: React.FC = () => {
           <Link href="/">
             <a cx="logo-wrapper">
               <Image
-                cx="logo"
-                src={logo}
-                height="40"
-                width="40"
-                priority
                 alt="IIIT Kota"
+                cx="logo"
+                height="40"
                 layout="fixed"
                 quality="100"
+                src={logo}
+                width="40"
+                priority
                 unoptimized
                 onClick={(): void => {
                   window.scroll({ top: 0, left: 0, behavior: 'smooth' });
@@ -86,15 +86,15 @@ const Navbar: React.FC = () => {
           </Link>
 
           <button
-            cx="menu"
-            type="button"
+            ref={btnRef}
             aria-expanded={isMenuOpen}
             aria-label="Toggle Menu"
+            cx="menu"
+            type="button"
             onClick={(e): void => {
               e.preventDefault();
               setIsMenuOpen(!isMenuOpen);
             }}
-            ref={btnRef}
           >
             <svg viewBox="0 0 100 100">
               <path
@@ -110,7 +110,7 @@ const Navbar: React.FC = () => {
           </button>
         </div>
 
-        <ul cx="links" data-toggle={isMenuOpen} ref={listRef}>
+        <ul ref={listRef} cx="links" data-toggle={isMenuOpen}>
           {[
             'Why Recruit',
             'Statistics',

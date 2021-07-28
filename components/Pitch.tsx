@@ -19,8 +19,8 @@ const WhyRecruit: React.FC = () => {
         {content.map(({ lead, desc }, idx) => (
           <Accordion
             key={cyrb53(lead)}
-            title={lead}
             isOpen={current === idx + 1}
+            title={lead}
             onClick={(): void => {
               if (current === idx + 1) setCurrent(0);
               else setCurrent(idx + 1);

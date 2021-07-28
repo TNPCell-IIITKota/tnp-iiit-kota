@@ -15,7 +15,7 @@ const Cards: React.FC = () => (
           MNIT Jaipur, RJ 302017
         </p>
 
-        <a href="mailto:placements@iiitkota.ac.in" cx="email">
+        <a cx="email" href="mailto:placements@iiitkota.ac.in">
           placements@iiitkota.ac.in
         </a>
         <p cx="phone">
@@ -39,7 +39,7 @@ const Cards: React.FC = () => (
           IIIT Kota
         </p>
 
-        <a href="mailto:ashish@iiitkota.ac.in" cx="email">
+        <a cx="email" href="mailto:ashish@iiitkota.ac.in">
           ashish@iiitkota.ac.in
         </a>
         <p cx="phone">

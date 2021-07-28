@@ -13,19 +13,19 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
   const isVisible = useOnScreen(ref);
 
   return (
-    <div cx="wrapper" ref={ref}>
+    <div ref={ref} cx="wrapper">
       <div>
         <h2>Eligible Students and Number of Offers</h2>
 
         <BarChart
-          width={480}
-          height={300}
-          data={eligibleVsOffers[year]}
           barSize={32}
+          data={eligibleVsOffers[year]}
+          height={300}
           margin={{ top: 16, right: 8, left: -14 }}
+          width={480}
         >
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="branch" scale="point" padding={{ left: 80, right: 80 }} />
+          <XAxis dataKey="branch" padding={{ left: 80, right: 80 }} scale="point" />
           <YAxis />
           <Tooltip content={CustomTooltip} />
           <Legend wrapperStyle={{ left: 18 }} />
@@ -38,26 +38,26 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
         <h2>Placement Percentage of Registered Students</h2>
 
         <BarChart
-          width={480}
-          height={300}
-          data={placementPC[year]}
-          layout="vertical"
           barSize={32}
+          data={placementPC[year]}
+          height={300}
+          layout="vertical"
           margin={{ top: 16, right: 16, left: -14 }}
+          width={480}
         >
           <XAxis type="number" />
-          <YAxis scale="point" type="category" dataKey="branch" padding={{ top: 48, bottom: 48 }} />
-          <CartesianGrid strokeDasharray="3 3" horizontal={false} />
+          <YAxis dataKey="branch" padding={{ top: 48, bottom: 48 }} scale="point" type="category" />
+          <CartesianGrid horizontal={false} strokeDasharray="3 3" />
           <Tooltip
             content={(props: TooltipProps<number, string>): React.ReactElement | null =>
               DetailedTooltip(props, year)
             }
           />
           <Bar
+            animationBegin={400}
             dataKey="Placement %"
             fill="#818CF8"
             isAnimationActive={isVisible}
-            animationBegin={400}
             label={CustomizedLabel}
           />
         </BarChart>

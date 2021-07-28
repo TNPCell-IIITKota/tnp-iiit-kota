@@ -82,6 +82,16 @@
     "no-duplicate-imports": "off",
     "no-invalid-this": "off",
     "no-loss-of-precision": "off",
+    "react/jsx-sort-props": [
+      "error",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": false,
+        "shorthandLast": true,
+        "ignoreCase": true,
+        "reservedFirst": true
+      }
+    ],
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "simple-import-sort/exports": "error",

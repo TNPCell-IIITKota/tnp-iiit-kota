@@ -18,14 +18,14 @@ const Hero: React.FC = () => (
     </div>
     <div cx="ctr">
       <Image
-        cx="logo"
-        src={logo}
-        height="192"
-        width="192"
-        priority
         alt="IIIT Kota"
+        cx="logo"
+        height="192"
         layout="fixed"
         quality="100"
+        src={logo}
+        width="192"
+        priority
         unoptimized
       />
       <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
@@ -36,14 +36,14 @@ const Hero: React.FC = () => (
     </div>
     <div cx="separator">
       <svg
-        xmlns="http://www.w3.org/2000/svg"
+        aria-label="separator"
         preserveAspectRatio="none"
+        role="img"
         version="1.1"
         viewBox="0 0 2560 100"
         x="0"
+        xmlns="http://www.w3.org/2000/svg"
         y="0"
-        role="img"
-        aria-label="separator"
       >
         <polygon fill="#fff" points="2560 0 2560 100 0 100" />
       </svg>
