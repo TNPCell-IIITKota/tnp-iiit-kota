@@ -12,14 +12,17 @@ const Tabs: React.FC = () => {
 
   return (
     <div cx="wrapper">
-      <ul cx="list-wrapper">
+      <ul aria-owns="placement-tab-0 placement-tab-1" cx="list-wrapper" role="tablist">
         {[0, 1].map((i) => (
-          <li key={cyrb53(`placement-tab-${i}`)} cx="tab">
+          <li key={cyrb53(`placement-tab-${i}`)} cx="tab" role="none">
             <a
+              aria-controls={`placement-stats-${now - i}`}
               aria-selected={openTab === i}
               cx="tab-link"
               href={`#placement-stats-${now - i}`}
+              id={`placement-tab-${i}`}
               role="tab"
+              tabIndex={openTab === i ? 0 : -1}
               onClick={(e): void => {
                 e.preventDefault();
                 setOpenTab(i);
@@ -35,7 +38,10 @@ const Tabs: React.FC = () => {
           <div
             key={cyrb53(`placement-content-${i}`)}
             aria-hidden={openTab !== i}
+            aria-labelledby={`placement-tab-${i}`}
             id={`placement-stats-${now - i}`}
+            role="tabpanel"
+            tabIndex={0}
           >
             <Table year={(now - i) as Year} />
             <Charts year={(now - i) as Year} />
