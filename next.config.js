@@ -18,6 +18,9 @@ module.exports = {
           delete moduleLoader.options.modules.getLocalIdent;
           moduleLoader.options.modules.localIdentName = '[hash:base64:6]';
         }
+
+        if (moduleLoader.loader.includes('resolve-url-loader'))
+          moduleLoader.options.sourceMap = false;
       });
     });
 
