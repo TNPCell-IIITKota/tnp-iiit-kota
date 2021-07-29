@@ -10,14 +10,10 @@
   @apply flex-auto mb-2 text-center md:mr-2 md:-mb-px last:mr-0;
 
   &-link {
-    @apply block py-3 px-5 text-xs font-bold leading-normal uppercase bg-white rounded shadow-md;
-
-    color: #0e407c;
+    @apply block py-3 px-5 text-xs font-bold leading-normal uppercase bg-white rounded shadow-md text-[#0e407c];
 
     &[aria-selected='true'] {
-      @apply text-white;
-
-      background-color: #0e407c;
+      @apply text-white bg-[#0e407c];
     }
   }
 
