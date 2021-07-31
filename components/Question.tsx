@@ -8,6 +8,7 @@ const Question: React.FC<{ onClick: React.MouseEventHandler<HTMLButtonElement> }
       <svg
         cx="icon"
         fill="none"
+        role="presentation"
         stroke="currentColor"
         strokeLinecap="round"
         strokeLinejoin="round"
