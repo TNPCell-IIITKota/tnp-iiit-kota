@@ -31,7 +31,7 @@
 
 ---
 
-This repository is the landing page of TNP Cell, IIIT Kota. You can access the website at [tpcell.iiitkota.ac.in][1].
+This repository is the landing page of TnP Cell, IIIT Kota. You can access the website at [tpcell.iiitkota.ac.in][1].
 
 ## Contributors
 
