@@ -25,7 +25,7 @@ const IndexPage: NextPage = () => (
         content="The TnP Cell of IIIT Kota acts as a facilitator for training and placement, and works enthusiastically towards the overall development of the students, helping them connect with industries."
         name="description"
       />
-      <title>Training and Placement Cell - IIIT Kota</title>
+      <title>Training &amp; Placement Cell - IIIT Kota</title>
 
       <Preload font="open-sans-latin-300-normal" />
       <Preload font="open-sans-latin-400-normal" />
