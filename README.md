@@ -3,7 +3,7 @@
   <img src="assets/logo.svg" width="100" />
 </p>
 <h1 align="center">
-  Training &amp; Placement Cell
+  Training and Placement Cell
   <br />
   <sub>IIIT Kota</sub>
 </h1>

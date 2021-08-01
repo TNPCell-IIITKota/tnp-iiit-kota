@@ -4,7 +4,7 @@ const Policy: React.FC = () => (
       <h1 cx="title">Placement&ensp;Policy</h1>
       <div cx="content">
         The placement season in IIIT Kota runs throughout the year, commencing from the first week
-        of July through to May. The Training &amp; Placement (TnP) Cell oversees the placement
+        of July through to May. The Training and Placement (TnP) Cell oversees the placement
         process, following the&nbsp;
         <a
           href="https://mnit.ac.in/cms/uploads/2018/07/Institute_Placement_Policy-MNIT.pdf"
@@ -25,7 +25,7 @@ const Policy: React.FC = () => (
             Technology (IIIT), Kota” throughout the policy.
           </li>
           <li>
-            “Placement &amp; Training Cell, MNIT Jaipur” shall be read as “Training &amp; Placement
+            “Placement and Training Cell, MNIT Jaipur” shall be read as “Training and Placement
             (TnP) Cell, IIIT Kota” throughout the document.
           </li>
           <li>

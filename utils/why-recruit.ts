@@ -13,7 +13,7 @@ const content = [
   },
   {
     lead: 'Industrial Experience',
-    desc: 'Practical training is an integral part of any technical curriculum. Summer training and internships offer students an insight into how things work in a professional space. They help students acquaint themselves with the real-world application of the technologies they learned on campus. This exposure helps students to deliver their best when they join the industry as working professionals.\nThe T&P Cell facilitates the practical training of students in organizations of national and international repute. Some of the students also get research internship offers from foreign institutes. Students also go for research projects as summer interns in IITs and other institutes. We have many alumni placed in top-notch multinational companies, and each year, we are setting a new placement record.',
+    desc: 'Practical training is an integral part of any technical curriculum. Summer training and internships offer students an insight into how things work in a professional space. They help students acquaint themselves with the real-world application of the technologies they learned on campus. This exposure helps students to deliver their best when they join the industry as working professionals.\nThe TnP Cell facilitates the practical training of students in organizations of national and international repute. Some of the students also get research internship offers from foreign institutes. Students also go for research projects as summer interns in IITs and other institutes. We have many alumni placed in top-notch multinational companies, and each year, we are setting a new placement record.',
   },
   {
     lead: 'All-Round Development',

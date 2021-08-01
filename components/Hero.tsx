@@ -28,11 +28,11 @@ const Hero: React.FC = () => (
         priority
         unoptimized
       />
-      <div cx="lead">Training &amp; Placement Cell, IIIT Kota</div>
-      <div cx="about">
+      <h1 cx="lead">Training and Placement Cell, IIIT Kota</h1>
+      <p cx="about">
         We act as a facilitator for training and placement, and work enthusiastically towards the
         overall development of the students, helping them connect with industries.
-      </div>
+      </p>
     </div>
     <div cx="separator">
       <svg

@@ -6,7 +6,7 @@ const Cards: React.FC = () => (
       <div cx="borders" />
       <div cx="borders" />
       <div cx="content">
-        <h2 cx="name">Training &amp; Placement Cell</h2>
+        <h2 cx="name">Training and Placement Cell</h2>
         <p cx="address">
           IIIT Kota Office
           <br />
@@ -34,7 +34,7 @@ const Cards: React.FC = () => (
         <p cx="address">
           Coordinator
           <br />
-          Training &amp; Placement Cell
+          Training and Placement Cell
           <br />
           IIIT Kota
         </p>

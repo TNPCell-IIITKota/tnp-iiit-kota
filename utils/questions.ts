@@ -10,7 +10,7 @@ const questions: Array<{ question: string; answer: string }> = [
   {
     question: 'How can a company register itself for the campus recruitment program?',
     answer:
-      'To participate in the campus recruitment program, a company must first contact the Training & Placement Cell and submit a job notification form (JNF). You can also find the detailed placement procedure in the policy linked above.',
+      'To participate in the campus recruitment program, a company must first contact the Training and Placement Cell and submit a job notification form (JNF). You can also find the detailed placement procedure in the policy linked above.',
   },
   {
     question: 'Is there any fee associated with the process?',

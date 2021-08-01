@@ -26,7 +26,7 @@ const Footer: React.FC = () => (
       </Link>
 
       <p cx="copyright">
-        © 2021 Training &amp; Placement Cell —
+        © 2021 Training and Placement Cell —
         <a
           aria-label="Visit IIIT Kota"
           cx="institute"
