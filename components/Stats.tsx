@@ -8,7 +8,7 @@ const Stats: React.FC = () => (
           <div cx="separator" />
         </div>
         <div cx="title-wrapper">
-          <h1 cx="title">Placement Statistics</h1>
+          <h2 cx="title">Placement Statistics</h2>
         </div>
       </div>
       <Tabs />

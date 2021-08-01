@@ -19,12 +19,12 @@ const WrappedImage: React.FC<{ name: string }> = ({ name }) => (
 const OverlayWrapper: React.FC<{ name: string; year: number | string; children: React.ReactNode }> =
   ({ name, year, children }) => (
     <div cx="overlay-wrapper">
-      <h2 cx="name">
+      <h3 cx="name">
         {name.substr(0, name.indexOf(' '))}
         <br />
         {name.substr(name.indexOf(' ') + 1)}
         <span cx="year">&nbsp;Y&apos;{year}</span>
-      </h2>
+      </h3>
       {children}
     </div>
   );
@@ -33,7 +33,7 @@ const Stars: React.FC = () => (
   <section cx="sect" id="featured-stars">
     <div cx="ctr">
       <div cx="title-wrapper">
-        <h1 cx="title">Featured Stars</h1>
+        <h2 cx="title">Featured Stars</h2>
         <p cx="desc">
           The alumni of IIIT Kota have made their mark on various government, academia and corporate
           fronts. Meet some of our alumni who we are proud of producing.
@@ -47,7 +47,7 @@ const Stars: React.FC = () => (
               <WrappedImage name={name} />
 
               <OverlayWrapper {...{ name, year }}>
-                <h3 cx="service">{service}</h3>
+                <h4 cx="service">{service}</h4>
               </OverlayWrapper>
             </div>
           </div>
@@ -59,7 +59,7 @@ const Stars: React.FC = () => (
               <WrappedImage name={name} />
 
               <OverlayWrapper {...{ name, year }}>
-                <h3 cx="college">{college}</h3>
+                <h4 cx="college">{college}</h4>
               </OverlayWrapper>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Stars: React.FC = () => (
                     <WrappedImage name={name} />
 
                     <OverlayWrapper {...{ name, year }}>
-                      <h3 cx="company">{company}</h3>
+                      <h4 cx="company">{company}</h4>
                       <p cx="lpa">{lpa} LPA</p>
                     </OverlayWrapper>
                   </div>

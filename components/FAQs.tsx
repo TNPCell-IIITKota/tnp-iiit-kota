@@ -12,7 +12,7 @@ const FAQs: React.FC = () => {
     <>
       <section cx="sect" id="faqs">
         <div cx="ctr">
-          <h1 cx="title">Frequently Asked Questions</h1>
+          <h2 cx="title">Frequently Asked Questions</h2>
 
           <div cx="questions">
             {questions.map(({ question: q, answer: a }) => (

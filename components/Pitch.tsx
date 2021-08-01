@@ -11,7 +11,7 @@ const WhyRecruit: React.FC = () => {
     <section cx="sect" id="why-recruit">
       <div cx="ctr">
         <div cx="title-wrapper">
-          <h1 cx="title">Why Recruit?</h1>
+          <h2 cx="title">Why Recruit?</h2>
           <div cx="hr-wrapper">
             <div cx="hr" />
           </div>

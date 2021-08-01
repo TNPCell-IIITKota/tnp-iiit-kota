@@ -15,7 +15,7 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
   return (
     <div ref={ref} cx="wrapper">
       <div>
-        <h2>Eligible Students and Number of Offers</h2>
+        <h3>Eligible Students and Number of Offers</h3>
 
         <BarChart
           barSize={32}
@@ -35,7 +35,7 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
       </div>
 
       <div>
-        <h2>Placement Percentage of Registered Students</h2>
+        <h3>Placement Percentage of Registered Students</h3>
 
         <BarChart
           barSize={32}

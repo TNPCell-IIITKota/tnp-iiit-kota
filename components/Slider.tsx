@@ -5,7 +5,7 @@ import cyrb53 from '@utils/hash-string';
 
 const Slider: React.FC = () => (
   <section cx="sect" id="past-recruiters">
-    <h1 cx="title">Past Recruiters</h1>
+    <h2 cx="title">Past Recruiters</h2>
 
     {[0, 1].map((level) => (
       <div key={cyrb53(`recruiters-${level}`)} cx="slider">
