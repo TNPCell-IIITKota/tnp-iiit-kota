@@ -1,5 +1,5 @@
 .navbar {
-  @apply fixed top-0 z-50 w-full bg-gray-900 shadow-lg bg-opacity-[0.98];
+  @apply fixed top-0 z-20 w-full bg-gray-900 shadow-lg bg-opacity-[0.98];
 
   @media (max-width: 1023.9999px) {
     @apply shadow-lg top-0 #{!important};

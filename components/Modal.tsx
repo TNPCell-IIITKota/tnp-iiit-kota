@@ -20,7 +20,7 @@ const Modal: React.ForwardRefRenderFunction<{
 
   useEffect(() => {
     const observer = new MutationObserver((): void => {
-      document.querySelector('header')!.style.width = `calc(100% - ${
+      document.querySelector<HTMLElement>('header')!.style.width = `calc(100% - ${
         document.documentElement.style.paddingRight || '0px'
       })`;
     });
