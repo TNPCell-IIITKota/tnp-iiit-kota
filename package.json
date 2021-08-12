@@ -1,11 +1,11 @@
 {
+  "private": true,
   "name": "tnp-iiit-kota",
   "version": "1.0.1",
-  "private": true,
   "description": "The Landing Page of Training and Placement Cell - IIIT Kota",
-  "repository": "https://github.com/brc-dd/tnp-iiit-kota",
   "license": "MIT",
   "author": "Divyansh Singh <divyansh.singh@ikcb.org> (https://github.com/brc-dd)",
+  "repository": "https://github.com/brc-dd/tnp-iiit-kota",
   "scripts": {
     "audit:fix": "bash -c \"npx npm-check-updates -u; npm i --package-lock-only; npm audit fix; rm yarn.lock; yarn import; rm package-lock.json\"",
     "build": "next build",
@@ -19,49 +19,44 @@
     "start": "next start",
     "type-check": "tsc"
   },
-  "resolutions": {
-    "css-what": "5.0.1"
-  },
   "dependencies": {
     "@headlessui/react": "^1.4.0",
-    "next": "^11.0.1",
+    "next": "^11.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "recharts": "^2.0.10"
+    "recharts": "^2.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^13.1.0",
     "@commitlint/config-conventional": "^13.1.0",
-    "@types/node": "^16.4.10",
-    "@types/react": "^17.0.15",
+    "@types/node": "^16.6.0",
+    "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "@typescript-eslint/parser": "^4.29.1",
     "autoprefixer": "^10.3.1",
     "css-minimizer-webpack-plugin": "^3.0.2",
     "cssnano-preset-advanced": "^5.1.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-typescript": "^12.3.1",
-    "eslint-config-next": "^11.0.1",
+    "eslint-config-next": "^11.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-import": "^2.24.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.1",
-    "lint-staged": "^11.1.1",
+    "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.3.2",
-    "prettier-plugin-packagejson": "^2.2.11",
-    "prop-types": "^15.7.2",
-    "sass": "^1.37.2",
+    "sass": "^1.37.5",
     "tailwindcss": "2.2.4",
     "typescript": "^4.3.5",
-    "webpack": "^5.48.0"
+    "webpack": "^5.50.0"
   }
 }
