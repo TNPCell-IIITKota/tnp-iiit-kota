@@ -26,23 +26,14 @@ const corporate: Record<
     { name: 'Jayansh Goyal', company: 'Microsoft', lpa: 43 },
     { name: 'Shivam Garg', company: 'Amazon', lpa: 32 },
     { name: 'Vibhor Rawal', company: 'Gameskraft', lpa: 32 },
-    // { name: 'Sudeep Singh Gill', company: 'Flipkart', lpa: 26.5 },
-    // { name: 'Ashish Uniyal', company: 'Goldman Sachs', lpa: 23 },
   ],
 
   20: [
+    { name: 'Saransh Jain', company: 'Amazon', lpa: 29 },
     { name: 'Shubham Guglani', company: 'Amazon', lpa: 29 },
-    // { name: 'Pratik Pandey', company: 'ServiceNow', lpa: 25 },
-    // { name: 'Tejeshwar Saini', company: 'Flipkart', lpa: 24 },
-    // { name: 'Akshra Gupta', company: 'Goldman Sachs', lpa: 23 },
-    // { name: 'Shrishti Gupta', company: 'Goldman Sachs', lpa: 23 },
-    // { name: 'Vipasha Chandwani', company: 'Goldman Sachs', lpa: 23 },
   ],
 
-  19: [
-    { name: 'Nilesh Agarwal', company: 'Amazon', lpa: 27 },
-    // { name: 'Nikhil Arya', company: 'ServiceNow', lpa: 21 },
-  ],
+  19: [{ name: 'Nilesh Agarwal', company: 'Amazon', lpa: 27 }],
 
   18: [
     { name: 'Gaurav Agarwal', company: 'Amazon', lpa: 27 },
