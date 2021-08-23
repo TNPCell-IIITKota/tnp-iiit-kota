@@ -59,8 +59,8 @@ const questions: Array<{ question: string; answer: string }> = [
     answer: `The campus is equipped with state of the art communication, computing, and presentation facilities to facilitate a smooth placement process:
 <ul>
   <li>Teleconferencing and video conferencing facility</li>
-  <li>Linux and Windows lab for online tests</li>
-  <li>Centrally air-conditioned auditorium, lecture halls, seminar and conference rooms for presentations, group discussions, and interviews</li>
+  <li>Linux and Windows labs for online tests</li>
+  <li>Air-conditioned auditorium, lecture halls, seminar and conference rooms for presentations, group discussions, and interviews</li>
 </ul>`,
   },
   {
