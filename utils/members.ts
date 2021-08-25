@@ -14,7 +14,6 @@ const members: Record<
   2022: [
     { name: 'Anushka Joshi', linkedIn: 'anushka4joshi' },
     { name: 'Inderjeet', linkedIn: 'inderjeet-816b88176' },
-    { name: 'Mayank Goyal', linkedIn: 'mayankkgoyal' },
     { name: 'Rajkumar Pareek', linkedIn: 'rajkumar-pareek-06a573170' },
     { name: 'Sanatan Shrivastava', linkedIn: 'sanatan-shrivastava-04a327171' },
   ],
