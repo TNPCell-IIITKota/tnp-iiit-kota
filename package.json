@@ -53,6 +53,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
+    "loader-utils": "^2.0.0",
     "postcss": "^8.3.6",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^6.7.0",
