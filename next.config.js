@@ -1,25 +1,19 @@
 const path = require('path');
 const loaderUtils = require('loader-utils');
 
-const hashOnlyIdent = (context, _, exportName, options) =>
+const hashOnlyIdent = (context, _, exportName) =>
   loaderUtils
-    .interpolateName(
-      context,
-      loaderUtils.getHashDigest(
-        Buffer.from(
-          `filePath:${path
-            .relative(context.rootContext, context.resourcePath)
-            .replace(/\\+/g, '/')}#className:${exportName}`,
-        ),
-        'md5',
-        'base64',
-        6,
+    .getHashDigest(
+      Buffer.from(
+        `filePath:${path
+          .relative(context.rootContext, context.resourcePath)
+          .replace(/\\+/g, '/')}#className:${exportName}`,
       ),
-      options,
+      'md5',
+      'base62',
+      6,
     )
-    .replace(/\.module_/, '_')
-    .replace(/[^a-zA-Z0-9-_]/g, '_')
-    .replace(/^(\d|--|-\d)/, '__$1');
+    .replace(/^(-?\d|--)/, '_$1');
 
 module.exports = {
   i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
