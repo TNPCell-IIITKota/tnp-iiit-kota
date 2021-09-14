@@ -9,8 +9,8 @@ const hashOnlyIdent = (context, _, exportName) =>
           .relative(context.rootContext, context.resourcePath)
           .replace(/\\+/g, '/')}#className:${exportName}`,
       ),
-      'md5',
-      'base62',
+      'md4',
+      'base64',
       6,
     )
     .replace(/^(-?\d|--)/, '_$1');
