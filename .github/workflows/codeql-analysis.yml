@@ -3,8 +3,10 @@ name: 'CodeQL'
 on:
   push:
     branches: [main]
+    paths: ['**/*.js', '**/*.ts', '**/*.tsx']
   pull_request:
     branches: [main]
+    paths: ['**/*.js', '**/*.ts', '**/*.tsx']
   schedule:
     - cron: '0 0 */7 * *'
   workflow_dispatch:
@@ -13,6 +15,7 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'pull_request' || github.actor != 'dependabot[bot]' }}
     permissions:
       actions: read
       contents: read
