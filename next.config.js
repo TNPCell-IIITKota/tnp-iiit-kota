@@ -1,6 +1,20 @@
 const path = require('path');
 const loaderUtils = require('loader-utils');
 
+const withTM = require('next-transpile-modules')([
+  'd3-array',
+  'd3-color',
+  'd3-format',
+  'd3-interpolate',
+  'd3-path',
+  'd3-scale',
+  'd3-shape',
+  'd3-time',
+  'd3-time-format',
+  'internmap',
+  'recharts',
+]);
+
 const hashOnlyIdent = (context, _, exportName) =>
   loaderUtils
     .getHashDigest(
@@ -15,7 +29,9 @@ const hashOnlyIdent = (context, _, exportName) =>
     )
     .replace(/^(-?\d|--)/, '_$1');
 
-module.exports = {
+/** @type {import('next').NextConfig} */
+module.exports = withTM({
+  experimental: { esmExternals: 'loose' },
   i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
   optimizeFonts: false,
   poweredByHeader: false,
@@ -57,4 +73,4 @@ module.exports = {
 
     return config;
   },
-};
+});
