@@ -21,10 +21,10 @@
 }
 
 .logo-wrapper {
-  @apply inline-flex items-center lg:mr-12;
+  @apply inline-flex z-10 items-center;
 
   @screen lg {
-    padding-right: 811.8px;
+    margin-right: 859.8px;
   }
 }
 
