@@ -55,7 +55,7 @@ const Team: React.FC = () => (
       <div cx="title-wrapper">
         <h2 cx="title">Our Team</h2>
       </div>
-      <h3 cx="lead">Faculty Coordinator</h3>
+      <h3 cx="lead">Faculty Coordinators</h3>
       <div cx="members">
         <Members level="faculty" />
       </div>
