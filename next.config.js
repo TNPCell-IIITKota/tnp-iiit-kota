@@ -45,13 +45,13 @@ module.exports = withTM({
     rules.forEach((rule) => {
       rule.use.forEach((moduleLoader) => {
         if (
-          moduleLoader.loader.includes('css-loader') &&
-          !moduleLoader.loader.includes('postcss-loader')
+          moduleLoader.loader?.includes('css-loader') &&
+          !moduleLoader.loader?.includes('postcss-loader')
         ) {
           moduleLoader.options.modules.getLocalIdent = hashOnlyIdent;
         }
 
-        if (moduleLoader.loader.includes('resolve-url-loader'))
+        if (moduleLoader.loader?.includes('resolve-url-loader'))
           moduleLoader.options.sourceMap = false;
       });
     });

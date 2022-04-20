@@ -12,7 +12,10 @@ const Members: React.FC<{ level: keyof typeof members }> = ({ level }) => (
             alt={name}
             cx="image"
             height="96"
-            src={`/members/${name.toLowerCase().replace(/\.?\s+/g, '-')}.jpg`}
+            src={`/members/${name
+              .toLowerCase()
+              .replace(/\.?\s+/g, '-')
+              .replace(/-\(.*\)/g, '')}.jpg`}
             width="96"
           />
 
@@ -41,7 +44,7 @@ const Members: React.FC<{ level: keyof typeof members }> = ({ level }) => (
           </a>
 
           <div cx="content">
-            <h3 cx="name">{name}</h3>
+            <h3 cx="name">{name.replace(/\s(?![^(]*\)|\()/g, '\u00A0')}</h3>
           </div>
         </div>
       </div>
