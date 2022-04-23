@@ -30,20 +30,20 @@ const Cards: React.FC = () => (
       <div cx="borders" />
       <div cx="borders" />
       <div cx="content">
-        <h3 cx="name">Dr. Ashish Sharma</h3>
+        <h3 cx="name">Dr. Amit Kumar Garg</h3>
         <p cx="address">
-          Coordinator
+          Faculty In-charge
           <br />
           Training and Placement Cell
           <br />
           IIIT Kota
         </p>
 
-        <a cx="email" href="mailto:ashish@iiitkota.ac.in">
-          ashish@iiitkota.ac.in
+        <a cx="email" href="mailto:amitgarg.ece@iiitkota.ac.in">
+          amitgarg.ece@iiitkota.ac.in
         </a>
         <p cx="phone">
-          <a href="tel:+919549650767">+91 95496 50767</a>
+          <a href="tel:+919549650432">+91 95496 50432</a>
         </p>
       </div>
     </div>

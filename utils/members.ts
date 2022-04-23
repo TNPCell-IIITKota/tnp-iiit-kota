@@ -3,7 +3,7 @@ const members: Record<
   Array<{ name: string; linkedIn: string }>
 > = {
   faculty: [
-    { name: 'Dr. Amit Kumar Garg (Faculty In-charge)', linkedIn: 'dramitkrgarg' },
+    { name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' },
     { name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' },
   ],
   2020: [
