@@ -13,7 +13,7 @@ const Tabs: React.FC = () => {
   return (
     <div cx="wrapper">
       <ul aria-owns="placement-tab-0 placement-tab-1" cx="list-wrapper" role="tablist">
-        {[0, 1].map((i) => (
+        {[0, 1, 2].map((i) => (
           <li key={cyrb53(`placement-tab-${i}`)} cx="tab" role="none">
             <a
               aria-controls={`placement-stats-${now - i}`}
