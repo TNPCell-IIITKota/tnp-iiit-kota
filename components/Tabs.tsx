@@ -34,7 +34,7 @@ const Tabs: React.FC = () => {
         ))}
       </ul>
       <div cx="tab-content">
-        {[0, 1].map((i) => (
+        {[0, 1, 2].map((i) => (
           <div
             key={cyrb53(`placement-content-${i}`)}
             aria-hidden={openTab !== i}
