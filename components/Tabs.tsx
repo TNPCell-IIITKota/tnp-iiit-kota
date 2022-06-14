@@ -7,7 +7,7 @@ import Table from '@components/Table';
 import cyrb53 from '@utils/hash-string';
 
 const Tabs: React.FC = () => {
-  const now = 2021;
+  const now = 2022;
   const [openTab, setOpenTab] = useState(0);
 
   return (
