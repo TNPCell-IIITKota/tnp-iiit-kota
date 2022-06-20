@@ -5,6 +5,5 @@
   "editor.wordWrap": "on",
   "eslint.packageManager": "yarn",
   "eslint.probe": ["typescript", "typescriptreact"],
-  "headwind.classRegex": { "scss": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);" },
   "scss.validate": false
 }

@@ -1,9 +1,9 @@
 .sect {
-  @apply flex overflow-hidden relative py-16 lg:pt-20;
+  @apply relative flex overflow-hidden py-16 lg:pt-20;
 }
 
 .shapes {
-  @apply absolute top-0 w-full h-full;
+  @apply absolute top-0 h-full w-full;
 
   background: linear-gradient(35deg, #172b4d, #1a174d);
   z-index: -1;
@@ -77,28 +77,28 @@
 
 .span {
   &-50 {
-    @apply w-12 h-12;
+    @apply h-12 w-12;
   }
 
   &-75 {
-    @apply w-20 h-20;
+    @apply h-20 w-20;
   }
 
   &-100 {
-    @apply w-24 h-24;
+    @apply h-24 w-24;
   }
 
   &-150 {
-    @apply w-36 h-36;
+    @apply h-36 w-36;
   }
 
   &-200 {
-    @apply w-48 h-48;
+    @apply h-48 w-48;
   }
 }
 
 .separator {
-  @apply overflow-hidden absolute right-0 bottom-0 left-0 w-full h-20;
+  @apply absolute right-0 bottom-0 left-0 h-20 w-full overflow-hidden;
 
   svg {
     @apply absolute bottom-0;
@@ -106,11 +106,11 @@
 }
 
 .ctr {
-  @apply container flex flex-col justify-center items-center self-center py-24 px-5 mx-auto h-full text-center text-white;
+  @apply container mx-auto flex h-full flex-col items-center justify-center self-center py-24 px-5 text-center text-white;
 }
 
 .logo {
-  @apply w-48 h-48 opacity-95;
+  @apply h-48 w-48 opacity-95;
 }
 
 .lead {
@@ -118,5 +118,9 @@
 }
 
 .about {
-  @apply pt-3 mb-6 text-lg font-light tracking-wide xl:w-3/5 md:pt-4;
+  @apply mb-6 pt-3 text-lg font-light tracking-wide md:pt-4 xl:w-3/5;
+}
+
+.brochure {
+  @apply focus:outline-none rounded-md border border-transparent bg-blue-100 py-2 px-4 font-semibold text-blue-900 shadow-sm transition-all hover:bg-blue-200 focus:ring-2 focus:ring-offset-2;
 }

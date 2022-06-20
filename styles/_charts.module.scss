@@ -1,12 +1,12 @@
 .wrapper {
-  @apply flex overflow-hidden flex-col flex-wrap justify-center items-center m-8;
+  @apply m-8 flex flex-col flex-wrap items-center justify-center overflow-hidden;
 
   h3 {
-    @apply pl-8 font-semibold text-center;
+    @apply pl-8 text-center font-semibold;
   }
 
   > div {
-    @apply overflow-x-auto overflow-y-hidden my-6 w-full;
+    @apply my-6 w-full overflow-x-auto overflow-y-hidden;
 
     scrollbar-width: thin;
   }
@@ -18,18 +18,18 @@
 
     @media (max-width: 768px) {
       .recharts-wrapper {
-        @apply w-[25rem] h-auto #{!important};
+        @apply h-auto w-[25rem] #{!important};
         @apply pb-8;
 
         > .recharts-surface {
-          @apply w-[25rem] h-auto #{!important};
+          @apply h-auto w-[25rem] #{!important};
           @apply mx-auto;
         }
       }
 
       .recharts-legend-wrapper {
-        @apply w-[25rem] bottom-auto left-1/2 #{!important};
-        @apply pl-4 mx-auto -translate-x-1/2;
+        @apply bottom-auto left-1/2 w-[25rem] #{!important};
+        @apply mx-auto -translate-x-1/2 pl-4;
       }
     }
   }

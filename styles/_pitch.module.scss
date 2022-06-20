@@ -3,7 +3,7 @@
 }
 
 .ctr {
-  @apply container px-5 pt-24 mx-auto;
+  @apply container mx-auto px-5 pt-24;
 }
 
 .title-wrapper {
@@ -15,9 +15,9 @@
 }
 
 .hr-wrapper {
-  @apply flex justify-center mt-6;
+  @apply mt-6 flex justify-center;
 }
 
 .hr {
-  @apply inline-flex w-24 h-1 bg-indigo-800 rounded-full;
+  @apply inline-flex h-1 w-24 rounded-full bg-indigo-800;
 }

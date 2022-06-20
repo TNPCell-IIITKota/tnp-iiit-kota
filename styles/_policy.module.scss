@@ -3,15 +3,15 @@
 }
 
 .ctr {
-  @apply container flex flex-col px-5 pt-24 pb-4 mx-auto;
+  @apply container mx-auto flex flex-col px-5 pt-24 pb-4;
 }
 
 .title {
-  @apply mb-14 text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
+  @apply mb-14 text-center text-2xl font-semibold text-gray-900 sm:text-3xl;
 }
 
 .content {
-  @apply mx-auto text-base leading-relaxed text-justify xl:w-3/5;
+  @apply mx-auto text-justify text-base leading-relaxed xl:w-3/5;
 
   a {
     @apply font-semibold;
@@ -23,9 +23,9 @@
 }
 
 .note {
-  @apply relative -top-px -left-px text-xs font-semibold text-gray-900 uppercase;
+  @apply relative -top-px -left-px text-xs font-semibold uppercase text-gray-900;
 }
 
 .list {
-  @apply my-4 ml-8 list-disc list-outside;
+  @apply my-4 ml-8 list-outside list-disc;
 }

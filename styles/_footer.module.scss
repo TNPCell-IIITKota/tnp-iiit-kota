@@ -1,21 +1,21 @@
 .footer {
-  @apply text-gray-400 bg-gray-900;
+  @apply bg-gray-900 text-gray-400;
 }
 
 .ctr {
-  @apply container flex flex-col items-center py-8 px-5 mx-auto sm:flex-row;
+  @apply container mx-auto flex flex-col items-center py-8 px-5 sm:flex-row;
 }
 
 .logo-wrapper {
-  @apply flex justify-center items-center font-semibold text-white md:justify-start;
+  @apply flex items-center justify-center font-semibold text-white md:justify-start;
 }
 
 .logo {
-  @apply w-10 h-10;
+  @apply h-10 w-10;
 }
 
 .copyright {
-  @apply mt-4 text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0;
+  @apply mt-4 text-sm text-gray-400 sm:ml-4 sm:mt-0 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:pl-4;
 }
 
 .institute {
@@ -23,13 +23,13 @@
 }
 
 .social {
-  @apply inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start;
+  @apply mt-4 inline-flex justify-center sm:ml-auto sm:mt-0 sm:justify-start;
 
   a {
-    @apply ml-3 text-gray-400 hover:text-gray-300 first:ml-0;
+    @apply ml-3 text-gray-400 first:ml-0 hover:text-gray-300;
   }
 
   svg {
-    @apply w-5 h-5;
+    @apply h-5 w-5;
   }
 }

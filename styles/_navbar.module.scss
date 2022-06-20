@@ -1,8 +1,8 @@
 .navbar {
-  @apply fixed top-0 z-20 w-full bg-gray-900 shadow-lg bg-opacity-[0.98];
+  @apply fixed top-0 z-20 w-full bg-gray-900 bg-opacity-[0.98] shadow-lg;
 
   @media (max-width: 1023.9999px) {
-    @apply shadow-lg top-0 #{!important};
+    @apply top-0 shadow-lg #{!important};
   }
 
   &[data-clear='true'] {
@@ -17,11 +17,11 @@
 }
 
 .wrapper {
-  @apply container flex relative flex-col justify-center items-center py-5 px-8 mx-auto lg:flex-row;
+  @apply container relative mx-auto flex flex-col items-center justify-center py-5 px-8 lg:flex-row;
 }
 
 .logo-wrapper {
-  @apply inline-flex z-10 items-center;
+  @apply z-10 inline-flex items-center;
 
   @screen lg {
     margin-right: 859.8px;
@@ -29,24 +29,24 @@
 }
 
 .logo {
-  @apply w-10 h-10;
+  @apply h-10 w-10;
 }
 
 .nav-link {
-  @apply text-base font-semibold tracking-wide text-black text-opacity-95 uppercase whitespace-nowrap transition-colors duration-200 lg:text-sm lg:font-normal lg:text-opacity-100 lg:text-gray-200 lg:hover:text-gray-50;
+  @apply whitespace-nowrap text-base font-semibold uppercase tracking-wide text-black text-opacity-95 transition-colors duration-200 lg:text-sm lg:font-normal lg:text-gray-200 lg:text-opacity-100 lg:hover:text-gray-50;
 }
 
 .sm-wrapper {
-  @apply flex justify-between w-full lg:justify-center;
+  @apply flex w-full justify-between lg:justify-center;
 }
 
 .links {
-  @apply flex overflow-hidden absolute right-0 flex-col items-start p-0 mr-8 space-y-4 max-w-0 max-h-0 bg-white rounded transition-all duration-500 ease-in-out lg:mr-0 lg:right-auto lg:p-0 lg:space-y-0 lg:items-center lg:flex-row lg:space-x-8 lg:bg-transparent lg:rounded-none lg:-mt-8 lg:max-h-[768px] lg:max-w-none;
+  @apply absolute right-0 mr-8 flex max-h-0 max-w-0 flex-col items-start space-y-4 overflow-hidden rounded bg-white p-0 transition-all duration-500 ease-in-out lg:right-auto lg:mr-0 lg:-mt-8 lg:max-h-[768px] lg:max-w-none lg:flex-row lg:items-center lg:space-y-0 lg:space-x-8 lg:rounded-none lg:bg-transparent lg:p-0;
 
   top: 60px;
 
   &[data-toggle='true'] {
-    @apply p-6 border max-h-[768px];
+    @apply max-h-[768px] border p-6;
 
     max-width: 100vw;
   }
@@ -57,7 +57,7 @@
 }
 
 .menu {
-  @apply flex p-0 w-10 h-10 border-transparent border-none cursor-pointer focus:outline-none lg:hidden;
+  @apply focus:outline-none flex h-10 w-10 cursor-pointer border-none border-transparent p-0 lg:hidden;
 }
 
 .line1,

@@ -1,5 +1,5 @@
 .tooltip {
-  @apply p-3 m-0 w-48 leading-normal whitespace-nowrap bg-white border border-gray-100 border-solid;
+  @apply m-0 w-48 whitespace-nowrap border border-solid border-gray-100 bg-white p-3 leading-normal;
 }
 
 .label {
@@ -7,10 +7,10 @@
 }
 
 .intro {
-  @apply m-0 border-t border-gray-100 border-solid;
+  @apply m-0 border-t border-solid border-gray-100;
 
   span {
-    @apply block my-1;
+    @apply my-1 block;
 
     &:nth-child(1) {
       @apply text-blue-500;

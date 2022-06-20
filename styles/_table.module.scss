@@ -1,13 +1,13 @@
 .ctr {
-  @apply flex overflow-x-auto flex-col -my-2 sm:-mx-6 lg:-mx-8;
+  @apply -my-2 flex flex-col overflow-x-auto sm:-mx-6 lg:-mx-8;
 }
 
 .table {
-  @apply overflow-hidden min-w-full border-b border-gray-200 divide-y divide-gray-200 shadow sm:rounded-lg;
+  @apply min-w-full divide-y divide-gray-200 overflow-hidden border-b border-gray-200 shadow sm:rounded-lg;
 }
 
 .wrapper {
-  @apply inline-block py-2 min-w-full align-middle sm:px-6 lg:px-8;
+  @apply inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8;
 }
 
 .head {
@@ -15,11 +15,11 @@
 }
 
 .body {
-  @apply text-sm text-gray-900 bg-white divide-y divide-gray-200;
+  @apply divide-y divide-gray-200 bg-white text-sm text-gray-900;
 }
 
 .col-th {
-  @apply py-3 px-6 text-xs font-semibold tracking-wider text-left text-gray-500 uppercase;
+  @apply py-3 px-6 text-left text-xs font-semibold uppercase tracking-wider text-gray-500;
 }
 
 .branch {
@@ -27,9 +27,9 @@
 }
 
 .row-th {
-  @apply py-4 px-6 font-semibold text-left uppercase whitespace-nowrap;
+  @apply whitespace-nowrap py-4 px-6 text-left font-semibold uppercase;
 }
 
 .data {
-  @apply py-4 px-6 whitespace-nowrap;
+  @apply whitespace-nowrap py-4 px-6;
 }

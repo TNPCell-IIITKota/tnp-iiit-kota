@@ -3,17 +3,17 @@
 }
 
 .ctr {
-  @apply container px-5 pt-16 mx-auto border-t border-gray-200;
+  @apply container mx-auto border-t border-gray-200 px-5 pt-16;
 }
 
 .title {
-  @apply mt-2 mb-14 text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
+  @apply mt-2 mb-14 text-center text-2xl font-semibold text-gray-900 sm:text-3xl;
 }
 
 .questions {
-  @apply flex flex-wrap -mx-2 sm:mx-auto sm:mb-2;
+  @apply -mx-2 flex flex-wrap sm:mx-auto sm:mb-2;
 }
 
 .desc {
-  @apply mx-auto mt-4 text-sm leading-relaxed text-center;
+  @apply mx-auto mt-4 text-center text-sm leading-relaxed;
 }

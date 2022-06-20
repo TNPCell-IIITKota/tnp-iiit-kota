@@ -1,9 +1,9 @@
 .wrapper {
-  @apply p-2 w-full lg:w-1/2;
+  @apply w-full p-2 lg:w-1/2;
 }
 
 .btn {
-  @apply flex relative items-center p-4 w-full h-full bg-gray-100 rounded;
+  @apply relative flex h-full w-full items-center rounded bg-gray-100 p-4;
 }
 
 .question {
@@ -12,5 +12,5 @@
 }
 
 .icon {
-  @apply absolute right-0 flex-shrink-0 mr-4 w-6 h-6 text-indigo-500;
+  @apply absolute right-0 mr-4 h-6 w-6 flex-shrink-0 text-indigo-500;
 }

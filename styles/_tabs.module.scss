@@ -1,24 +1,24 @@
 .wrapper {
-  @apply flex flex-wrap mx-auto xl:w-3/5;
+  @apply mx-auto flex flex-wrap xl:w-3/5;
 }
 
 .list-wrapper {
-  @apply flex flex-col flex-wrap pt-3 pb-4 mb-0 w-full list-none md:flex-row;
+  @apply mb-0 flex w-full list-none flex-col flex-wrap pt-3 pb-4 md:flex-row;
 }
 
 .tab {
-  @apply flex-auto mb-2 text-center md:mr-2 md:-mb-px last:mr-0;
+  @apply mb-2 flex-auto text-center last:mr-0 md:mr-2 md:-mb-px;
 
   &-link {
-    @apply block py-3 px-5 text-xs font-bold leading-normal uppercase bg-white rounded shadow-md text-[#0e407c];
+    @apply block rounded bg-white py-3 px-5 text-xs font-bold uppercase leading-normal text-[#0e407c] shadow-md;
 
     &[aria-selected='true'] {
-      @apply text-white bg-[#0e407c];
+      @apply bg-[#0e407c] text-white;
     }
   }
 
   &-content {
-    @apply flex relative flex-col py-5 px-4 mb-6 w-full min-w-0 break-words bg-white rounded shadow-md;
+    @apply relative mb-6 flex w-full min-w-0 flex-col break-words rounded bg-white py-5 px-4 shadow-md;
 
     [aria-hidden='true'] {
       @apply hidden;

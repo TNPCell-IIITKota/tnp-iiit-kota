@@ -1,13 +1,13 @@
 .sect {
-  @apply overflow-hidden pt-20 mt-2 w-full max-w-full;
+  @apply mt-2 w-full max-w-full overflow-hidden pt-20;
 }
 
 .title {
-  @apply mb-16 text-2xl font-semibold text-center text-gray-900 sm:text-3xl;
+  @apply mb-16 text-center text-2xl font-semibold text-gray-900 sm:text-3xl;
 }
 
 .slider {
-  @apply flex my-8 w-max;
+  @apply my-8 flex w-max;
   animation: slide 64s linear infinite;
 }
 
@@ -15,7 +15,7 @@
   @apply px-10;
 
   img {
-    @apply opacity-70 transition duration-200 cursor-default outline-none grayscale contrast-200 hover:opacity-80 hover:filter-none;
+    @apply outline-none cursor-default opacity-70 contrast-200 grayscale transition duration-200 hover:opacity-80 hover:filter-none;
     @apply h-10 #{!important};
   }
 }

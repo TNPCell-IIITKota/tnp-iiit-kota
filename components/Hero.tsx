@@ -33,6 +33,14 @@ const Hero: React.FC = () => (
         We act as a facilitator for training and placement, and work enthusiastically towards the
         overall development of the students, helping them connect with industries.
       </p>
+      <a
+        cx="brochure"
+        href="/docs/placement-brochure-2023.pdf"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Download Brochure
+      </a>
     </div>
     <div cx="separator">
       <svg

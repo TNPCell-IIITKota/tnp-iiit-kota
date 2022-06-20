@@ -1,9 +1,9 @@
 .modal {
-  @apply overflow-y-auto fixed inset-0 z-30;
+  @apply fixed inset-0 z-30 overflow-y-auto;
 }
 
 .ctr {
-  @apply flex justify-center items-center px-4 min-h-screen text-center sm:block;
+  @apply flex min-h-screen items-center justify-center px-4 text-center sm:block;
 }
 
 .overlay {
@@ -11,15 +11,15 @@
 }
 
 .fake {
-  @apply hidden sm:inline-block sm:align-middle sm:h-screen;
+  @apply hidden sm:inline-block sm:h-screen sm:align-middle;
 }
 
 .wrapper {
-  @apply inline-block overflow-hidden text-left align-bottom bg-white rounded-lg shadow-xl transition-all transform sm:my-8 sm:align-middle sm:max-w-lg sm:w-full;
+  @apply inline-block transform overflow-hidden rounded-lg bg-white text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:align-middle;
 }
 
 .ans {
-  @apply p-4 pb-1 text-sm text-justify text-gray-500 sm:p-6 sm:pb-0;
+  @apply p-4 pb-1 text-justify text-sm text-gray-500 sm:p-6 sm:pb-0;
 
   ul {
     @apply mt-2 ml-4 list-disc;
@@ -31,5 +31,5 @@
 }
 
 .btn {
-  @apply inline-flex justify-center py-2 px-4 w-full text-base font-semibold text-blue-900 bg-blue-100 rounded-md border border-transparent shadow-sm transition-all hover:bg-blue-200 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:w-auto sm:text-sm;
+  @apply focus:outline-none inline-flex w-full justify-center rounded-md border border-transparent bg-blue-100 py-2 px-4 text-base font-semibold text-blue-900 shadow-sm transition-all hover:bg-blue-200 focus:ring-2 focus:ring-offset-2 sm:w-auto sm:text-sm;
 }
