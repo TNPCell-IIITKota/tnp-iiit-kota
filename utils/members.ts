@@ -1,5 +1,5 @@
 const members: Record<
-  '2020' | '2021' | '2022' | 'faculty' | 'webmaster',
+  '2020' | '2021' | '2022' | '2023' | 'faculty' | 'webmaster',
   Array<{ name: string; linkedIn: string }>
 > = {
   faculty: [
@@ -19,6 +19,12 @@ const members: Record<
     { name: 'Inderjeet', linkedIn: 'inderjeet-816b88176' },
     { name: 'Rajkumar Pareek', linkedIn: 'rajkumar-pareek-06a573170' },
     { name: 'Sanatan Shrivastava', linkedIn: 'sanatan-shrivastava-04a327171' },
+  ],
+  2023: [
+    { name: 'Adarsh Gupta', linkedIn: 'adarsh29gupta' },
+    { name: 'Anant Mehra', linkedIn: 'anant-mehra-626952190' },
+    { name: 'Mehul Saxena', linkedIn: 'mehulsaxena' },
+    { name: 'Priyanshi Mehta', linkedIn: 'priyanshi-mehta-247181191' },
   ],
   webmaster: [
     { name: 'Divyansh Singh', linkedIn: 'brc-dd' },

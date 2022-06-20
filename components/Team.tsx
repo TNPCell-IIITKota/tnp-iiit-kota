@@ -62,14 +62,15 @@ const Team: React.FC = () => (
       <div cx="members">
         <Members level="faculty" />
       </div>
-      <h3 cx="lead">Student Placement Coordinators — Y&apos;22</h3>
+      <h3 cx="lead">Student Placement Coordinators — Y&apos;23</h3>
       <div cx="members">
-        <Members level="2022" />
+        <Members level="2023" />
       </div>
       <h3 cx="lead">Former Student Placement Coordinators</h3>
       <div cx="members">
-        <Members level="2020" />
+        <Members level="2022" />
         <Members level="2021" />
+        <Members level="2020" />
       </div>
       <h3 cx="lead">Webmasters</h3>
       <div cx="members">
