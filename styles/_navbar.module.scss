@@ -24,12 +24,12 @@
   @apply z-10 inline-flex items-center;
 
   @screen lg {
-    margin-right: 859.8px;
+    margin-right: 955px;
   }
 }
 
 .logo {
-  @apply h-10 w-10;
+  @apply h-10 w-10 cursor-pointer;
 }
 
 .nav-link {
