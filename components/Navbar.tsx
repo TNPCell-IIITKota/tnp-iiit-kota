@@ -100,6 +100,23 @@ const Navbar: React.FC = () => {
         </div>
 
         <ul ref={listRef} cx="links" data-toggle={isMenuOpen}>
+          <li>
+            <a cx="nav-link" href="https://iiitkota.ac.in" rel="noreferrer" target="_blank">
+              <svg
+                className="mr-[6px] -mb-px inline-block h-4 w-4 align-baseline"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z"
+                  fillRule="evenodd"
+                />
+              </svg>
+              Home
+            </a>
+          </li>
           {[
             'Why Recruit',
             'Statistics',
