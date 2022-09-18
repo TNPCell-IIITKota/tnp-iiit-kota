@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
 
         <ul ref={listRef} cx="links" data-toggle={isMenuOpen}>
           <li>
-            <a cx="nav-link" href="https://iiitkota.ac.in" rel="noreferrer" target="_blank">
+            <a cx="nav-link" href="https://iiitkota.ac.in">
               <svg
                 className="mr-[6px] -mb-px inline-block h-4 w-4 align-baseline"
                 fill="currentColor"
