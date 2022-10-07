@@ -21,7 +21,7 @@
 }
 
 .logo-wrapper {
-  @apply z-10 inline-flex items-center;
+  @apply z-10 inline-flex items-center w-full;
 
   @screen lg {
     margin-right: 955px;

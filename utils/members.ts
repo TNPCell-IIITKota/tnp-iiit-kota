@@ -4,7 +4,7 @@ const members: Record<
 > = {
   faculty: [
     { name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' },
-    { name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' },
+    // { name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' },
   ],
   2020: [
     { name: 'Mohit Choudhary', linkedIn: 'mohit-choudhary-30715a159' },
