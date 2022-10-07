@@ -2,10 +2,7 @@ const members: Record<
   '2020' | '2021' | '2022' | '2023' | 'faculty' | 'webmaster',
   Array<{ name: string; linkedIn: string }>
 > = {
-  faculty: [
-    { name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' },
-    { name: 'Dr. Ashish Sharma', linkedIn: 'dr-ashish-sharma-a6a5491b' },
-  ],
+  faculty: [{ name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' }],
   2020: [
     { name: 'Mohit Choudhary', linkedIn: 'mohit-choudhary-30715a159' },
     { name: 'Shrikant Deshmane', linkedIn: 'shrikant-deshmane-439791147' },
