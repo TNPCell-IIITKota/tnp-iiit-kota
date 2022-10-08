@@ -38,9 +38,9 @@ const IndexPage: NextPage = () => (
     <Stats />
     <Stars />
     <Slider />
-    <Team />
     <Policy />
     <FAQs />
+    <Team />
     <Contact />
     <Footer />
   </>
