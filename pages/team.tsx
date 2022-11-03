@@ -2,18 +2,11 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 
-import Contact from '@components/Contact';
-import FAQs from '@components/FAQs';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Navbar from '@components/Navbar';
-import Pitch from '@components/Pitch';
-import Policy from '@components/Policy';
 import Preload from '@components/Preload';
-import Slider from '@components/Slider';
-import Stars from '@components/Stars';
-import Stats from '@components/Stats';
-import TeamHome from '@components/TeamHome';
+import Team from '@components/Team';
 
 const IndexPage: NextPage = () => (
   <>
@@ -34,14 +27,8 @@ const IndexPage: NextPage = () => (
 
     <Navbar />
     <Hero />
-    <Slider />
-    <Pitch />
-    <Stats />
-    <Stars />
-    <Policy />
-    <FAQs />
-    <TeamHome />
-    <Contact />
+    <Team />
+    <p className="pb-8" />
     <Footer />
   </>
 );
