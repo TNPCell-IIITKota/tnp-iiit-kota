@@ -52,21 +52,21 @@ const Members: React.FC<{ level: keyof typeof members }> = ({ level }) => (
   </>
 );
 
-const Team: React.FC = () => (
+const TeamHome: React.FC = () => (
   <section cx="sect" id="our-team">
     <div cx="ctr">
       <div cx="title-wrapper">
         <h2 cx="title">Our Team</h2>
       </div>
-      {/*      <h3 cx="lead">Faculty Coordinator</h3>
+      <h3 cx="lead">Faculty Coordinator</h3>
       <div cx="members">
         <Members level="faculty" />
       </div>
       <h3 cx="lead">Student Placement Coordinators — Y&apos;23</h3>
       <div cx="members">
         <Members level="2023" />
-      </div> */}
-      <h3 cx="lead">Former Student Placement Coordinators</h3>
+      </div>
+      {/* <h3 cx="lead">Former Student Placement Coordinators</h3>
       <div cx="members">
         <Members level="2022" />
         <Members level="2021" />
@@ -75,9 +75,9 @@ const Team: React.FC = () => (
       <h3 cx="lead">Webmasters</h3>
       <div cx="members">
         <Members level="webmaster" />
-      </div>
+      </div> */}
     </div>
   </section>
 );
 
-export default Team;
+export default TeamHome;
