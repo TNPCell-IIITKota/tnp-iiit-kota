@@ -68,6 +68,7 @@ const Team: React.FC = () => (
       </div> */}
       <h3 cx="lead">Former Student Placement Coordinators</h3>
       <div cx="members">
+        <Members level="2023" />
         <Members level="2022" />
         <Members level="2021" />
         <Members level="2020" />

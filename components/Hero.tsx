@@ -35,7 +35,7 @@ const Hero: React.FC = () => (
       </p>
       <a
         cx="brochure"
-        href="/docs/placement-brochure-2023.pdf"
+        href="/docs/2024-placement-brochure.pdf"
         rel="noopener noreferrer"
         target="_blank"
       >

@@ -30,6 +30,7 @@ const Stats: React.FC = () => (
               />
             </svg>
           </a>
+          <p cx="additional-info">*These stats are last updated as per June 20th, 2023.</p>
         </div>
       </div>
       <Tabs />
