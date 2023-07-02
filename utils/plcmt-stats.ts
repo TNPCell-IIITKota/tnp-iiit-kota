@@ -19,6 +19,11 @@ const branchWiseData: Record<
     ECE: { Strength: 52, Eligible: 42, Placed: 36 },
     Total: { Strength: 154, Eligible: 139, Placed: 128 },
   },
+  2023: {
+    CSE: { Strength: 119, Eligible: 111, Placed: 94 },
+    ECE: { Strength: 51, Eligible: 42, Placed: 33 },
+    Total: { Strength: 170, Eligible: 153, Placed: 127 },
+  },
 };
 
 const placementPC = {} as Record<Year, Array<{ branch: Branch; 'Placement %': number }>>;
@@ -38,6 +43,11 @@ const eligibleVsOffers = {
     { branch: 'CSE', 'Number of Offers': 145 },
     { branch: 'ECE', 'Number of Offers': 55 },
     { branch: 'Total', 'Number of Offers': 200 },
+  ],
+  2023: [
+    { branch: 'CSE', 'Number of Offers': 132 },
+    { branch: 'ECE', 'Number of Offers': 49 },
+    { branch: 'Total', 'Number of Offers': 181 },
   ],
 } as Record<
   Year,
@@ -70,6 +80,11 @@ const aggregateData: Record<Year, Array<{ branch: Branch; Average: number; Maxim
     { branch: 'CSE', Average: 15.25, Maximum: 81.0 },
     { branch: 'ECE', Average: 12.37, Maximum: 61.0 },
     { branch: 'Total', Average: 14.37, Maximum: 81.0 },
+  ],
+  2023: [
+    { branch: 'CSE', Average: 15.76, Maximum: 53.6 },
+    { branch: 'ECE', Average: 11.31, Maximum: 25.0 },
+    { branch: 'Total', Average: 14.6, Maximum: 53.6 },
   ],
 };
 

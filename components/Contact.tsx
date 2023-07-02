@@ -32,7 +32,7 @@ const Cards: React.FC = () => (
       <div cx="content">
         <h3 cx="name">Dr. Amit Kumar Garg</h3>
         <p cx="address">
-          Faculty In-charge
+          Associate Dean
           <br />
           Training and Placement Cell
           <br />

@@ -19,7 +19,7 @@
 }
 
 .title-wrapper {
-  @apply mb-6 flex flex-col flex-wrap py-6 sm:flex-row;
+  @apply mb-6 flex flex-wrap py-6 sm:flex-row;
 }
 
 .title {
@@ -28,4 +28,8 @@
 
 .download {
   @apply ml-2 -mb-1 inline-block h-6 w-6 hover:text-gray-900;
+}
+
+.additional-info {
+  @apply text-sm tracking-wide text-gray-600 sm:ml-2 sm:mt-2;
 }
