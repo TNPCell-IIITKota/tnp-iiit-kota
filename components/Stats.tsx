@@ -10,7 +10,7 @@ const Stats: React.FC = () => (
         <div cx="title-wrapper">
           <h2 cx="title">Placement Statistics</h2>
           <a
-            href="/docs/placement-report-2022.pdf"
+            href="/docs/placement-report-2023.pdf"
             rel="noopener noreferrer"
             target="_blank"
             title="Download latest report"
