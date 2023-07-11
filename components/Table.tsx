@@ -9,11 +9,13 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
       <table cx="table">
         <thead cx="head">
           <tr>
-            {['Branch', 'Maximum Package', 'Average Package', 'Placement %'].map((header) => (
-              <th key={cyrb53(header)} cx="col-th" scope="col">
-                {header}
-              </th>
-            ))}
+            {['Branch', 'Maximum Package (CTC)', 'Average Package (CTC)', 'Placement %'].map(
+              (header) => (
+                <th key={cyrb53(header)} cx="col-th" scope="col">
+                  {header}
+                </th>
+              ),
+            )}
           </tr>
         </thead>
         <tbody cx="body">
@@ -22,8 +24,8 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
               <th cx="row-th" scope="row">
                 {row.branch}
               </th>
-              <td cx="data">{row.Maximum} LPA</td>
-              <td cx="data">{row.Average} LPA</td>
+              <td cx="data">{row.Maximum} Lakhs</td>
+              <td cx="data">{row.Average} Lakhs</td>
               <td cx="data">
                 {placementPC[year].find((x) => x.branch === row.branch)?.['Placement %']}%
               </td>
