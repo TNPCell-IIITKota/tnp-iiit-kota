@@ -66,7 +66,7 @@ const TeamHome: React.FC = () => (
       <div cx="members">
         <Members level="2025" />
       </div>
-      <h3 cx="lead">Student Placement Trainee — Y&apos;26</h3>
+      <h3 cx="lead">Student Placement Trainees — Y&apos;26</h3>
       <div cx="members">
         <Members level="2026" />
       </div>

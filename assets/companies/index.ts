@@ -3,8 +3,10 @@ import Accops from './accops.svg';
 import Adobe from './adobe.svg';
 import AlcatelLucent from './alcatellucent.svg';
 import Amazon from './amazon.svg';
+import Autodesk from './autodesk.svg';
 import Byjus from './byjus.svg';
 import Capgemini from './capgemini.svg';
+import Carrier from './carrier.svg';
 import CGI from './cgi.svg';
 import Cvent from './cvent.svg';
 import Delhivery from './delhivery.svg';
@@ -17,6 +19,7 @@ import GoldmanSachs from './goldmansachs.svg';
 import Icertis from './icertis.svg';
 import Infosys from './infosys.svg';
 import Jio from './jio.svg';
+import Messho from './meesho.svg';
 import Microsoft from './microsoft.svg';
 import Nagarro from './nagarro.svg';
 import NeoSoft from './neosoft.svg';
@@ -33,9 +36,11 @@ import Snapdeal from './snapdeal.svg';
 import Tally from './tally.svg';
 import TCS from './tcs.svg';
 import Toshiba from './toshiba.svg';
+import trilogy from './trilogy.svg';
 import Virtusa from './virtusa.svg';
 import Xebia from './xebia.svg';
 import Yamaha from './yamaha.svg';
+import Zscaler from './zscaler.svg';
 
 const companies: Record<0 | 1, Record<string, StaticImageData>> = {
   0: {
@@ -44,6 +49,7 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     GoldmanSachs,
     Flipkart,
     Adobe,
+    Autodesk,
     SamsungSDS,
     Jio,
     Cvent,
@@ -56,6 +62,7 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     PublicisSapient,
     Nagarro,
     TCS,
+    Zscaler,
     FiftyFive,
     _314eCorp,
     Yamaha,
@@ -63,6 +70,7 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     Delhivery,
     Byjus,
     Accops,
+    Messho,
     Icertis,
     Tally,
     AlcatelLucent,
@@ -73,6 +81,8 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     Samsung,
     Q3Tech,
     NeoSoft,
+    Carrier,
+    trilogy,
     Fampay,
     Fanatics,
     Oracle,
