@@ -72,14 +72,14 @@ const Stars: React.FC = () => (
           .reverse()
           .map((year) => (
             <React.Fragment key={cyrb53(`stars-y'${year}`)}>
-              {corporate[year as keyof typeof corporate].map(({ name, company, lpa }) => (
+              {corporate[year as keyof typeof corporate].map(({ name, company }) => (
                 <div key={cyrb53(name)} cx="star-c">
                   <div cx="wrapper">
                     <WrappedImage name={name} />
 
                     <OverlayWrapper {...{ name, year }}>
                       <h4 cx="company">{company}</h4>
-                      <p cx="lpa">{lpa} LPA</p>
+                      {/* <p cx="lpa">{lpa} LPA</p> */}
                     </OverlayWrapper>
                   </div>
                 </div>
