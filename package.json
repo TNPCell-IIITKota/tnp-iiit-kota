@@ -9,7 +9,7 @@
   "scripts": {
     "audit:fix": "bash -c \"npx npm-check-updates -u; npm i --package-lock-only; npm audit fix; rm yarn.lock; yarn import; rm package-lock.json\"",
     "build": "next build",
-    "dev": "bash -c \"rm -r .next; yarn; next dev  -p 3004\"",
+    "dev": "bash -c \"rm -r .next; yarn; next dev\"",
     "lint:code": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
     "lint:staged": "lint-staged --allow-empty --concurrent 1",
     "prepare": "husky install",
