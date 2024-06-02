@@ -10,9 +10,9 @@ const Cards: React.FC = () => (
         <p cx="address">
           IIIT Kota Office
           <br />
-          2nd Floor, Prabha Bhawan
+          1st Floor, Academic Block
           <br />
-          MNIT Jaipur, RJ 302017
+          Ranpur, Kota, RJ 325003
         </p>
 
         <a cx="email" href="mailto:placements@iiitkota.ac.in">

@@ -8,7 +8,7 @@
   "repository": "https://github.com/brc-dd/tnp-iiit-kota",
   "scripts": {
     "audit:fix": "bash -c \"npx npm-check-updates -u; npm i --package-lock-only; npm audit fix; rm yarn.lock; yarn import; rm package-lock.json\"",
-    "build": "next build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
     "dev": "bash -c \"rm -r .next; yarn; next dev\"",
     "lint:code": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
     "lint:staged": "lint-staged --allow-empty --concurrent 1",
@@ -72,5 +72,6 @@
   "browserslist": [
     "> 0.3%",
     "not dead"
-  ]
+  ],
+  "packageManager": "yarn@1.22.22"
 }

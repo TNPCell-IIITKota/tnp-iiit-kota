@@ -1,5 +1,5 @@
 const members: Record<
-  '2020' | '2021' | '2022' | '2023' | '2024' | 'faculty' | 'webmaster',
+  '2020' | '2021' | '2022' | '2023' | '2024' | '2025' | '2026' | 'faculty' | 'webmaster',
   Array<{ name: string; linkedIn: string }>
 > = {
   faculty: [{ name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' }],
@@ -31,6 +31,17 @@ const members: Record<
     { name: 'S Ramesh Kumar', linkedIn: 'ramesh-kumar-saragadam-9b2617142' },
     { name: 'Sharang Verma', linkedIn: 'sharang-verma-43b582207' },
     { name: 'Shivani', linkedIn: 'shivani-choudhary-36bab01bb' },
+  ],
+  2025: [
+    { name: 'Harshit Arora', linkedIn: 'harshit556' },
+    { name: 'Kartik Mehandiratta', linkedIn: 'kartik-mehandiratta-91666022b' },
+    { name: 'Romit Das', linkedIn: 'romit-das' },
+    { name: 'Shantanu Kapse', linkedIn: 'raycurve' },
+    { name: 'Yug Modi', linkedIn: 'yug-modi-27b965215' },
+  ],
+  2026: [
+    { name: 'Dhairya Majmudar', linkedIn: 'dhairya-majmudar' },
+    { name: 'Hiteshwar Kaushik', linkedIn: 'hiteshwarkaushik' },
   ],
   webmaster: [
     { name: 'Divyansh Singh', linkedIn: 'brc-dd' },
