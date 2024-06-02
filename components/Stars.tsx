@@ -79,7 +79,6 @@ const Stars: React.FC = () => (
 
                     <OverlayWrapper {...{ name, year }}>
                       <h4 cx="company">{company}</h4>
-                      {/* <p cx="lpa">{lpa} LPA</p> */}
                     </OverlayWrapper>
                   </div>
                 </div>
