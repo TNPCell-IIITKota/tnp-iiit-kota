@@ -10,7 +10,9 @@ const Cards: React.FC = () => (
         <p cx="address">
           IIIT Kota Office
           <br />
-          1st Floor, Academic Block
+          G Floor, Academic Block, IIIT Kota
+          <br />
+          RIICO Industrial Area, Kuber Extension,
           <br />
           Ranpur, Kota, RJ 325003
         </p>
