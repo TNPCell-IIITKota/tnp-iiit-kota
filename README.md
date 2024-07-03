@@ -46,5 +46,7 @@ This repository is the landing page of TnP Cell, IIIT Kota. You can access the w
 [5]: https://github.com/sanatan-shrivastava
 [6]: https://images.weserv.nl/?url=raw.githubusercontent.com/brc-dd/tnp-iiit-kota/main/public/members/pavnesh-chaturvedi.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
 [7]: https://github.com/pc-beast
-[8]: https://github.com/DhairyaMajmudar
-[9]: https://images.weserv.nl/?url=raw.githubusercontent.com/DhairyaMajmudar/tnp-iiit-kota/main/public/members/dhairya-majmudar.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[8]: https://images.weserv.nl/?url=raw.githubusercontent.com/DhairyaMajmudar/tnp-iiit-kota/main/public/members/dhairya-majmudar.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[9]: https://github.com/DhairyaMajmudar
+[10]: https://images.weserv.nl/?url=raw.githubusercontent.com/DhairyaMajmudar/tnp-iiit-kota/main/public/members/ankur-agarwal.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
+[11]: https://github.com/Ankur6702
