@@ -3,12 +3,14 @@ import type { Year } from '@types';
 // import type { TooltipProps } from 'recharts';
 import { useRef } from 'react';
 // import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
-import { Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis } from 'recharts';
+// import { Bar, BarChart, CartesianGrid, Legend, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts';
 
 // import { CustomizedLabel, CustomTooltip, DetailedTooltip } from '@components/LabelsTooltips';
 import { CustomizedLabel } from '@components/LabelsTooltips';
 import useOnScreen from '@utils/on-screen';
-import { eligibleVsOffers, placementPC } from '@utils/plcmt-stats';
+// import { eligibleVsOffers, placementPC } from '@utils/plcmt-stats';
+import { placementPC } from '@utils/plcmt-stats';
 
 const Charts: React.FC<{ year: Year }> = ({ year }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -16,7 +18,7 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
 
   return (
     <div ref={ref} cx="wrapper">
-      <div>
+      {/* <div>
         <h3>Eligible Students and Number of Offers</h3>
 
         <BarChart
@@ -29,12 +31,12 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
           <CartesianGrid strokeDasharray="3 3" vertical={false} />
           <XAxis dataKey="branch" padding={{ left: 80, right: 80 }} scale="point" />
           <YAxis />
-          {/* <Tooltip content={CustomTooltip} /> */}
+          <Tooltip content={CustomTooltip} />
           <Legend wrapperStyle={{ left: 18 }} />
           <Bar dataKey="Eligible Students" fill="#60A5FA" isAnimationActive={isVisible} />
           <Bar dataKey="Number of Offers" fill="#34D399" isAnimationActive={isVisible} />
         </BarChart>
-      </div>
+      </div> */}
 
       <div>
         <h3>Placement Percentage of Registered Students</h3>
