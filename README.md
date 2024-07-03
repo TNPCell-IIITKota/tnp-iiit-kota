@@ -35,9 +35,9 @@ This repository is the landing page of TnP Cell, IIIT Kota. You can access the w
 
 ## Contributors
 
-|       ![Divyansh Singh][2]        |         ![Sanatan Shrivastava][4]          |          ![Pavnesh Chaturvedi][6]           |         ![Dhairya Majmudar][8]          |
-| :-------------------------------: | :----------------------------------------: | :-----------------------------------------: | :-------------------------------------: |
-| [Divyansh Singh][3] <br /> Author | [Sanatan Shrivastava][5] <br /> Maintainer | [Pavnesh Chaturvedi][7] <br /> Collaborator | [Dhairya Majmudar][9] <br /> Maintainer |
+|       ![Divyansh Singh][2]        |          ![Sanatan Shrivastava][4]           |          ![Pavnesh Chaturvedi][6]           |         ![Dhairya Majmudar][8]          |          ![Ankur Agarwal][10]           |
+| :-------------------------------: | :------------------------------------------: | :-----------------------------------------: | :-------------------------------------: | :-------------------------------------: |
+| [Divyansh Singh][3] <br /> Author | [Sanatan Shrivastava][5] <br /> Collaborator | [Pavnesh Chaturvedi][7] <br /> Collaborator | [Dhairya Majmudar][9] <br /> Maintainer | [Ankur Agarwal][11] <br /> Collaborator |
 
 [1]: https://tpcell.iiitkota.ac.in
 [2]: https://images.weserv.nl/?url=raw.githubusercontent.com/brc-dd/tnp-iiit-kota/main/public/members/divyansh-singh.jpg&h=100&w=100&fit=cover&mask=circle&maxage=7d
