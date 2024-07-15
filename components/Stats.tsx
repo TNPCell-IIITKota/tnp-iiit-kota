@@ -30,7 +30,7 @@ const Stats: React.FC = () => (
               />
             </svg>
           </a>
-          <p cx="additional-info">*These stats are last updated as per June 30th, 2024. </p>
+          <p cx="additional-info">*These stats are last updated as per July 15th, 2024. </p>
           <span style={{ fontSize: '14px' }}>
             Subject to get updated with final placement report{' '}
           </span>
