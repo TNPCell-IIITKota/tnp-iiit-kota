@@ -55,13 +55,13 @@ const eligibleVsOffers = {
     { branch: 'Total', 'Number of Offers': 181 },
   ],
   2024: [
-    { branch: 'CSE', 'Number of Offers': 122 },
-    { branch: 'ECE', 'Number of Offers': 60 },
-    { branch: 'Total', 'Number of Offers': 181 }, // update no. of offers
+    { branch: 'CSE', 'Number of Offers': 122, median: 10 },
+    { branch: 'ECE', 'Number of Offers': 60, median: 8 },
+    { branch: 'Total', 'Number of Offers': 181, median: 10 },
   ],
 } as Record<
   Year,
-  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number }>
+  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number; median: number }>
 >;
 
 Object.entries(branchWiseData).forEach(([key, value]) => {
@@ -75,7 +75,10 @@ Object.entries(branchWiseData).forEach(([key, value]) => {
   });
 });
 
-const aggregateData: Record<Year, Array<{ branch: Branch; Average: number; Maximum: number }>> = {
+const aggregateData: Record<
+  Year,
+  Array<{ branch: Branch; Average: number; Maximum: number; Median?: number }>
+> = {
   2020: [
     { branch: 'CSE', Average: 11.7, Maximum: 29.0 },
     { branch: 'ECE', Average: 8.9, Maximum: 29.0 },
@@ -87,19 +90,19 @@ const aggregateData: Record<Year, Array<{ branch: Branch; Average: number; Maxim
     { branch: 'Total', Average: 9.0, Maximum: 43.0 },
   ],
   2022: [
-    { branch: 'CSE', Average: 15.25, Maximum: 81.0 },
-    { branch: 'ECE', Average: 12.37, Maximum: 61.0 },
-    { branch: 'Total', Average: 14.37, Maximum: 81.0 },
+    { branch: 'CSE', Average: 15.25, Maximum: 81.0, Median: 13.5 },
+    { branch: 'ECE', Average: 12.37, Maximum: 61.0, Median: 10 },
+    { branch: 'Total', Average: 14.37, Maximum: 81.0, Median: 13.5 },
   ],
   2023: [
-    { branch: 'CSE', Average: 15.76, Maximum: 53.6 },
-    { branch: 'ECE', Average: 11.31, Maximum: 25.0 },
-    { branch: 'Total', Average: 14.6, Maximum: 53.6 },
+    { branch: 'CSE', Average: 15.76, Maximum: 53.6, Median: 12.47 },
+    { branch: 'ECE', Average: 11.31, Maximum: 25.0, Median: 8.5 },
+    { branch: 'Total', Average: 14.6, Maximum: 53.6, Median: 12.47 },
   ],
   2024: [
-    { branch: 'CSE', Average: 12.71, Maximum: 52 },
-    { branch: 'ECE', Average: 11.96, Maximum: 53.6 },
-    { branch: 'Total', Average: 12.46, Maximum: 53.6 },
+    { branch: 'CSE', Average: 12.71, Maximum: 52, Median: 10 },
+    { branch: 'ECE', Average: 11.96, Maximum: 53.6, Median: 8 },
+    { branch: 'Total', Average: 12.46, Maximum: 53.6, Median: 10 },
   ],
 };
 
