@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.1",
-    "axios": "^1.1.3",
+    "axios": "^1.6.0",
     "next": "canary",
     "next-transpile-modules": "^8.0.0",
     "nodemailer": "^6.8.0",
