@@ -25,8 +25,8 @@ const branchWiseData: Record<
     Total: { Strength: 170, Eligible: 153, Placed: 127 },
   },
   2024: {
-    CSE: { Strength: 119, Eligible: 109, Placed: 80 }, // update strength
-    ECE: { Strength: 51, Eligible: 53, Placed: 40 }, // update strength
+    CSE: { Strength: 131, Eligible: 109, Placed: 80 },
+    ECE: { Strength: 65, Eligible: 53, Placed: 40 },
     Total: { Strength: 196, Eligible: 162, Placed: 120 },
   },
 };
@@ -55,9 +55,9 @@ const eligibleVsOffers = {
     { branch: 'Total', 'Number of Offers': 181 },
   ],
   2024: [
-    { branch: 'CSE', 'Number of Offers': 122, median: 10 },
-    { branch: 'ECE', 'Number of Offers': 60, median: 8 },
-    { branch: 'Total', 'Number of Offers': 181, median: 10 },
+    { branch: 'CSE', 'Number of Offers': 91, median: 10 },
+    { branch: 'ECE', 'Number of Offers': 49, median: 8 },
+    { branch: 'Total', 'Number of Offers': 140, median: 10 },
   ],
 } as Record<
   Year,
