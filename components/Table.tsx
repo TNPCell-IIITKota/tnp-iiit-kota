@@ -30,7 +30,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
               </th>
               <td cx="data">{row.Maximum} Lakhs</td>
               <td cx="data">{row.Average} Lakhs</td>
-              <td cx="data">{row.Median} Lakhs</td>
+              <td cx="data">{row.Median} CTC</td>
               <td cx="data">
                 {placementPC[year].find((x) => x.branch === row.branch)?.['Placement %']}%
               </td>
