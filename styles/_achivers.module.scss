@@ -32,11 +32,11 @@
 }
 
 .wrapper {
-  @apply relative flex h-36 flex-col items-center p-4;
+  @apply relative flex h-40 flex-col items-center p-4 sm:h-36;
 }
 
 .image-wrapper {
-  @apply absolute inset-0 mx-auto flex h-36 w-36 flex-col items-center justify-center overflow-hidden;
+  @apply absolute inset-0 mx-auto flex h-40 w-40 flex-col items-center justify-center overflow-hidden sm:h-36 sm:w-36;
 }
 
 .image {
@@ -44,7 +44,7 @@
 }
 
 .overlay-wrapper {
-  @apply absolute inset-0 z-10 mx-auto flex  h-36 w-36 flex-col justify-center overflow-hidden border border-gray-200 bg-black py-6 px-6 opacity-0 duration-300 hover:opacity-90;
+  @apply absolute inset-0 z-10 mx-auto flex  h-40 w-40 flex-col justify-center overflow-hidden border border-gray-200 bg-black py-6 px-6 opacity-0 duration-300 hover:opacity-90 sm:h-36 sm:w-36;
 }
 
 .name {
