@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { achivers, gate } from '@utils/achivers';
+import { achivers, exams } from '@utils/achivers';
 import cyrb53 from '@utils/hash-string';
 
 const WrappedImage: React.FC<{ name: string }> = ({ name }) => (
@@ -42,7 +42,7 @@ const Stars: React.FC = () => (
       </div>
 
       <div cx="stars">
-        {gate.map(({ name, rank }) => (
+        {exams.map(({ name, rank }) => (
           <div key={cyrb53(name)} cx="star-i">
             <div cx="wrapper">
               <WrappedImage name={name} />

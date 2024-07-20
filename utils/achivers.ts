@@ -1,7 +1,8 @@
-const gate = [
-  { name: 'Ankur Agarwal', rank: 'GATE AIR 111' },
-  { name: 'Ankur Agarwal', rank: 'GATE AIR 111' },
-  { name: 'Ankur Agarwal', rank: 'GATE AIR 111' },
+const exams = [
+  { name: 'Aditya Raj Sharma', rank: 'GATE AIR 242' },
+  { name: 'Vatsal Adhiya', rank: 'GATE AIR 313' },
+  { name: 'Kuldeep Soni', rank: 'GATE AIR 669' },
+  { name: 'Aditya Raj Singh', rank: 'CAT 99.72%' },
 ];
 
 const achivers: Record<'24', Array<{ name: string; achievements: Array<string> }>> = {
@@ -30,10 +31,11 @@ const achivers: Record<'24', Array<{ name: string; achievements: Array<string> }
     },
     { name: 'Ankur Agarwal', achievements: [`Amazon ML Summer Camp.`] },
     { name: 'Ankur Agarwal', achievements: [`Amazon ML Summer Camp.`] },
+    { name: 'Ankur Agarwal', achievements: [`Amazon ML Summer Camp.`] },
     { name: 'Ankur Agarwal', achievements: [`Google WE Scholar'24`] },
     { name: 'Ankur Agarwal', achievements: [`Google WE Scholar'24`] },
     { name: 'Ankur Agarwal', achievements: [`Infosys SpringBoard'24`] },
   ],
 };
 
-export { achivers, gate };
+export { achivers, exams };
