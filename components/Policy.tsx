@@ -14,7 +14,7 @@ const Policy: React.FC = () => (
         >
           placement policy
         </a>
-        &nbsp;for both placements and internships.
+        &nbsp;for both placements and internships
         <ul cx="list">
           <li>
             The policy applies to all students of the Institute registered with the TnP Cell and any
