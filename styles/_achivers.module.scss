@@ -1,0 +1,62 @@
+.sect {
+  @apply text-gray-600;
+}
+
+.ctr {
+  @apply container mx-auto -mb-4 px-5 pt-20;
+}
+
+.title-wrapper {
+  @apply mb-9 flex w-full flex-col text-center;
+}
+
+.title {
+  @apply mb-4 text-2xl font-semibold text-gray-900 sm:text-3xl;
+}
+
+.desc {
+  @apply mx-auto text-lg leading-relaxed lg:w-2/3;
+}
+
+.stars {
+  @apply -m-2 mx-auto flex flex-wrap justify-center xl:w-4/5;
+}
+
+.star-c {
+  @apply w-full p-2 py-8 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5;
+}
+
+.star-i,
+.star-a {
+  @apply w-full p-2 py-8 sm:w-1/2 md:w-[34%] lg:w-1/4 xl:w-1/5;
+}
+
+.wrapper {
+  @apply relative flex h-40 flex-col items-center p-4 sm:h-36;
+}
+
+.image-wrapper {
+  @apply absolute inset-0 mx-auto flex h-40 w-40 flex-col items-center justify-center overflow-hidden sm:h-36 sm:w-36;
+}
+
+.image {
+  @apply h-24 w-24 flex-shrink-0 object-cover object-center;
+}
+
+.overlay-wrapper {
+  @apply absolute inset-0 z-10 mx-auto flex  h-40 w-40 flex-col justify-center overflow-hidden border border-gray-200 bg-black py-6 px-6 opacity-0 duration-300 hover:opacity-90 sm:h-36 sm:w-36;
+}
+
+.name {
+  @apply mb-1 text-sm font-semibold uppercase tracking-widest text-indigo-500;
+}
+
+.achiv,
+.college,
+.service {
+  @apply mb-2 text-[12px] font-semibold tracking-wide text-gray-50;
+}
+
+.college {
+  @apply text-xs font-normal;
+}
