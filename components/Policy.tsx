@@ -3,30 +3,22 @@ const Policy: React.FC = () => (
     <div cx="ctr">
       <h2 cx="title">Placement&ensp;Policy</h2>
       <div cx="content">
-        The placement season in IIIT Kota runs throughout the year, commencing from the first week
-        of July through to May. The Training and Placement (TnP) Cell oversees the placement
-        process, following the&nbsp;
+        The placement season in IIIT Kota runs throughout the year, commencing tentatively from the
+        mid of July. The Training and Placement (TnP) Cell oversees the placement process, following
+        the&nbsp;
         <a
-          href="https://mnit.ac.in/cms/uploads/2018/07/Institute_Placement_Policy-MNIT.pdf"
+          href="https://files.iiitkota.ac.in/pdf/placements/Institute_Placement_Policy-IIITK_2025.pdf"
           rel="noopener noreferrer"
           target="_blank"
-          title="Institute Placement Policy – MNIT"
+          title="Institute Placement Policy – IIIT Kota"
         >
           placement policy
         </a>
-        &nbsp;of the mentor institute – MNIT Jaipur, subject to the following changes:
+        &nbsp;for both placements and internships.
         <ul cx="list">
           <li>
             The policy applies to all students of the Institute registered with the TnP Cell and any
             company interested in campus recruitment.
-          </li>
-          <li>
-            The definition of “Institute” shall be understood as “Indian Institute of Information
-            Technology (IIIT), Kota” throughout the policy.
-          </li>
-          <li>
-            “Placement and Training Cell, MNIT Jaipur” shall be read as “Training and Placement
-            (TnP) Cell, IIIT Kota” throughout the document.
           </li>
           <li>
             The contact information given below shall be used for all communications instead of the
@@ -36,7 +28,7 @@ const Policy: React.FC = () => (
         <span cx="note">Note:&ensp;</span>
         &nbsp;Companies may refer to&nbsp;
         <a
-          href="https://mnit.ac.in/cms/uploads/2018/07/Institute_Placement_Policy-MNIT.pdf#page=6"
+          href="https://files.iiitkota.ac.in/pdf/placements/Institute_Placement_Policy-IIITK_2025.pdf#page=6"
           rel="noopener noreferrer"
           target="_blank"
         >
