@@ -3,9 +3,9 @@ const Policy: React.FC = () => (
     <div cx="ctr">
       <h2 cx="title">Placement&ensp;Policy</h2>
       <div cx="content">
-        The placement season in IIIT Kota runs throughout the year, commencing from the first week
-        of July through to May. The Training and Placement (TnP) Cell oversees the placement
-        process, following the&nbsp;
+        The placement season in IIIT Kota runs throughout the year, commencing tentatively from the
+        mid of July. The Training and Placement (TnP) Cell oversees the placement process, following
+        the&nbsp;
         <a
           href="https://files.iiitkota.ac.in/pdf/placements/Institute_Placement_Policy-IIITK_2025.pdf"
           rel="noopener noreferrer"
