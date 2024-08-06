@@ -100,9 +100,9 @@ const aggregateData: Record<
     { branch: 'Total', Average: 14.6, Maximum: 53.6, Median: 12.47 },
   ],
   2024: [
-    { branch: 'CSE', Average: 12.71, Maximum: 52, Median: 10 },
+    { branch: 'CSE', Average: 12.71, Maximum: 65, Median: 10 },
     { branch: 'ECE', Average: 11.96, Maximum: 53.6, Median: 8 },
-    { branch: 'Total', Average: 12.46, Maximum: 53.6, Median: 10 },
+    { branch: 'Total', Average: 12.46, Maximum: 65, Median: 10 },
   ],
 };
 
