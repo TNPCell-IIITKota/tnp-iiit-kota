@@ -8,8 +8,10 @@ const Stats: React.FC = () => (
           <div cx="separator" />
         </div>
         <div cx="title-wrapper">
+          {/* @ToDo: Uncomment after development of new broucher */}
+
           <h2 cx="title">Placement Statistics</h2>
-          <a
+          {/* <a
             href="/docs/placement-report-2023.pdf"
             rel="noopener noreferrer"
             target="_blank"
@@ -29,11 +31,11 @@ const Stats: React.FC = () => (
                 strokeLinejoin="round"
               />
             </svg>
-          </a>
+          </a> */}
           <p cx="additional-info">*These stats are last updated as per July 15th, 2024. </p>
-          <span style={{ fontSize: '14px' }}>
+          {/* <span style={{ fontSize: '14px' }}>
             Subject to get updated with final placement report{' '}
-          </span>
+          </span> */}
         </div>
       </div>
       <Tabs />
