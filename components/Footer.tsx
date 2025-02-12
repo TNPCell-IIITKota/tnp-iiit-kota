@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import logo from '@assets/logo.svg';
 
+const year = new Date().getFullYear();
+
 const Footer: React.FC = () => (
   <footer cx="footer">
     <div cx="ctr">
@@ -26,7 +28,7 @@ const Footer: React.FC = () => (
       </Link>
 
       <p cx="copyright">
-        © 2024 Training and Placement Cell —
+        © {year} Training and Placement Cell —
         <a
           aria-label="Visit IIIT Kota"
           cx="institute"

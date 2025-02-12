@@ -40,8 +40,13 @@ const members: Record<
     { name: 'Yug Modi', linkedIn: 'yug-modi-27b965215' },
   ],
   2026: [
+    { name: 'Abhishek Pant', linkedIn: 'abhishek-pant-5921a1257' },
     { name: 'Dhairya Majmudar', linkedIn: 'dhairya-majmudar' },
     { name: 'Hiteshwar Kaushik', linkedIn: 'hiteshwarkaushik' },
+    { name: 'Partik Malasi', linkedIn: 'partik-malasi-736686249' },
+    { name: 'Tarsh Swarnkar', linkedIn: 'tarshswarnkar' },
+    { name: 'Vansh Nigam', linkedIn: 'vansh-nigam-740675204' },
+    { name: 'Varun Dhaundiyal', linkedIn: 'varun-dhaundiyal' },
   ],
   webmaster: [
     { name: 'Divyansh Singh', linkedIn: 'brc-dd' },
