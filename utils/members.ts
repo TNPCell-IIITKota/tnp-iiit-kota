@@ -1,8 +1,20 @@
 const members: Record<
   '2020' | '2021' | '2022' | '2023' | '2024' | '2025' | '2026' | 'faculty' | 'webmaster',
-  Array<{ name: string; linkedIn: string }>
+  Array<{ name: string; linkedIn: string; designation?: string }>
 > = {
-  faculty: [{ name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' }],
+  faculty: [
+    { name: 'Dr. KK Sharma', linkedIn: '', designation: 'Dean, TnP Cell' },
+    {
+      name: 'Dr. Amit Kumar Garg',
+      linkedIn: 'dramitkrgarg',
+      designation: 'Associate Dean, TnP Cell',
+    },
+    {
+      name: 'Dr. Radhika Sharma',
+      linkedIn: 'radhika-sharma-868589207',
+      designation: 'Coordinator, TnP Cell',
+    },
+  ],
   2020: [
     { name: 'Mohit Choudhary', linkedIn: 'mohit-choudhary-30715a159' },
     { name: 'Shrikant Deshmane', linkedIn: 'shrikant-deshmane-439791147' },
