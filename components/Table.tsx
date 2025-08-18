@@ -14,7 +14,8 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
               'Maximum Package (CTC)',
               'Average Package (CTC)',
               'Median (CTC)',
-              'Placement %',
+              'FTE Offers %',
+              ...(year === 2025 ? ['FTE/PPO/Intern Offers %'] : []),
             ].map((header) => (
               <th key={cyrb53(header)} cx="col-th" scope="col">
                 {header}
@@ -34,6 +35,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => (
               <td cx="data">
                 {placementPC[year].find((x) => x.branch === row.branch)?.['Placement %']}%
               </td>
+              {row.Percentage && <td cx="data">{row.Percentage}%</td>}
             </tr>
           ))}
         </tbody>

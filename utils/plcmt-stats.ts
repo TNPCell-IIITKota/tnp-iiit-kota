@@ -29,6 +29,12 @@ const branchWiseData: Record<
     ECE: { Strength: 65, Eligible: 53, Placed: 39 },
     Total: { Strength: 196, Eligible: 162, Placed: 123 },
   },
+  // @todo: update batch strength
+  2025: {
+    CSE: { Strength: 131, Eligible: 107, Placed: 81 },
+    ECE: { Strength: 66, Eligible: 50, Placed: 31 },
+    Total: { Strength: 197, Eligible: 157, Placed: 112 },
+  },
 };
 
 const placementPC = {} as Record<Year, Array<{ branch: Branch; 'Placement %': number }>>;
@@ -55,13 +61,18 @@ const eligibleVsOffers = {
     { branch: 'Total', 'Number of Offers': 181 },
   ],
   2024: [
-    { branch: 'CSE', 'Number of Offers': 91, median: 10 },
-    { branch: 'ECE', 'Number of Offers': 49, median: 8 },
-    { branch: 'Total', 'Number of Offers': 140, median: 10 },
+    { branch: 'CSE', 'Number of Offers': 91 },
+    { branch: 'ECE', 'Number of Offers': 49 },
+    { branch: 'Total', 'Number of Offers': 140 },
+  ],
+  2025: [
+    { branch: 'CSE', 'Number of Offers': 81 },
+    { branch: 'ECE', 'Number of Offers': 31 },
+    { branch: 'Total', 'Number of Offers': 112 },
   ],
 } as Record<
   Year,
-  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number; median: number }>
+  Array<{ branch: Branch; 'Eligible Students': number; 'Number of Offers': number }>
 >;
 
 Object.entries(branchWiseData).forEach(([key, value]) => {
@@ -77,7 +88,7 @@ Object.entries(branchWiseData).forEach(([key, value]) => {
 
 const aggregateData: Record<
   Year,
-  Array<{ branch: Branch; Average: number; Maximum: number; Median?: number }>
+  Array<{ branch: Branch; Average: number; Maximum: number; Median?: number; Percentage?: number }>
 > = {
   2020: [
     { branch: 'CSE', Average: 11.7, Maximum: 29.0 },
@@ -103,6 +114,11 @@ const aggregateData: Record<
     { branch: 'CSE', Average: 13.39, Maximum: 65, Median: 10 },
     { branch: 'ECE', Average: 12.41, Maximum: 53.6, Median: 8 },
     { branch: 'Total', Average: 13.09, Maximum: 65, Median: 10 },
+  ],
+  2025: [
+    { branch: 'CSE', Average: 11.44, Maximum: 40, Median: 9.1, Percentage: 80.37 },
+    { branch: 'ECE', Average: 10.34, Maximum: 54, Median: 9.5, Percentage: 74 },
+    { branch: 'Total', Average: 11.13, Maximum: 54, Median: 9.1, Percentage: 78.34 },
   ],
 };
 

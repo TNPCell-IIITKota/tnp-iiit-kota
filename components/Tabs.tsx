@@ -7,13 +7,13 @@ import Table from '@components/Table';
 import cyrb53 from '@utils/hash-string';
 
 const Tabs: React.FC = () => {
-  const now = 2024;
+  const now = 2025;
   const [openTab, setOpenTab] = useState(0);
 
   return (
     <div cx="wrapper">
       <ul aria-owns="placement-tab-0 placement-tab-1" cx="list-wrapper" role="tablist">
-        {[0, 1, 2].map((i) => (
+        {[0, 1, 2, 3].map((i) => (
           <li key={cyrb53(`placement-tab-${i}`)} cx="tab" role="none">
             <a
               aria-controls={`placement-stats-${now - i}`}
@@ -34,7 +34,7 @@ const Tabs: React.FC = () => {
         ))}
       </ul>
       <div cx="tab-content">
-        {[0, 1, 2].map((i) => (
+        {[0, 1, 2, 3].map((i) => (
           <div
             key={cyrb53(`placement-content-${i}`)}
             aria-hidden={openTab !== i}
@@ -43,6 +43,11 @@ const Tabs: React.FC = () => {
             role="tabpanel"
             tabIndex={0}
           >
+            {i === 0 && (
+              <p className="my-[10px] text-left text-sm text-[#666]">
+                *Placement stats with Full-Time Offers, Internships, and PPO conversions included.
+              </p>
+            )}
             <Table year={(now - i) as Year} />
             <Charts year={(now - i) as Year} />
           </div>
