@@ -29,11 +29,10 @@ const branchWiseData: Record<
     ECE: { Strength: 65, Eligible: 53, Placed: 39 },
     Total: { Strength: 196, Eligible: 162, Placed: 123 },
   },
-  // @todo: update batch strength
   2025: {
-    CSE: { Strength: 131, Eligible: 107, Placed: 81 },
+    CSE: { Strength: 138, Eligible: 107, Placed: 81 },
     ECE: { Strength: 66, Eligible: 50, Placed: 31 },
-    Total: { Strength: 197, Eligible: 157, Placed: 112 },
+    Total: { Strength: 204, Eligible: 157, Placed: 112 },
   },
 };
 
