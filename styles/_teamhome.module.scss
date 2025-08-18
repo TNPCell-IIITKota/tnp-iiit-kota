@@ -18,6 +18,14 @@
   @apply -m-2 mx-auto flex flex-wrap justify-center xl:w-4/5;
 }
 
+.faculty-members {
+  @apply -m-2 mx-auto flex flex-col flex-wrap items-center justify-center xl:w-4/5;
+}
+
+.faculty-designation {
+  @apply whitespace-nowrap;
+}
+
 .member {
   @apply w-full p-2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5;
 }
