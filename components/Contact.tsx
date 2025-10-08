@@ -45,7 +45,7 @@ const Cards: React.FC = () => (
           chetna.ece@iiitkota.ac.in
         </a>
         <p cx="phone">
-          <a href="tel:+919549650432">+91 95496 50234</a>
+          <a href="tel:+919549650234">+91 95496 50234</a>
         </p>
       </div>
     </div>
