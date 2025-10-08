@@ -1,8 +1,8 @@
 const members: Record<
-  '2020' | '2021' | '2022' | '2023' | '2024' | '2025' | '2026' | 'faculty' | 'webmaster',
+  '2020' | '2021' | '2022' | '2023' | '2024' | '2025' | '2026' | '2027' | 'faculty' | 'webmaster',
   Array<{ name: string; linkedIn: string }>
 > = {
-  faculty: [{ name: 'Dr. Amit Kumar Garg', linkedIn: 'dramitkrgarg' }],
+  faculty: [{ name: 'Dr. Chetna Sharma', linkedIn: 'chetna-sharma-phd-8ba8a337' }],
   2020: [
     { name: 'Mohit Choudhary', linkedIn: 'mohit-choudhary-30715a159' },
     { name: 'Shrikant Deshmane', linkedIn: 'shrikant-deshmane-439791147' },
@@ -43,10 +43,20 @@ const members: Record<
     { name: 'Abhishek Pant', linkedIn: 'abhishek-pant-5921a1257' },
     { name: 'Dhairya Majmudar', linkedIn: 'dhairya-majmudar' },
     { name: 'Hiteshwar Kaushik', linkedIn: 'hiteshwarkaushik' },
+    { name: 'Kanishq Tahalyani', linkedIn: 'kanishq-tahalyani-551119257' },
     { name: 'Partik Malasi', linkedIn: 'partik-malasi-736686249' },
     { name: 'Tarsh Swarnkar', linkedIn: 'tarshswarnkar' },
     { name: 'Vansh Nigam', linkedIn: 'vansh-nigam-740675204' },
     { name: 'Varun Dhaundiyal', linkedIn: 'varun-dhaundiyal' },
+  ],
+  2027: [
+    { name: 'Aayansh Chaudhary', linkedIn: 'aayansh-chaudhary-b18a28310' },
+    { name: 'Devina Yadav', linkedIn: 'devina-yadav-516965295' },
+    { name: 'Lalit Kumar', linkedIn: 'lalit-kumar-298595298' },
+    { name: 'Mehak Verma', linkedIn: 'mehak-verma-1b1353291' },
+    { name: 'Nitesh Kumar', linkedIn: 'nitesh-kumar-680525290' },
+    { name: 'Parth Sharma', linkedIn: 'parth-sharma-7845942a2' },
+    { name: 'Ritika Mittal', linkedIn: 'ritika-mittal-5454sr' },
   ],
   webmaster: [
     { name: 'Divyansh Singh', linkedIn: 'brc-dd' },
