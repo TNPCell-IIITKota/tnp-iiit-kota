@@ -8,6 +8,7 @@ import FAQs from '@components/FAQs';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Navbar from '@components/Navbar';
+import OurRecruiters from '@components/OurRecruiters';
 import Pitch from '@components/Pitch';
 import Policy from '@components/Policy';
 import Preload from '@components/Preload';
@@ -35,6 +36,7 @@ const IndexPage: NextPage = () => (
 
     <Navbar />
     <Hero />
+    <OurRecruiters />
     <Pitch />
     <Stats />
     <Slider />
