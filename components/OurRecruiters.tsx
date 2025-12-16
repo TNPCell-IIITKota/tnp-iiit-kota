@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
-import image3 from '@assets/banner/ankur.jpg';
-import image2 from '@assets/banner/ashpreet.jpg';
+import image2 from '@assets/banner/ankur.jpg';
+import image3 from '@assets/banner/ashpreet.jpg';
 import image1 from '@assets/banner/ourrec.jpg';
 
-const OurRecruiter: React.FC = () => {
+const OurRecruiters: React.FC = () => {
   const slides = [
     { id: 1, image: image1, alt: 'Recruiter Portrait' },
-    { id: 2, image: image3, alt: 'Placement Drive' },
-    { id: 3, image: image2, alt: 'Campus Interaction' },
+    { id: 2, image: image2, alt: 'Coinbase' },
+    { id: 3, image: image3, alt: 'Google' },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  useEffect((): (() => void) => {
+  useEffect(() => {
     const interval = setInterval((): void => {
       setCurrentSlide((prev: number): number => (prev === slides.length - 1 ? 0 : prev + 1));
     }, 4000);
@@ -69,4 +69,4 @@ const OurRecruiter: React.FC = () => {
   );
 };
 
-export default OurRecruiter;
+export default OurRecruiters;
