@@ -3,40 +3,19 @@ import Tabs from '@components/Tabs';
 const Stats: React.FC = () => (
   <section cx="sect" id="statistics">
     <div cx="ctr">
-      <div cx="wrapper">
-        <div cx="separator-wrapper">
-          <div cx="separator" />
-        </div>
-        <div cx="title-wrapper">
-          {/* @ToDo: Uncomment after development of new broucher */}
-
-          <h2 cx="title">Placement Statistics</h2>
-          {/* <a
-            href="/docs/placement-report-2023.pdf"
-            rel="noopener noreferrer"
-            target="_blank"
-            title="Download latest report"
-          >
-            <svg
-              cx="download"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.4"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a> */}
-          <p cx="additional-info">*These stats are last updated as per August 18th, 2025. </p>
-          {/* <span style={{ fontSize: '14px' }}>
-            Subject to get updated with final placement report{' '}
-          </span> */}
-        </div>
+      <div cx="header-wrapper">
+        <h2 cx="title">
+          Placement <span cx="highlight">Statistics</span>
+        </h2>
+        <div cx="divider-line" />
+        <p cx="additional-info">
+          Comprehensive summary of placement data, student participation, and compensation trends
+          over the years.
+          <span cx="update-time">
+            {' '}
+            Last updated: June 07<sup>th</sup>, 2026
+          </span>
+        </p>
       </div>
       <Tabs />
     </div>

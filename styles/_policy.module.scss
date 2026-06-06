@@ -1,31 +1,195 @@
 .sect {
-  @apply text-gray-600;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8fafc; // Light background matching Why Recruit
+  padding: 3.5rem 1rem;
+}
+
+.bg-accent-1 {
+  position: absolute;
+  left: -10rem;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-accent-2 {
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .ctr {
-  @apply container mx-auto flex flex-col px-5 pt-24 pb-4;
+  position: relative;
+  z-index: 10;
+  max-width: 960px;
+  margin: 0 auto;
+  @apply flex flex-col px-4;
+}
+
+.title-wrapper {
+  @apply mx-auto mb-10 flex max-w-2xl flex-col items-center text-center;
 }
 
 .title {
-  @apply mb-14 text-center text-2xl font-semibold text-gray-900 sm:text-3xl;
-}
+  @apply text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
+  font-family: 'Open Sans', sans-serif;
 
-.content {
-  @apply mx-auto text-justify text-base leading-relaxed xl:w-3/5;
-
-  a {
-    @apply font-semibold;
-
-    &:first-of-type {
-      @apply text-[#32325d] underline;
-    }
+  .highlight {
+    color: #ea580c; // Brand accent orange
   }
 }
 
-.note {
-  @apply relative -top-px -left-px text-xs font-semibold uppercase text-gray-900;
+.divider-line {
+  @apply mt-4 h-1 w-16 rounded;
+  background: linear-gradient(90deg, #172b4d, #ea580c);
 }
 
-.list {
-  @apply my-4 ml-8 list-outside list-disc;
+.policy-card {
+  @apply w-full rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition-all duration-300 md:p-10;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+
+  &:hover {
+    @apply border-blue-100;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.03), 0 0 25px rgba(43, 64, 106, 0.02);
+  }
+}
+
+.intro-text {
+  @apply mb-8 text-base font-normal leading-relaxed text-gray-600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Guidelines Grid
+.guidelines-grid {
+  @apply mb-8 grid grid-cols-1 gap-6 md:grid-cols-2;
+}
+
+.guideline-card {
+  @apply flex items-start space-x-4 rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.01);
+
+  &:hover {
+    @apply border-blue-100 bg-gray-50 bg-opacity-30;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+  }
+
+  .icon-wrapper {
+    @apply flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl;
+
+    svg {
+      @apply h-6 w-6;
+    }
+  }
+
+  .guideline-info {
+    @apply flex flex-col;
+  }
+
+  .guideline-title {
+    @apply mb-1.5 text-base font-bold text-gray-900;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .guideline-desc {
+    @apply text-sm font-normal leading-relaxed text-gray-600;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+// Alert note box
+.note-box {
+  @apply mb-8 flex items-start space-x-3 rounded-2xl border p-4;
+  background-color: rgba(251, 146, 60, 0.05);
+  border-color: rgba(251, 146, 60, 0.12);
+
+  .note-icon-wrapper {
+    @apply flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-xl;
+    background-color: rgba(251, 146, 60, 0.12);
+    color: #ea580c;
+
+    svg {
+      @apply h-5 w-5;
+    }
+  }
+
+  .note-text {
+    @apply text-sm font-normal leading-relaxed text-gray-600;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .note-highlight {
+    @apply text-xs font-bold uppercase tracking-wide;
+    color: #c2410c;
+  }
+}
+
+.link-underlined {
+  @apply font-bold underline transition-colors duration-300;
+  color: #ea580c;
+
+  &:hover {
+    color: #c2410c;
+  }
+}
+
+// Integrated CTA Banner
+.download-cta {
+  @apply mt-2 flex flex-col items-center justify-between gap-6 rounded-2xl border border-blue-50 p-6 md:flex-row md:p-8;
+  background: linear-gradient(135deg, rgba(43, 64, 106, 0.03) 0%, rgba(234, 88, 12, 0.03) 100%);
+
+  .cta-text {
+    @apply flex max-w-lg flex-col text-left;
+  }
+
+  .cta-title {
+    @apply mb-1 text-base font-bold text-gray-900 md:text-lg;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .cta-desc {
+    @apply text-xs font-normal leading-relaxed text-gray-500 md:text-sm;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .cta-action {
+    @apply w-full flex-shrink-0 md:w-auto;
+  }
+}
+
+.download-btn {
+  @apply flex w-full items-center justify-center space-x-2 rounded-xl py-3 px-6 font-bold text-white transition-all duration-300 md:w-auto;
+  background-color: #2b406a;
+  box-shadow: 0 4px 14px rgba(43, 64, 106, 0.2);
+
+  &:hover {
+    background-color: #1c2b4c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(43, 64, 106, 0.3);
+
+    .btn-icon {
+      transform: translateY(2px);
+    }
+  }
+
+  .btn-icon {
+    @apply h-5 w-5 transition-transform duration-300;
+  }
+
+  span {
+    @apply text-sm;
+    font-family: 'Open Sans', sans-serif;
+  }
 }

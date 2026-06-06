@@ -1,0 +1,80 @@
+.btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  border-radius: 50%;
+  background-color: rgba(23, 43, 77, 0.85); // Dark blue glassmorphism
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.12); // Premium glass outline
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  outline: none;
+  padding: 0;
+  overflow: hidden; // Clips the elevator arrow animation inside the circle
+
+  &:hover {
+    border-color: rgba(234, 88, 12, 0.3);
+    box-shadow: 0 0 20px rgba(234, 88, 12, 0.2), 0 12px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px) scale(1.1); // Physical lift and scale
+
+    // Apply neon glow on the orange progress circle
+    .progress-svg circle:nth-child(2) {
+      filter: drop-shadow(0 0 4px rgba(234, 88, 12, 0.8));
+    }
+
+    // Trigger the elevator slide animation on the arrow
+    .icon {
+      animation: arrowSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+  }
+
+  .progress-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg); // Starts circle progress from 12 o'clock
+
+    circle:nth-child(2) {
+      transition: filter 0.3s ease;
+    }
+  }
+
+  .icon {
+    position: relative;
+    z-index: 10;
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+}
+
+// Satisfying elevator looping animation for the arrow icon
+@keyframes arrowSlideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  49% {
+    transform: translateY(-24px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(24px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

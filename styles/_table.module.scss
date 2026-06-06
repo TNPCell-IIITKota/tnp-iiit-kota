@@ -1,35 +1,128 @@
 .ctr {
-  @apply -my-2 flex flex-col overflow-x-auto sm:-mx-6 lg:-mx-8;
+  @apply w-full rounded-2xl border border-gray-200 bg-white;
+  overflow-x: auto; // Enables horizontal scrolling on mobile viewports
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
 }
 
 .table {
-  @apply min-w-full divide-y divide-gray-200 overflow-hidden border-b border-gray-200 shadow sm:rounded-lg;
-}
-
-.wrapper {
-  @apply inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8;
+  @apply min-w-full border-collapse text-left;
 }
 
 .head {
-  @apply bg-gray-50;
+  // Dark slate gradient background
+  background: linear-gradient(135deg, #0b132b 0%, #172b4d 50%, #1e3a8a 100%);
+
+  .col-th {
+    @apply py-4 px-6 text-xs font-bold uppercase tracking-wider;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+  }
 }
 
 .body {
-  @apply divide-y divide-gray-200 bg-white text-sm text-gray-900;
+  @apply divide-y divide-gray-100 text-sm text-gray-700;
 }
 
-.col-th {
-  @apply py-3 px-6 text-left text-xs font-semibold uppercase tracking-wider text-gray-500;
+.branch-row {
+  @apply transition-colors duration-200;
+
+  &:hover {
+    background-color: rgba(234, 88, 12, 0.015); // Subtle orange row hover
+
+    .row-th {
+      color: #ea580c; // Highlighting active row title
+    }
+  }
+
+  .row-th {
+    @apply py-4 px-6 font-bold text-gray-900 transition-colors duration-200;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .data {
+    @apply py-4 px-6 font-medium;
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
-.branch {
-  @apply last:font-semibold;
+.branch-total {
+  background-color: rgba(43, 64, 106, 0.03);
+  border-top: 2px solid rgba(43, 64, 106, 0.12);
+  @apply transition-colors duration-200;
+
+  &:hover {
+    background-color: rgba(43, 64, 106, 0.06);
+  }
+
+  .row-th {
+    @apply px-6 font-extrabold uppercase text-blue-900;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .data {
+    @apply px-6 font-bold text-blue-900;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
 }
 
-.row-th {
-  @apply whitespace-nowrap py-4 px-6 text-left font-semibold uppercase;
+// Packages text styling
+.pkg-text-avg {
+  @apply font-bold text-gray-800;
 }
 
-.data {
-  @apply whitespace-nowrap py-4 px-6;
+.pkg-text-median {
+  @apply font-medium text-gray-600;
+}
+
+.pkg-badge-max {
+  @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all duration-300;
+  background-color: rgba(234, 88, 12, 0.08);
+  color: #ea580c;
+  border: 1px solid rgba(234, 88, 12, 0.15);
+
+  &:hover {
+    background-color: #ea580c;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(234, 88, 12, 0.2);
+    transform: translateY(-1.5px);
+  }
+}
+
+.rate-badge {
+  @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all duration-300;
+  background-color: rgba(16, 185, 129, 0.08);
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.15);
+
+  &:hover {
+    background-color: #059669;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
+    transform: translateY(-1.5px);
+  }
+}
+
+.rate-badge-secondary {
+  @apply inline-flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-semibold transition-all duration-300;
+  background-color: rgba(99, 102, 241, 0.08);
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+
+  &:hover {
+    background-color: #4f46e5;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
+    transform: translateY(-1.5px);
+  }
+}
+
+.badge-icon {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex-shrink: 0;
 }

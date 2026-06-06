@@ -1,0 +1,102 @@
+.sect {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8fafc; // Matches Why Recruit background theme
+  padding: 3.5rem 1rem;
+}
+
+.bg-accent-1 {
+  position: absolute;
+  left: -10rem;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-accent-2 {
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ctr {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  @apply mx-auto mb-12 flex max-w-2xl flex-col items-center text-center;
+}
+
+.title {
+  @apply text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.highlight {
+  color: #ea580c;
+}
+
+.divider-line {
+  @apply mt-4 h-1 w-16 rounded bg-blue-600;
+  background: linear-gradient(90deg, #111827, #ea580c);
+}
+
+.desc {
+  @apply mt-4 text-base font-normal leading-relaxed text-gray-600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.stars {
+  @apply relative z-10 mx-auto flex max-w-[1250px] flex-wrap justify-center gap-3 sm:gap-4 md:gap-5;
+}
+
+.star-c {
+  @apply flex items-start justify-center;
+}
+
+.wrapper {
+  @apply relative flex w-[115px] flex-col rounded-xl bg-[#2b406a] p-1.5 shadow-md transition-transform duration-300 ease-in-out hover:z-20 hover:scale-[1.15] sm:w-[130px] md:w-[145px];
+}
+
+.image-wrapper {
+  @apply relative w-full;
+  aspect-ratio: 1 / 1;
+}
+
+.image {
+  @apply h-full w-full rounded-lg object-cover object-center;
+}
+
+.logo-wrapper {
+  @apply absolute right-0 bottom-1.5 flex h-7 w-7 items-center justify-center overflow-hidden rounded bg-white p-1 shadow-sm md:h-8 md:w-8;
+}
+
+.logo {
+  @apply h-full w-full object-contain;
+}
+
+.info-wrapper {
+  @apply flex flex-col items-center justify-start;
+}
+
+.name {
+  @apply text-center text-[9px] font-extrabold uppercase leading-tight tracking-wide text-white sm:text-[10px] md:text-[11px];
+}
+
+.company {
+  @apply mt-0.5 text-center text-[8px] italic leading-tight text-gray-200 sm:text-[9px] md:text-[10px];
+}

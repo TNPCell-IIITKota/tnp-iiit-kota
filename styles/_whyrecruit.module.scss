@@ -1,0 +1,251 @@
+.sect {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8fafc;
+  padding: 3.5rem 1rem;
+}
+
+.bg-accent-1 {
+  position: absolute;
+  left: -10rem;
+  top: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
+  z-index: 0;
+}
+
+.bg-accent-2 {
+  position: absolute;
+  right: -10rem;
+  bottom: 0;
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
+  z-index: 0;
+}
+
+.ctr {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Centered Title Block
+.title-wrapper {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.025em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}
+
+.highlight {
+  color: #ea580c;
+}
+
+.divider-line {
+  height: 4px;
+  width: 60px;
+  background: linear-gradient(90deg, #2b406a, #ea580c);
+  border-radius: 4px;
+  margin: 0.75rem auto 1.25rem auto;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #64748b;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .desc {
+    font-size: 1.05rem;
+  }
+}
+
+// Symmetrical slider container layout (arrow - track - arrow)
+.slider-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  position: relative;
+}
+
+// Symmetrical Navigation Buttons
+.arrow-btn {
+  display: none; // Hidden on mobile viewports for swipe/indicator dots space
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  color: #ea580c; // Resting brand orange color for arrows!
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+
+  svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    background-color: #ea580c;
+    border-color: #ea580c;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(234, 88, 12, 0.2);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (min-width: 640px) {
+  .arrow-btn {
+    display: flex; // Visible from small tablet screens and up
+  }
+}
+
+// Carousel Mask Track Container
+.slider-container {
+  flex: 1;
+  overflow: hidden;
+  padding: 0.5rem 0 1.5rem 0;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.card-wrapper {
+  flex-shrink: 0;
+  padding: 0 0.75rem;
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-top: 3px solid #2b406a; // Resting top border indicator (deep blue)
+  border-radius: 1rem;
+  padding: 2.25rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  // Simple, clean hover transformations
+  &:hover {
+    transform: translateY(-4px);
+    border-top-color: #ea580c; // Transitions to orange highlight on hover
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+
+    .card-icon {
+      background-color: #ea580c; // Solid orange background
+      border-color: #ea580c;
+      color: #ffffff; // White SVG symbol
+      transform: translateY(-4px) scale(1.06);
+      box-shadow: 0 6px 14px rgba(234, 88, 12, 0.25);
+    }
+  }
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(234, 88, 12, 0.07); // Resting translucent orange bg!
+  color: #ea580c; // Resting bright orange icon!
+  border: 1px solid rgba(234, 88, 12, 0.15); // Resting light orange border!
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.card-icon > :global(svg) {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.card-desc {
+  font-size: 0.925rem;
+  color: #475569;
+  line-height: 1.65;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Indicator Dots
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot,
+.dot-active {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  height: 8px;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dot {
+  width: 8px;
+  background-color: #cbd5e1;
+
+  &:hover {
+    background-color: #94a3b8;
+  }
+}
+
+.dot-active {
+  width: 24px;
+  background-color: #ea580c;
+  box-shadow: 0 2px 6px rgba(234, 88, 12, 0.3);
+}

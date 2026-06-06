@@ -41,6 +41,10 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+    @media (min-width: 1280px) {
+      scroll-padding-top: 96px;
+    }
   }
 
   * {
@@ -49,9 +53,9 @@
 }
 
 .legend-item-0 > span {
-  @apply text-blue-600 #{!important};
+  color: #0a2558 !important;
 }
 
 .legend-item-1 > span {
-  @apply text-green-700 #{!important};
+  color: #ea580c !important;
 }

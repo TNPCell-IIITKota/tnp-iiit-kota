@@ -16,7 +16,7 @@ const CustomTooltip = ({
           <span>Eligible Students: {payload[0].value}</span>
           <span>Number of Offers: {payload[1].value}</span>
           <span>
-            Jobs Offered: {Math.round((payload[1].value! * 1e4) / payload[0].value!) / 1e2}%
+            Offer Rate: {Math.round((payload[1].value! * 1e4) / payload[0].value!) / 1e2}%
           </span>
         </p>
       </div>
@@ -29,12 +29,14 @@ const CustomTooltip = ({
 const CustomizedLabel = ({ x, y, width, height, value }: LabelProps): React.ReactElement => (
   <text
     dominantBaseline="middle"
-    fill="#fff"
+    fill="#ffffff"
+    fontSize={11}
+    fontWeight={700}
     textAnchor="middle"
-    x={(x as number) + (width as number) - 40}
+    x={(x as number) + (width as number) - 36}
     y={(y as number) + (height as number) / 2}
   >
-    {(value as number).toFixed(2)} %
+    {(value as number).toFixed(2)}%
   </text>
 );
 

@@ -2,19 +2,22 @@ import type { NextPage } from 'next';
 
 import Head from 'next/head';
 
-import Achivers from '@components/Achivers';
 import Contact from '@components/Contact';
 import FAQs from '@components/FAQs';
 import Footer from '@components/Footer';
 import Hero from '@components/Hero';
+import MapLocation from '@components/MapLocation';
 import Navbar from '@components/Navbar';
-import Pitch from '@components/Pitch';
+import Stars from '@components/OurAlumni';
+import OurEsteemedRecruiters from '@components/OurEsteemedRecruiters';
+import PlcmtHigh from '@components/PlcmtHigh';
 import Policy from '@components/Policy';
 import Preload from '@components/Preload';
-import Slider from '@components/Slider';
-import Stars from '@components/Stars';
+import ScrollToTop from '@components/ScrollToTop';
 import Stats from '@components/Stats';
+import StudAchivers from '@components/StudAchivers';
 import TeamHome from '@components/TeamHome';
+import Pitch from '@components/WhyRecruit';
 
 const IndexPage: NextPage = () => (
   <>
@@ -37,14 +40,17 @@ const IndexPage: NextPage = () => (
     <Hero />
     <Pitch />
     <Stats />
-    <Slider />
+    <OurEsteemedRecruiters />
     <Stars />
-    <Achivers />
+    <PlcmtHigh />
+    <StudAchivers />
     <Policy />
     <FAQs />
     <TeamHome />
     <Contact />
+    <MapLocation />
     <Footer />
+    <ScrollToTop />
   </>
 );
 

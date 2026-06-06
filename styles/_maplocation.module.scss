@@ -1,0 +1,239 @@
+.sect {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8fafc;
+  padding: 3.5rem 1rem;
+  border-top: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+// Drifting ambient color glows
+.bg-accent-1 {
+  position: absolute;
+  left: -15rem;
+  top: -5rem;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(43, 64, 106, 0.03) 0%, rgba(43, 64, 106, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.bg-accent-2 {
+  position: absolute;
+  right: -15rem;
+  bottom: -5rem;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(234, 88, 12, 0.03) 0%, rgba(234, 88, 12, 0) 70%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.ctr {
+  position: relative;
+  z-index: 10;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Sleek split 2-column layout
+.split-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+  align-items: center;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5rem;
+  }
+}
+
+// Left side info column
+.info-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+
+  @media (min-width: 1024px) {
+    width: 45%;
+  }
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #ea580c;
+  margin-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #0a2558;
+  letter-spacing: -0.025em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.2;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.highlight {
+  color: #ea580c;
+}
+
+.divider-line {
+  height: 3.5px;
+  width: 50px;
+  background: linear-gradient(90deg, #0a2558, #ea580c);
+  border-radius: 4px;
+  margin: 0.75rem 0 1rem 0;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+// Clean address block card
+.address-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: #ffffff;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper {
+  color: #ea580c;
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+
+  svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.address-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 0.15rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.address-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0a2558;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.coords {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+// Get Directions Button
+.btn-directions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #0a2558;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 4px 12px rgba(10, 37, 88, 0.15);
+
+  .arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    transition: transform 0.25s ease;
+  }
+
+  &:hover {
+    background-color: #ea580c;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+    transform: translateY(-1px);
+
+    .arrow-icon {
+      transform: translateX(3px);
+    }
+  }
+}
+
+// Right side map column
+.map-side {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 1024px) {
+    width: 50%;
+  }
+}
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background: #cbd5e1;
+  border-radius: 1rem;
+  box-shadow: 0 15px 30px -10px rgba(10, 37, 88, 0.08), 0 8px 12px -8px rgba(10, 37, 88, 0.05);
+  overflow: hidden;
+  border: 4px solid #ffffff; // Symmetrical white outline border
+  outline: 1px solid rgba(226, 232, 240, 0.8);
+
+  @media (min-width: 768px) {
+    height: 320px;
+  }
+
+  @media (min-width: 1024px) {
+    height: 340px;
+  }
+}
+
+.map-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
