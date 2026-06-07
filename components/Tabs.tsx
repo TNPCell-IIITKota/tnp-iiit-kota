@@ -49,8 +49,12 @@ const Tabs: React.FC = () => {
           <motion.div
             key={openTab}
             animate={{ opacity: 1, y: 0 }}
+            aria-labelledby={`placement-tab-${openTab}`}
             exit={{ opacity: 0, y: -15 }}
+            id={`placement-stats-${now - openTab}`}
             initial={{ opacity: 0, y: 15 }}
+            role="tabpanel"
+            tabIndex={0}
             transition={{ duration: 0.22, ease: 'easeOut' }}
           >
             {openTab === 0 && (

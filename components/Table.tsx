@@ -85,11 +85,11 @@ const Table: React.FC<{ year: Year }> = ({ year }) => {
                         strokeLinejoin="round"
                       />
                     </svg>
-                    {rate}%
+                    {rate !== undefined ? `${rate}%` : '—'}
                   </span>
                 </td>
 
-                {row.Percentage && (
+                {row.Percentage !== undefined && (
                   <td cx="data">
                     <span cx="rate-badge-secondary">
                       <svg

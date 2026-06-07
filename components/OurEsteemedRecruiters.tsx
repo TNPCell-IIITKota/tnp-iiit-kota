@@ -78,7 +78,7 @@ const OurEsteemedRecruiters: React.FC = () => {
             >
               <div cx="logo-card">
                 <div cx="img-container">
-                  <Image alt={name} src={src} priority />
+                  <Image alt={name} src={src} />
                 </div>
               </div>
             </motion.div>

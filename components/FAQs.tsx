@@ -1,6 +1,7 @@
 /* eslint-disable react/no-danger */
-import React, { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import React, { Fragment, useState } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { motion } from 'framer-motion';
 
 import cyrb53 from '@utils/hash-string';
 import questions from '@utils/questions';
@@ -40,7 +41,7 @@ const FAQs: React.FC = () => {
           </h2>
           <div cx="divider-line" />
           <p cx="subtitle">
-            Click on any question below to view detailed information regarding schedules,
+            Click on any question below to view@ detailed information regarding schedules,
             registration, and guidelines.
           </p>
         </motion.div>
@@ -105,72 +106,81 @@ const FAQs: React.FC = () => {
         </p>
       </div>
 
-      <AnimatePresence>
-        {selectedQuestion && (
-          <div cx="modal-overlay">
-            <motion.div
-              animate={{ opacity: 1 }}
-              cx="modal-backdrop"
-              exit={{ opacity: 0 }}
-              initial={{ opacity: 0 }}
-              onClick={(): void => {
-                setSelectedQuestion(null);
-              }}
-            />
+      <Transition as={Fragment} show={selectedQuestion !== null} appear>
+        <Dialog
+          as="div"
+          cx="modal-overlay"
+          onClose={(): void => {
+            setSelectedQuestion(null);
+          }}
+        >
+          <Transition.Child
+            as={Fragment}
+            enter="transition-opacity ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Dialog.Overlay cx="modal-backdrop" />
+          </Transition.Child>
 
-            {/* Square Detail Box */}
-            <motion.div
-              animate={{
-                opacity: 1,
-                scale: 1,
-                y: 0,
-                transition: { type: 'spring', damping: 25, stiffness: 350 },
-              }}
-              cx="modal-wrapper"
-              exit={{ opacity: 0, scale: 0.9, y: 30, transition: { duration: 0.2 } }}
-              initial={{ opacity: 0, scale: 0.9, y: 30 }}
-            >
-              <div cx="modal-box">
-                {/* Close Button */}
-                <button
-                  aria-label="Close details"
-                  cx="close-btn"
-                  type="button"
-                  onClick={(): void => {
-                    setSelectedQuestion(null);
-                  }}
-                >
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.5"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+          <Transition.Child
+            as={Fragment}
+            enter="transition-all ease-out duration-300"
+            enterFrom="opacity-0 scale-95 translate-y-4"
+            enterTo="opacity-100 scale-100 translate-y-0"
+            leave="transition-all ease-in duration-200"
+            leaveFrom="opacity-100 scale-100 translate-y-0"
+            leaveTo="opacity-0 scale-95 translate-y-4"
+          >
+            <div cx="modal-wrapper">
+              {selectedQuestion && (
+                <div cx="modal-box">
+                  {/* Close Button */}
+                  <button
+                    aria-label="Close details"
+                    cx="close-btn"
+                    type="button"
+                    onClick={(): void => {
+                      setSelectedQuestion(null);
+                    }}
                   >
-                    <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
-                  </svg>
-                </button>
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M6 18L18 6M6 6l12 12" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </button>
 
-                <div cx="modal-content">
-                  <div cx="modal-header">
-                    <span cx="question-badge">Question</span>
-                    <h3 cx="modal-question">{selectedQuestion.question}</h3>
-                  </div>
+                  <div cx="modal-content">
+                    <div cx="modal-header">
+                      <span cx="question-badge">Question</span>
+                      <Dialog.Title as="h3" cx="modal-question">
+                        {selectedQuestion.question}
+                      </Dialog.Title>
+                    </div>
 
-                  <div cx="modal-divider" />
+                    <div cx="modal-divider" />
 
-                  <div cx="modal-answer-scroll">
-                    <div
-                      cx="modal-answer"
-                      dangerouslySetInnerHTML={{ __html: selectedQuestion.answer }}
-                    />
+                    <div cx="modal-answer-scroll">
+                      <div
+                        cx="modal-answer"
+                        dangerouslySetInnerHTML={{ __html: selectedQuestion.answer }}
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
+              )}
+            </div>
+          </Transition.Child>
+        </Dialog>
+      </Transition>
     </section>
   );
 };

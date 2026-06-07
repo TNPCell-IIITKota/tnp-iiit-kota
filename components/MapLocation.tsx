@@ -42,7 +42,7 @@ const MapLocation: React.FC = () => (
             </div>
             <div cx="address-details">
               <h4 cx="address-label">Address</h4>
-              <p cx="address-text">Ranpur, Kota - 324003, Rajasthan, India</p>
+              <p cx="address-text">Ranpur, Kota - 325003, Rajasthan, India</p>
               <p cx="coords">25.0499° N, 75.8321° E</p>
             </div>
           </div>
