@@ -8,27 +8,11 @@
 
 // Drifting ambient color glows matching highlights section
 .bg-accent-1 {
-  position: absolute;
-  left: -10rem;
-  top: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(23, 114, 106, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .ctr {
@@ -52,8 +36,8 @@
 }
 
 .divider-line {
-  @apply mt-4 h-1 w-16 rounded bg-blue-600;
-  background: linear-gradient(90deg, #111827, #ea580c); // Matches highlights divider gradient
+  @apply mt-4 h-1 w-16 rounded;
+  background: #ea580c;
 }
 
 .desc {
@@ -80,7 +64,7 @@
 }
 
 .image {
-  @apply h-full w-full rounded-lg object-cover object-center;
+  @apply h-full w-full rounded-xl object-cover object-center;
 }
 
 .logo-wrapper {

@@ -52,6 +52,12 @@
   .nav-link {
     @apply relative flex w-full items-center whitespace-nowrap px-4 py-2 text-[13px] font-bold uppercase tracking-wider transition-all duration-200 ease-in-out xl:w-auto;
     border-radius: 0.75rem;
+    cursor: pointer;
+
+    &:focus-visible {
+      outline: 2px solid #ea580c;
+      outline-offset: -2px;
+    }
 
     @media (min-width: 1280px) and (max-width: 1359px) {
       font-size: 10.5px;
@@ -334,7 +340,8 @@
   position: relative;
 
   @media (min-width: 1280px) {
-    &:hover {
+    &:hover,
+    &:focus-within {
       .dropdown-menu {
         visibility: visible;
         opacity: 1;
@@ -374,7 +381,6 @@
     background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(226, 232, 240, 0.85);
-    border-top: 3px solid #2b406a; // Academic corporate blue top indicator bar
     border-radius: 0.75rem;
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
     padding: 0.625rem;
@@ -408,7 +414,7 @@
   font-family: 'Open Sans', sans-serif; // Matches theme font family
   text-align: left;
   border-left: 2px solid transparent;
-  border-radius: 0 0.5rem 0.5rem 0; // Soft curve offset by the left border highlight
+  border-radius: 0 0.375rem 0.375rem 0; // Soft curve offset by the left border highlight
   transition: all 0.25s ease;
 
   &:hover {

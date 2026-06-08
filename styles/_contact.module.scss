@@ -7,27 +7,11 @@
 }
 
 .bg-accent-1 {
-  position: absolute;
-  left: -10rem;
-  top: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .ctr {
@@ -53,7 +37,7 @@
 
 .divider-line {
   @apply mt-4 h-1 w-16 rounded;
-  background: linear-gradient(90deg, #172b4d, #ea580c);
+  background: #ea580c;
 }
 
 .cards {
@@ -67,7 +51,7 @@
   &:hover {
     @apply border-blue-50;
     border-color: #ea580c;
-    background: linear-gradient(135deg, #ffffff 0%, rgba(234, 88, 12, 0.03) 100%);
+    background: #ffffff;
     box-shadow: 0 20px 30px rgba(234, 88, 12, 0.12), 0 8px 16px rgba(10, 37, 88, 0.06);
     transform: translateY(-3px);
   }

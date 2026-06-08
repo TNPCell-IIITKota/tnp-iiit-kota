@@ -7,27 +7,11 @@
 }
 
 .bg-accent-1 {
-  position: absolute;
-  left: -10rem;
-  top: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .ctr {
@@ -52,7 +36,7 @@
 
 .divider-line {
   @apply mt-4 h-1 w-16 rounded;
-  background: linear-gradient(90deg, #172b4d, #ea580c);
+  background: #ea580c;
 }
 
 .lead {
@@ -74,16 +58,16 @@
 }
 
 .image-wrapper {
-  @apply relative w-full overflow-hidden rounded-lg;
+  @apply relative w-full overflow-hidden rounded-xl;
   aspect-ratio: 1 / 1;
 }
 
 .image {
-  @apply h-full w-full rounded-lg object-cover object-center;
+  @apply h-full w-full rounded-xl object-cover object-center;
 }
 
 .overlay {
-  @apply absolute inset-0 flex items-center justify-center rounded-lg bg-black bg-opacity-50 opacity-0 transition-opacity duration-300;
+  @apply absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 opacity-0 transition-opacity duration-300;
   z-index: 10;
   cursor: pointer;
 

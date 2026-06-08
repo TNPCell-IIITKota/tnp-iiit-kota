@@ -41,7 +41,7 @@ const FAQs: React.FC = () => {
           </h2>
           <div cx="divider-line" />
           <p cx="subtitle">
-            Click on any question below to view@ detailed information regarding schedules,
+            Click on any question below to view detailed information regarding schedules,
             registration, and guidelines.
           </p>
         </motion.div>

@@ -7,27 +7,11 @@
 }
 
 .bg-accent-1 {
-  position: absolute;
-  left: -10rem;
-  top: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .ctr {
@@ -53,7 +37,7 @@
 
 .divider-line {
   @apply mt-4 mb-5 h-1 w-16 rounded;
-  background: linear-gradient(90deg, #172b4d, #ea580c);
+  background: #ea580c;
 }
 
 .subtitle {

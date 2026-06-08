@@ -20,8 +20,8 @@
 }
 
 .divider-line {
-  @apply mt-4 mb-4 h-1 w-16 rounded bg-blue-600;
-  background: linear-gradient(90deg, #2b406a, #ea580c);
+  @apply mt-4 mb-4 h-1 w-16 rounded;
+  background: #ea580c;
 }
 
 .subtitle {
@@ -59,7 +59,7 @@
     z-index: 10;
     transform: translateY(-10px) scale(1.08);
     border-color: #ea580c;
-    background: linear-gradient(135deg, #ffffff 0%, rgba(234, 88, 12, 0.03) 100%);
+    background: #ffffff;
     box-shadow: 0 20px 30px rgba(234, 88, 12, 0.12), 0 8px 16px rgba(10, 37, 88, 0.06);
     img {
       transform: scale(1.05);

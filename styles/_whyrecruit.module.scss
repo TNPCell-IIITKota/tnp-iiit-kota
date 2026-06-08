@@ -7,25 +7,11 @@
 }
 
 .bg-accent-1 {
-  position: absolute;
-  left: -10rem;
-  top: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.04) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -10rem;
-  bottom: 0;
-  height: 500px;
-  width: 500px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.04) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
+  display: none !important;
 }
 
 .ctr {
@@ -62,7 +48,7 @@
 .divider-line {
   height: 4px;
   width: 60px;
-  background: linear-gradient(90deg, #2b406a, #ea580c);
+  background: #ea580c;
   border-radius: 4px;
   margin: 0.75rem auto 1.25rem auto;
 }
@@ -156,7 +142,6 @@
   flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-top: 3px solid #2b406a; // Resting top border indicator (deep blue)
   border-radius: 1rem;
   padding: 2.25rem 2rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
@@ -167,7 +152,7 @@
   // Simple, clean hover transformations
   &:hover {
     transform: translateY(-4px);
-    border-top-color: #ea580c; // Transitions to orange highlight on hover
+    border-color: #2b406a; // Highlight entire border in solid deep blue
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
 
     .card-icon {

@@ -63,6 +63,8 @@ const Navbar: React.FC = () => {
       'why-recruit',
       'statistics',
       'featured-stars',
+      'placement-highlights',
+      'student-achievements',
       'our-esteemed-recruiters',
       'our-team',
       'policy',
@@ -192,12 +194,21 @@ const Navbar: React.FC = () => {
 
           {navItems.map((item) => {
             const id = item.label.toLowerCase().replace(/\s+/g, '-');
-            const isActive = activeSection === id;
+            const isActive =
+              activeSection === id ||
+              (item.children?.some((child) => activeSection === child.href.split('#')[1]) ?? false);
 
             if (item.children) {
               return (
                 <li key={cyrb53(item.label)} cx="dropdown-item">
-                  <span cx="nav-link" data-active={isActive}>
+                  <a
+                    aria-expanded={isActive}
+                    aria-haspopup="true"
+                    cx="nav-link"
+                    data-active={isActive}
+                    role="button"
+                    tabIndex={0}
+                  >
                     {item.label}
                     <svg
                       cx="chevron-icon"
@@ -209,7 +220,7 @@ const Navbar: React.FC = () => {
                     >
                       <path d="M19 9l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
-                  </span>
+                  </a>
                   <ul cx="dropdown-menu">
                     {item.children.map((child) => (
                       <li key={cyrb53(child.label)}>

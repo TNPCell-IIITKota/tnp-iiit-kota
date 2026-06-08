@@ -8,7 +8,6 @@
   position: relative;
   overflow: hidden;
 
-  // Visual top border matches other sections
   &::before {
     content: '';
     position: absolute;
@@ -16,7 +15,7 @@
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #2b406a, #ea580c);
+    background: linear-gradient(135deg, #0b132b 0%, #172b4d 50%, #1e3a8a 100%);
     opacity: 0.85;
   }
 

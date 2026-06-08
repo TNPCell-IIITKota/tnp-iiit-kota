@@ -6,7 +6,7 @@
   @apply container mx-auto px-6;
 }
 
-.header-wrapper {
+.title-wrapper {
   @apply mx-auto mb-12 flex max-w-2xl flex-col items-center text-center;
 }
 
@@ -20,11 +20,11 @@
 }
 
 .divider-line {
-  @apply mt-4 mb-4 h-1 w-16 rounded bg-blue-600;
-  background: linear-gradient(90deg, #111827, #ea580c);
+  @apply mt-4 mb-4 h-1 w-16 rounded;
+  background: #ea580c;
 }
 
-.additional-info {
+.desc {
   @apply text-base font-normal leading-relaxed text-gray-600;
   font-family: 'Open Sans', sans-serif;
 

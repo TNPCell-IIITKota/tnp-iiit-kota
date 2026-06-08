@@ -6,30 +6,12 @@
   padding: 3.5rem 1rem;
   border-top: 1px solid rgba(226, 232, 240, 0.8);
 }
-
-// Drifting ambient color glows
 .bg-accent-1 {
-  position: absolute;
-  left: -15rem;
-  top: -5rem;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(43, 64, 106, 0.03) 0%, rgba(43, 64, 106, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .bg-accent-2 {
-  position: absolute;
-  right: -15rem;
-  bottom: -5rem;
-  height: 350px;
-  width: 350px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(234, 88, 12, 0.03) 0%, rgba(234, 88, 12, 0) 70%);
-  z-index: 0;
-  pointer-events: none;
+  display: none !important;
 }
 
 .ctr {
@@ -98,7 +80,7 @@
 .divider-line {
   height: 3.5px;
   width: 50px;
-  background: linear-gradient(90deg, #0a2558, #ea580c);
+  background: #ea580c;
   border-radius: 4px;
   margin: 0.75rem 0 1rem 0;
 }
@@ -175,7 +157,7 @@
   font-weight: 700;
   color: #ffffff;
   background-color: #0a2558;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   transition: all 0.25s ease-in-out;
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
