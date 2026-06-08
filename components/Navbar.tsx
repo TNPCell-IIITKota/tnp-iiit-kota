@@ -5,14 +5,34 @@ import Link from 'next/link';
 import logo from '@assets/logo.svg';
 import cyrb53 from '@utils/hash-string';
 
+const navItems = [
+  { label: 'Why Recruit', href: '/#why-recruit' },
+  { label: 'Statistics', href: '/#statistics' },
+  {
+    label: 'Featured Stars',
+    href: '/#featured-stars',
+    children: [
+      { label: 'Our Alumni', href: '/#featured-stars' },
+      { label: 'Placement Highlights - Batch of 2026', href: '/#placement-highlights' },
+      { label: 'Student Achievements - Batch of 2027', href: '/#student-achievements' },
+    ],
+  },
+  { label: 'Our Esteemed Recruiters', href: '/#our-esteemed-recruiters' },
+  { label: 'Our Team', href: '/#our-team' },
+  { label: 'Policy', href: '/#policy' },
+  { label: 'Contact Us', href: '/#contact-us' },
+];
+
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [transparent, setTransparent] = useState(true);
   const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [activeSection, setActiveSection] = useState('home');
 
   const btnRef = useRef<HTMLButtonElement>(null);
   const listRef = useRef<HTMLUListElement>(null);
 
+  // Close mobile menu when clicking outside
   useEffect(() => {
     const refs = [btnRef, listRef] as Array<React.RefObject<HTMLElement>>;
 
@@ -35,14 +55,49 @@ const Navbar: React.FC = () => {
     };
   }, [btnRef, listRef, isMenuOpen]);
 
+  // ScrollSpy to track active section and handle scroll direction
   useEffect(() => {
     let prev = window.pageYOffset;
-    const handleScroll = (): void => {
-      setTransparent(window.pageYOffset < 40);
 
+    const sections = [
+      'why-recruit',
+      'statistics',
+      'featured-stars',
+      'placement-highlights',
+      'student-achievements',
+      'our-esteemed-recruiters',
+      'our-team',
+      'policy',
+      'contact-us',
+    ];
+
+    const handleScroll = (): void => {
       const curr = window.pageYOffset;
-      setIsScrollingUp(curr < window.innerHeight - 40 || prev > curr);
+      setTransparent(curr < 45);
+      setIsScrollingUp(curr < window.innerHeight - 80 || prev > curr);
       prev = curr;
+
+      // ScrollSpy Logic
+      const scrollPosition = curr + 120; // Offset for navbar height and margins
+
+      if (curr < 100) {
+        setActiveSection('home');
+        return;
+      }
+
+      const currentActive = sections.find((section) => {
+        const el = document.getElementById(section);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          return scrollPosition >= top && scrollPosition < top + height;
+        }
+        return false;
+      });
+
+      if (currentActive) {
+        setActiveSection(currentActive);
+      }
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -56,21 +111,34 @@ const Navbar: React.FC = () => {
       <nav cx="wrapper">
         <div cx="sm-wrapper">
           <Link href="/">
-            <a cx="logo-wrapper">
+            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+            <a
+              cx="logo-wrapper"
+              onClick={(): void => {
+                window.scroll({ top: 0, left: 0, behavior: 'smooth' });
+                setIsMenuOpen(false);
+              }}
+            >
               <Image
                 alt="IIIT Kota"
                 cx="logo"
-                height="40"
+                height="54"
                 layout="fixed"
                 quality="100"
                 src={logo}
-                width="40"
+                width="54"
                 priority
                 unoptimized
-                onClick={(): void => {
-                  window.scroll({ top: 0, left: 0, behavior: 'smooth' });
-                }}
               />
+              <div cx="logo-text">
+                <h1 cx="hindi-text">भारतीय सूचना प्रौद्योगिकी संस्थान कोटा</h1>
+                <h2 cx="english-text">Indian Institute of Information Technology Kota</h2>
+                <p cx="sub-text">An Institute of National Importance under an Act of Parliament</p>
+              </div>
+              <div cx="logo-text-mobile">
+                <h2 cx="mobile-title">Indian Institute of Information Technology Kota</h2>
+                <p cx="mobile-sub">Training & Placement Cell</p>
+              </div>
             </a>
           </Link>
 
@@ -101,7 +169,13 @@ const Navbar: React.FC = () => {
 
         <ul ref={listRef} cx="links" data-toggle={isMenuOpen}>
           <li>
-            <a cx="nav-link" href="https://iiitkota.ac.in">
+            <a
+              cx="nav-link"
+              href="https://iiitkota.ac.in"
+              onClick={(): void => {
+                setIsMenuOpen(false);
+              }}
+            >
               <svg
                 className="mr-[6px] -mb-px inline-block h-4 w-4 align-baseline"
                 fill="currentColor"
@@ -117,21 +191,74 @@ const Navbar: React.FC = () => {
               Home
             </a>
           </li>
-          {[
-            'Why Recruit',
-            'Statistics',
-            'Featured Stars',
-            'Past Recruiters',
-            'Our Team',
-            'Policy',
-            'Contact Us',
-          ].map((s) => (
-            <li key={cyrb53(s)}>
-              <Link href={`/#${s.toLowerCase().replace(/\s+/g, '-')}`}>
-                <a cx="nav-link">{s}</a>
-              </Link>
-            </li>
-          ))}
+
+          {navItems.map((item) => {
+            const id = item.label.toLowerCase().replace(/\s+/g, '-');
+            const isActive =
+              activeSection === id ||
+              (item.children?.some((child) => activeSection === child.href.split('#')[1]) ?? false);
+
+            if (item.children) {
+              return (
+                <li key={cyrb53(item.label)} cx="dropdown-item">
+                  <a
+                    aria-expanded={isActive}
+                    aria-haspopup="true"
+                    cx="nav-link"
+                    data-active={isActive}
+                    role="button"
+                    tabIndex={0}
+                  >
+                    {item.label}
+                    <svg
+                      cx="chevron-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M19 9l-7 7-7-7" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </a>
+                  <ul cx="dropdown-menu">
+                    {item.children.map((child) => (
+                      <li key={cyrb53(child.label)}>
+                        <Link href={child.href}>
+                          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+                          <a
+                            cx="dropdown-link"
+                            onClick={(): void => {
+                              setIsMenuOpen(false);
+                            }}
+                          >
+                            {child.label}
+                          </a>
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            }
+
+            return (
+              <li key={cyrb53(item.label)}>
+                <Link href={item.href}>
+                  {/* eslint-disable-next-line jsx-a11y/anchor-is-valid, jsx-a11y/click-events-have-key-events, jsx-a11y/no-static-element-interactions */}
+                  <a
+                    cx="nav-link"
+                    data-active={isActive}
+                    onClick={(): void => {
+                      setIsMenuOpen(false);
+                    }}
+                  >
+                    {item.label}
+                  </a>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </header>

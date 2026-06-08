@@ -1,36 +1,36 @@
 .wrapper {
-  @apply m-8 flex flex-col flex-wrap items-center justify-center overflow-hidden;
+  @apply grid w-full grid-cols-1 gap-8 md:grid-cols-2;
+}
 
-  h3 {
-    @apply pl-8 text-center font-semibold;
+.chart-box {
+  @apply flex flex-col rounded-2xl border border-gray-100 bg-white p-6 transition-all duration-300;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #0b132b 0%, #172b4d 50%, #1e3a8a 100%);
+    opacity: 0.85;
   }
 
-  > div {
-    @apply my-6 w-full overflow-x-auto overflow-y-hidden;
-
-    scrollbar-width: thin;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.08);
   }
+}
 
-  :global {
-    .recharts-wrapper {
-      margin: 0 auto;
-    }
+.chart-title {
+  @apply mb-6 text-center text-sm font-extrabold uppercase tracking-wide;
+  color: #1e293b;
+  font-family: 'Open Sans', sans-serif;
+}
 
-    @media (max-width: 768px) {
-      .recharts-wrapper {
-        @apply h-auto w-[25rem] #{!important};
-        @apply pb-8;
-
-        > .recharts-surface {
-          @apply h-auto w-[25rem] #{!important};
-          @apply mx-auto;
-        }
-      }
-
-      .recharts-legend-wrapper {
-        @apply bottom-auto left-1/2 w-[25rem] #{!important};
-        @apply mx-auto -translate-x-1/2 pl-4;
-      }
-    }
-  }
+.chart-container {
+  @apply mt-2 h-[320px] w-full;
 }

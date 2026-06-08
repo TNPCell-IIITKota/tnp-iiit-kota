@@ -1,35 +1,35 @@
 .sect {
-  @apply text-gray-600;
+  @apply bg-gray-50 py-20;
 }
 
 .ctr {
-  @apply container mx-auto px-5 pt-24;
-}
-
-.wrapper {
-  @apply mx-auto flex flex-col xl:w-3/5;
-}
-
-.separator-wrapper {
-  @apply h-1 overflow-hidden rounded bg-gray-200;
-}
-
-.separator {
-  @apply h-full w-24 bg-indigo-800;
+  @apply container mx-auto px-6;
 }
 
 .title-wrapper {
-  @apply mb-6 flex flex-wrap py-6 sm:flex-row;
+  @apply mx-auto mb-12 flex max-w-2xl flex-col items-center text-center;
 }
 
 .title {
-  @apply mb-2 text-2xl font-semibold text-gray-900 sm:mb-0;
+  @apply text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.download {
-  @apply ml-2 -mb-1 inline-block h-6 w-6 hover:text-gray-900;
+.highlight {
+  color: #ea580c;
 }
 
-.additional-info {
-  @apply text-sm tracking-wide text-gray-600 sm:ml-2 sm:mt-2;
+.divider-line {
+  @apply mt-4 mb-4 h-1 w-16 rounded;
+  background: #ea580c;
+}
+
+.desc {
+  @apply text-base font-normal leading-relaxed text-gray-600;
+  font-family: 'Open Sans', sans-serif;
+
+  .update-time {
+    @apply mt-2 block text-xs font-semibold uppercase tracking-wider;
+    color: #ea580c;
+  }
 }

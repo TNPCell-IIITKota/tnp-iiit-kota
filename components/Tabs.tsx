@@ -1,13 +1,14 @@
 import type { Year } from '@types';
 
 import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 import Charts from '@components/Charts';
 import Table from '@components/Table';
 import cyrb53 from '@utils/hash-string';
 
 const Tabs: React.FC = () => {
-  const now = 2025;
+  const now = 2026;
   const [openTab, setOpenTab] = useState(0);
 
   return (
@@ -18,7 +19,7 @@ const Tabs: React.FC = () => {
             <a
               aria-controls={`placement-stats-${now - i}`}
               aria-selected={openTab === i}
-              cx="tab-link"
+              cx={openTab === i ? 'tab-link-active' : 'tab-link'}
               href={`#placement-stats-${now - i}`}
               id={`placement-tab-${i}`}
               role="tab"
@@ -28,30 +29,49 @@ const Tabs: React.FC = () => {
                 setOpenTab(i);
               }}
             >
-              {now - i - 1} – {now - i}
+              {openTab === i && (
+                <motion.div
+                  cx="active-bg"
+                  layoutId="activeYearTab"
+                  transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+                />
+              )}
+              <span cx="tab-text">
+                {now - i - 1} – {now - i}
+              </span>
             </a>
           </li>
         ))}
       </ul>
+
       <div cx="tab-content">
-        {[0, 1, 2, 3].map((i) => (
-          <div
-            key={cyrb53(`placement-content-${i}`)}
-            aria-hidden={openTab !== i}
-            aria-labelledby={`placement-tab-${i}`}
-            id={`placement-stats-${now - i}`}
+        <AnimatePresence exitBeforeEnter>
+          <motion.div
+            key={openTab}
+            animate={{ opacity: 1, y: 0 }}
+            aria-labelledby={`placement-tab-${openTab}`}
+            exit={{ opacity: 0, y: -15 }}
+            id={`placement-stats-${now - openTab}`}
+            initial={{ opacity: 0, y: 15 }}
             role="tabpanel"
             tabIndex={0}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
           >
-            {i === 0 && (
-              <p className="my-[10px] text-left text-sm text-[#666]">
-                *Placement stats with Full-Time Offers, Internships, and PPO conversions included.
+            {openTab === 0 && (
+              <p cx="footnote">
+                * Placement stats with Full-Time Offers, Internships, and PPO conversions included.
               </p>
             )}
-            <Table year={(now - i) as Year} />
-            <Charts year={(now - i) as Year} />
-          </div>
-        ))}
+            <div cx="data-layout">
+              <div cx="table-pane">
+                <Table year={(now - openTab) as Year} />
+              </div>
+              <div cx="charts-pane">
+                <Charts year={(now - openTab) as Year} />
+              </div>
+            </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </div>
   );

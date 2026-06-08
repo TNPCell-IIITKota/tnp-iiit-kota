@@ -7,7 +7,8 @@ import Autodesk from './autodesk.svg';
 import Byjus from './byjus.svg';
 import Capgemini from './capgemini.svg';
 import Carrier from './carrier.svg';
-import CGI from './cgi.svg';
+import Cashfree from './cashfree.svg';
+import Cisco from './cisco.svg';
 import Cvent from './cvent.svg';
 import Delhivery from './delhivery.svg';
 import Deloitte from './deloitte.svg';
@@ -16,13 +17,16 @@ import Fanatics from './fanatics.svg';
 import FiftyFive from './fiftyfive.svg';
 import Flipkart from './flipkart.svg';
 import GoldmanSachs from './goldmansachs.svg';
+import HighSpot from './highspot.svg';
 import Icertis from './icertis.svg';
 import Infosys from './infosys.svg';
 import Jio from './jio.svg';
 import Messho from './meesho.svg';
 import Microsoft from './microsoft.svg';
+import Movieinsync from './moveinsync.svg';
 import Nagarro from './nagarro.svg';
 import NeoSoft from './neosoft.svg';
+import Nvidia from './nvidia.svg';
 import Oracle from './oracle.svg';
 import Orange from './orange.svg';
 import OYO from './oyo.svg';
@@ -37,6 +41,7 @@ import Tally from './tally.svg';
 import TCS from './tcs.svg';
 import Toshiba from './toshiba.svg';
 import trilogy from './trilogy.svg';
+import Upstox from './upstox.svg';
 import Virtusa from './virtusa.svg';
 import Xebia from './xebia.svg';
 import Yamaha from './yamaha.svg';
@@ -56,7 +61,13 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     Capgemini,
     ServiceNow,
     OYO,
+    Nvidia,
     Infosys,
+    Cisco,
+    Upstox,
+    Cashfree,
+    Movieinsync,
+    HighSpot,
   },
   1: {
     PublicisSapient,
@@ -88,7 +99,6 @@ const companies: Record<0 | 1, Record<string, StaticImageData>> = {
     Oracle,
     Pinclick,
     Orange,
-    CGI,
   },
 };
 

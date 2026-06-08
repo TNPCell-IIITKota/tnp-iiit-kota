@@ -1,19 +1,229 @@
 .sect {
-  @apply mx-auto mt-4 text-gray-600 xl:w-3/5;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f8fafc; // White background to alternate with Policy background (#f8fafc)
+  padding: 3.5rem 1rem;
+}
+
+.bg-accent-1 {
+  display: none !important;
+}
+
+.bg-accent-2 {
+  display: none !important;
 }
 
 .ctr {
-  @apply container mx-auto border-t border-gray-200 px-5 pt-16;
+  position: relative;
+  z-index: 10;
+  max-width: 960px;
+  margin: 0 auto;
+  @apply flex flex-col px-4;
+}
+
+.title-wrapper {
+  @apply mx-auto mb-12 flex max-w-2xl flex-col items-center text-center;
 }
 
 .title {
-  @apply mt-2 mb-14 text-center text-2xl font-semibold text-gray-900 sm:text-3xl;
+  @apply text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl;
+  font-family: 'Open Sans', sans-serif;
+
+  .highlight {
+    color: #ea580c; // Brand accent orange
+  }
 }
 
-.questions {
-  @apply -mx-2 flex flex-wrap sm:mx-auto sm:mb-2;
+.divider-line {
+  @apply mt-4 mb-5 h-1 w-16 rounded;
+  background: #ea580c;
+}
+
+.subtitle {
+  @apply text-sm font-normal leading-relaxed text-gray-500 md:text-base;
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Compact Grid Container for Row Cards
+.grid-container {
+  @apply mb-12 grid w-full grid-cols-1 gap-4 md:grid-cols-2;
+}
+
+.faq-row-card {
+  @apply flex w-full cursor-pointer items-center justify-between rounded-xl border border-gray-100 bg-white p-4 text-left transition-all duration-300;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.01);
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid rgba(234, 88, 12, 0.9);
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    @apply border-blue-50 bg-gray-50 bg-opacity-30;
+    transform: translateX(4px);
+    box-shadow: 0 4px 15px rgba(43, 64, 106, 0.03);
+
+    .q-icon-wrapper {
+      background-color: rgba(234, 88, 12, 0.08);
+      color: #ea580c;
+    }
+
+    .row-question {
+      color: #ea580c;
+    }
+
+    .card-right {
+      color: #ea580c;
+      transform: translateX(2px);
+    }
+  }
+}
+
+.card-left {
+  @apply flex flex-1 items-center pr-4;
+}
+
+.q-icon-wrapper {
+  @apply flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-lg bg-gray-50 text-gray-400 transition-all duration-300;
+
+  svg {
+    @apply h-5 w-5;
+  }
+}
+
+.row-question {
+  @apply ml-3 text-sm font-bold text-gray-800 transition-colors duration-300;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.45;
+}
+
+.card-right {
+  @apply flex flex-shrink-0 items-center text-gray-400 transition-all duration-300;
+
+  svg {
+    @apply h-4 w-4;
+  }
+}
+
+// Custom Modal Square Box Overlay Styles
+.modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center p-4;
+}
+
+.modal-backdrop {
+  @apply absolute inset-0 bg-gray-900 bg-opacity-40 backdrop-blur-sm backdrop-filter;
+}
+
+.modal-wrapper {
+  @apply relative z-10 w-full max-w-[480px];
+}
+
+.modal-box {
+  @apply relative flex w-full flex-col overflow-hidden rounded-3xl border border-gray-50 bg-white p-8 shadow-2xl;
+  aspect-ratio: 1 / 1;
+  max-height: 50vh; // Fallback for very short screens
+}
+
+.close-btn {
+  @apply absolute top-5 right-5 z-20 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border-0 bg-gray-50 text-gray-400 transition-all duration-300 hover:text-gray-600;
+  outline: none;
+
+  &:focus-visible {
+    outline: 2px solid rgba(234, 88, 12, 0.9);
+    outline-offset: 3px;
+  }
+
+  &:hover {
+    @apply bg-gray-100;
+    transform: rotate(90deg) scale(1.05);
+  }
+
+  svg {
+    @apply h-5 w-5;
+  }
+}
+
+.modal-content {
+  @apply flex h-full min-h-0 flex-1 flex-col;
+}
+
+.modal-header {
+  @apply pr-8 text-left;
+}
+
+.question-badge {
+  @apply mb-2 inline-block rounded-md px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-white;
+  background-color: #ea580c;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal-question {
+  @apply text-base font-extrabold leading-snug text-gray-900 md:text-lg;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.modal-divider {
+  @apply my-4 h-px w-full flex-shrink-0 bg-gray-100;
+}
+
+// Inner Scroll Panel with Custom Scrollbar
+.modal-answer-scroll {
+  @apply min-h-0 flex-1 overflow-y-auto pr-2;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f8fafc;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #e2e8f0;
+    border-radius: 3px;
+
+    &:hover {
+      background: #cbd5e1;
+    }
+  }
+}
+
+.modal-answer {
+  @apply pb-4 text-left text-xs font-normal leading-relaxed text-gray-600 md:text-sm;
+  font-family: 'Open Sans', sans-serif;
+
+  b,
+  strong {
+    @apply font-bold text-gray-800;
+  }
+
+  i,
+  em {
+    @apply italic;
+  }
+
+  ul {
+    @apply mt-2 list-disc space-y-1.5 pl-5;
+  }
+
+  li {
+    @apply text-gray-600;
+  }
 }
 
 .desc {
-  @apply mx-auto mt-4 text-center text-sm leading-relaxed;
+  @apply mt-4 text-center text-sm font-normal leading-relaxed text-gray-500 md:text-base;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-link {
+  @apply font-bold underline transition-colors duration-300;
+  color: #ea580c;
+
+  &:hover {
+    color: #c2410c;
+  }
 }
