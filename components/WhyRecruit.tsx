@@ -89,11 +89,10 @@ const WhyRecruit: React.FC = () => {
       <div cx="ctr">
         {/* Centered Header Title Block */}
         <motion.div
+          animate={{ opacity: 1, y: 0 }}
           cx="title-wrapper"
-          initial={{ opacity: 0, y: -15 }}
+          initial={false}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.5 }}
-          whileInView={{ opacity: 1, y: 0 }}
         >
           <h2 cx="title">
             Why Recruit <span cx="highlight">IIIT Kota?</span>
@@ -122,11 +121,10 @@ const WhyRecruit: React.FC = () => {
 
           {/* Cards Viewport Mask Container */}
           <motion.div
+            animate="show"
             cx="slider-container"
-            initial="hidden"
+            initial={false}
             variants={containerVariants}
-            viewport={{ once: true, amount: 0.15 }}
-            whileInView="show"
           >
             <div
               cx="slider-track"

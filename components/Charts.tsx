@@ -26,11 +26,10 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
     <div ref={ref} cx="wrapper">
       {/* Chart 1: Eligible vs Offers */}
       <motion.div
+        animate={{ opacity: 1, y: 0 }}
         cx="chart-box"
-        initial={{ opacity: 0, y: 20 }}
+        initial={false}
         transition={{ duration: 0.5, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.15 }}
-        whileInView={{ opacity: 1, y: 0 }}
       >
         <h3 cx="chart-title">Eligible Students & Placement Offers</h3>
         <div cx="chart-container">
@@ -94,11 +93,10 @@ const Charts: React.FC<{ year: Year }> = ({ year }) => {
 
       {/* Chart 2: Branch-wise Placement Percentage */}
       <motion.div
+        animate={{ opacity: 1, y: 0 }}
         cx="chart-box"
-        initial={{ opacity: 0, y: 20 }}
+        initial={false}
         transition={{ duration: 0.5, delay: 0.1, ease: 'easeOut' }}
-        viewport={{ once: true, amount: 0.15 }}
-        whileInView={{ opacity: 1, y: 0 }}
       >
         <h3 cx="chart-title">Branch-wise Placement Percentage</h3>
         <div cx="chart-container">

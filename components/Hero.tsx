@@ -50,12 +50,7 @@ const Hero: React.FC = () => {
       <div cx="grid-overlay" />
 
       <div cx="ctr">
-        <motion.div
-          animate="visible"
-          cx="grid-layout"
-          initial="hidden"
-          variants={containerVariants}
-        >
+        <motion.div animate="visible" cx="grid-layout" initial={false} variants={containerVariants}>
           {/* Left Column: Typography & Action Buttons */}
           <div cx="left-col">
             <motion.h1 cx="lead" variants={itemVariants}>

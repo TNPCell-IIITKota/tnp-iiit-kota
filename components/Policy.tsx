@@ -27,13 +27,7 @@ const Policy: React.FC = () => {
         </div>
 
         {/* Centralized Policy Container */}
-        <motion.div
-          cx="policy-card"
-          initial="hidden"
-          variants={containerVariants}
-          viewport={{ once: true, amount: 0.2 }}
-          whileInView="visible"
-        >
+        <motion.div animate="visible" cx="policy-card" initial={false} variants={containerVariants}>
           {/* Main Introduction Text */}
           <p cx="intro-text">
             The placement season in IIIT Kota runs throughout the year, commencing tentatively from

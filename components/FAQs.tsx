@@ -30,11 +30,10 @@ const FAQs: React.FC = () => {
       <div cx="ctr">
         {/* Section Header */}
         <motion.div
+          animate={{ opacity: 1, y: 0 }}
           cx="title-wrapper"
-          initial={{ opacity: 0, y: -15 }}
+          initial={false}
           transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.5 }}
-          whileInView={{ opacity: 1, y: 0 }}
         >
           <h2 cx="title">
             Frequently Asked <span cx="highlight">Questions</span>
@@ -48,11 +47,10 @@ const FAQs: React.FC = () => {
 
         {/* Compact Row Cards Grid */}
         <motion.div
+          animate="visible"
           cx="grid-container"
-          initial="hidden"
+          initial={false}
           variants={containerVariants}
-          viewport={{ once: true, amount: 0.2 }}
-          whileInView="visible"
         >
           {questions.map(({ question: q, answer: a }) => (
             <button
