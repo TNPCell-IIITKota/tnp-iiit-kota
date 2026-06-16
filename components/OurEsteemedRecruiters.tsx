@@ -45,13 +45,7 @@ const OurEsteemedRecruiters: React.FC = () => {
     <section cx="sect" id="our-esteemed-recruiters">
       <div cx="ctr">
         {/* Section Header */}
-        <motion.div
-          cx="title-wrapper"
-          initial="hidden"
-          variants={titleVariants}
-          viewport={{ once: true, amount: 0.5 }}
-          whileInView="visible"
-        >
+        <motion.div animate="visible" cx="title-wrapper" initial={false} variants={titleVariants}>
           <h2 cx="title">
             Our Esteemed <span cx="highlight">Recruiters</span>
           </h2>
@@ -63,13 +57,7 @@ const OurEsteemedRecruiters: React.FC = () => {
         </motion.div>
 
         {/* Logo Grid Section with Entrance Stagger Animation */}
-        <motion.div
-          cx="logo-grid"
-          initial="hidden"
-          variants={containerVariants}
-          viewport={{ once: true, amount: 0.1 }}
-          whileInView="visible"
-        >
+        <motion.div animate="visible" cx="logo-grid" initial={false} variants={containerVariants}>
           {allCompanies.map(([name, src]) => (
             <motion.div
               key={cyrb53(`recruiter-card-${name}`)}

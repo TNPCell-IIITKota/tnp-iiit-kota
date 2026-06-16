@@ -6,11 +6,10 @@ const Stats: React.FC = () => (
   <section cx="sect" id="statistics">
     <div cx="ctr">
       <motion.div
+        animate={{ opacity: 1, y: 0 }}
         cx="title-wrapper"
-        initial={{ opacity: 0, y: -15 }}
+        initial={false}
         transition={{ duration: 0.5 }}
-        viewport={{ once: true, amount: 0.5 }}
-        whileInView={{ opacity: 1, y: 0 }}
       >
         <h2 cx="title">
           Placement <span cx="highlight">Statistics</span>
