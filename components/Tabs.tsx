@@ -57,11 +57,9 @@ const Tabs: React.FC = () => {
             tabIndex={0}
             transition={{ duration: 0.22, ease: 'easeOut' }}
           >
-            {openTab === 0 && (
-              <p cx="footnote">
-                * Placement stats with Full-Time Offers, Internships, and PPO conversions included.
-              </p>
-            )}
+            <p cx="footnote">
+              * Placement stats with Full-Time Offers, Internships, and PPO conversions included.
+            </p>
             <div cx="data-layout">
               <div cx="table-pane">
                 <Table year={(now - openTab) as Year} />
