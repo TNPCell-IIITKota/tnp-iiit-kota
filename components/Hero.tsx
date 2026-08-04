@@ -112,7 +112,6 @@ const Hero: React.FC = () => {
 
           <div cx="right-col">
             <motion.div
-              animate={{ y: [0, -8, 0] }}
               cx="logo-container"
               transition={{
                 duration: 5,
@@ -144,19 +143,20 @@ const Hero: React.FC = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     strokeWidth="2.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                    <path d="M13 17V9" />
+                    <path d="M18 17V5" />
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                    <path d="M8 17v-3" />
                   </svg>
                 </div>
                 <div cx="stat-info">
-                  <span cx="stat-value">56 LPA</span>
+                  <span cx="stat-value">53 LPA</span>
                   <span cx="stat-label">HIGHEST PACKAGE</span>
                 </div>
               </motion.div>
@@ -170,19 +170,18 @@ const Hero: React.FC = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     strokeWidth="2.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                    <path d="M3 3v16a2 2 0 0 0 2 2h16" />
+                    <path d="M7 16c.5-2 1.5-7 4-7 2 0 2 3 4 3 2.5 0 4.5-5 5-7" />
                   </svg>
                 </div>
                 <div cx="stat-info">
-                  <span cx="stat-value">18.66 LPA</span>
+                  <span cx="stat-value">15.49 LPA</span>
                   <span cx="stat-label">AVERAGE PACKAGE</span>
                 </div>
               </motion.div>
@@ -196,19 +195,18 @@ const Hero: React.FC = () => {
                   <svg
                     fill="none"
                     stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     strokeWidth="2.5"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
+                    <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                    <path d="m9 12 2 2 4-4" />
                   </svg>
                 </div>
                 <div cx="stat-info">
-                  <span cx="stat-value">95.23%</span>
+                  <span cx="stat-value">94.64 %</span>
                   <span cx="stat-label">PLACEMENT SUCCESS</span>
                 </div>
               </motion.div>

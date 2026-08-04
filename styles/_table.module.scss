@@ -76,49 +76,19 @@
 }
 
 .pkg-text-median {
-  @apply font-medium text-gray-600;
+  @apply font-bold text-gray-800;
 }
 
 .pkg-badge-max {
-  @apply inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-bold transition-all duration-300;
-  background-color: rgba(234, 88, 12, 0.08);
-  color: #ea580c;
-  border: 1px solid rgba(234, 88, 12, 0.15);
-
-  &:hover {
-    background-color: #ea580c;
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(234, 88, 12, 0.2);
-    transform: translateY(-1.5px);
-  }
+  @apply font-bold text-gray-800;
 }
 
 .rate-badge {
-  @apply inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-bold transition-all duration-300;
-  background-color: rgba(16, 185, 129, 0.08);
-  color: #059669;
-  border: 1px solid rgba(16, 185, 129, 0.15);
-
-  &:hover {
-    background-color: #059669;
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
-    transform: translateY(-1.5px);
-  }
+  @apply font-bold text-gray-800;
 }
 
 .rate-badge-secondary {
-  @apply inline-flex items-center gap-1.5 rounded-md px-3 py-1.5 text-xs font-semibold transition-all duration-300;
-  background-color: rgba(99, 102, 241, 0.08);
-  color: #4f46e5;
-  border: 1px solid rgba(99, 102, 241, 0.15);
-
-  &:hover {
-    background-color: #4f46e5;
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(99, 102, 241, 0.2);
-    transform: translateY(-1.5px);
-  }
+  @apply font-bold text-gray-800;
 }
 
 .badge-icon {

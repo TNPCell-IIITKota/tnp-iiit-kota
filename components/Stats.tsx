@@ -19,7 +19,7 @@ const Stats: React.FC = () => (
           Comprehensive summary of placement data, student participation, and compensation trends
           over the years.
           <span cx="update-time">
-            Last updated: June 07<sup>th</sup>, 2026
+            Last updated: August 4<sup>th</sup>, 2026
           </span>
         </p>
       </motion.div>
