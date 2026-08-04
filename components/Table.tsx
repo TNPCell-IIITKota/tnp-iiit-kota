@@ -58,23 +58,7 @@ const Table: React.FC<{ year: Year }> = ({ year }) => {
                 </td>
 
                 <td cx="data">
-                  <span cx="rate-badge">
-                    <svg
-                      cx="badge-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                    {rate !== undefined ? `${rate}%` : '—'}
-                  </span>
+                  <span cx="rate-badge">{rate !== undefined ? `${rate}%` : '—'}</span>
                 </td>
 
                 {row.Percentage !== undefined && (

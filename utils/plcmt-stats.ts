@@ -30,9 +30,9 @@ const branchWiseData: Record<
     Total: { Strength: 196, Eligible: 162, Placed: 123 },
   },
   2025: {
-    CSE: { Strength: 138, Eligible: 107, Placed: 81 },
-    ECE: { Strength: 66, Eligible: 50, Placed: 31 },
-    Total: { Strength: 204, Eligible: 157, Placed: 112 },
+    CSE: { Strength: 138, Eligible: 107, Placed: 86 },
+    ECE: { Strength: 66, Eligible: 50, Placed: 37 },
+    Total: { Strength: 204, Eligible: 157, Placed: 123 },
   },
   2026: {
     CSE: { Strength: 138, Eligible: 116, Placed: 108 },
@@ -70,9 +70,9 @@ const eligibleVsOffers = {
     { branch: 'Total', 'Number of Offers': 140 },
   ],
   2025: [
-    { branch: 'CSE', 'Number of Offers': 81 },
-    { branch: 'ECE', 'Number of Offers': 31 },
-    { branch: 'Total', 'Number of Offers': 112 },
+    { branch: 'CSE', 'Number of Offers': 86 },
+    { branch: 'ECE', 'Number of Offers': 37 },
+    { branch: 'Total', 'Number of Offers': 123 },
   ],
   2026: [
     { branch: 'CSE', 'Number of Offers': 108 },
@@ -125,9 +125,9 @@ const aggregateData: Record<
     { branch: 'Total', Average: 13.09, Maximum: 65, Median: 10 },
   ],
   2025: [
-    { branch: 'CSE', Average: 11.44, Maximum: 40, Median: 9.1, Percentage: 80.37 },
-    { branch: 'ECE', Average: 10.34, Maximum: 54, Median: 9.5, Percentage: 74 },
-    { branch: 'Total', Average: 11.13, Maximum: 54, Median: 9.1, Percentage: 78.34 },
+    { branch: 'CSE', Average: 11.44, Maximum: 40, Median: 9.1, Percentage: 75.7 },
+    { branch: 'ECE', Average: 10.34, Maximum: 54, Median: 9.5, Percentage: 62 },
+    { branch: 'Total', Average: 11.13, Maximum: 54, Median: 9.1, Percentage: 71.34 },
   ],
   2026: [
     { branch: 'CSE', Average: 16.85, Maximum: 53, Median: 12, Percentage: 69.85 },
