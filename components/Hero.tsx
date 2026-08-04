@@ -112,7 +112,6 @@ const Hero: React.FC = () => {
 
           <div cx="right-col">
             <motion.div
-              // animate={{ y: [0, 8, 0] }}
               cx="logo-container"
               transition={{
                 duration: 5,
