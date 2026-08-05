@@ -13,7 +13,6 @@ const members: Record<
   Array<{ name: string; linkedIn: string; mobile?: string; role?: string }>
 > = {
   faculty: [
-    { name: 'Prof. K K Sharma', linkedIn: 'prof-k-k-sharma', role: 'Dean' },
     { name: 'Dr. Chetna Sharma', linkedIn: 'chetna-sharma-phd-8ba8a337', role: 'Associate Dean' },
     {
       name: 'Dr. Shivang Tripathi',
