@@ -78,7 +78,7 @@ const TeamHome: React.FC = () => (
         <div cx="divider-line" />
       </div>
 
-      <h3 cx="lead">Dean, Associate Dean & Faculty Coordinator, Training and Placements</h3>
+      <h3 cx="lead">Associate Dean & Faculty Coordinator, Training and Placements</h3>
       <div cx="members">
         <Members level="faculty" />
       </div>
