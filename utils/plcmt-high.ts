@@ -32,7 +32,7 @@ const plcmtHigh = [
   { name: 'Ankit Singh', description: 'SDE @Groww', logo: 'groww_logo' },
   { name: 'Kratin Aggarwal', description: 'SDE @OpenText', logo: 'opentext_logo' },
   { name: 'Varad Kulkarni', description: 'SDE @NVIDIA', logo: 'nvidia_logo' },
-  { name: 'Devansh Gupta', description: 'SDE @Samsung', logo: 'samsung_logo' },
+  { name: 'Devansh Gupta', description: 'ASE @IndiaMART', logo: 'indiamart_logo' },
   { name: 'Himanshu Sharma', description: 'SDE @Groww', logo: 'groww_logo' },
 ];
 
