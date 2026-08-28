@@ -24,7 +24,7 @@ const plcmtHigh = [
   { name: 'Kanishq Tahalyani', description: 'SWE @Cisco', logo: 'cisco_logo' },
   { name: 'Aman Khare', description: 'Product Analyst @Shipsy', logo: 'shipsy_logo' },
   { name: 'Priyanshu Mishra', description: 'SDE @Truestate', logo: 'truestate_logo' },
-  { name: 'Kunal Sharma', description: 'SDE @Samsung', logo: 'samsung_logo' },
+  { name: 'Keshav Gupta', description: 'AI Engineer @Galaxy', logo: 'galaxy_logo' },
   { name: 'Uday Kumar', description: 'SDE @CoinSwitch', logo: 'coinswitch_logo' },
   { name: 'Rohan Saini', description: 'SDE @DataFlow', logo: 'dataflow_logo' },
   { name: 'Utkarsh Pradhan', description: 'SDE @FinacPlus', logo: 'finacplus_logo' },
