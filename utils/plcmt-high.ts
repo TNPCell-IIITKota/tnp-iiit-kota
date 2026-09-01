@@ -24,7 +24,7 @@ const plcmtHigh = [
   { name: 'Kanishq Tahalyani', description: 'SWE @Cisco', logo: 'cisco_logo' },
   { name: 'Aman Khare', description: 'Product Analyst @Shipsy', logo: 'shipsy_logo' },
   { name: 'Priyanshu Mishra', description: 'SDE @Truestate', logo: 'truestate_logo' },
-  { name: 'Kunal Sharma', description: 'SDE @Samsung', logo: 'samsung_logo' },
+  { name: 'Keshav Gupta', description: 'AI Engineer @Galaxy', logo: 'galaxy_logo' },
   { name: 'Uday Kumar', description: 'SDE @CoinSwitch', logo: 'coinswitch_logo' },
   { name: 'Rohan Saini', description: 'SDE @DataFlow', logo: 'dataflow_logo' },
   { name: 'Utkarsh Pradhan', description: 'SDE @FinacPlus', logo: 'finacplus_logo' },
@@ -32,7 +32,7 @@ const plcmtHigh = [
   { name: 'Ankit Singh', description: 'SDE @Groww', logo: 'groww_logo' },
   { name: 'Kratin Aggarwal', description: 'SDE @OpenText', logo: 'opentext_logo' },
   { name: 'Varad Kulkarni', description: 'SDE @NVIDIA', logo: 'nvidia_logo' },
-  { name: 'Devansh Gupta', description: 'SDE @Samsung', logo: 'samsung_logo' },
+  { name: 'Devansh Gupta', description: 'ASE @IndiaMART', logo: 'indiamart_logo' },
   { name: 'Himanshu Sharma', description: 'SDE @Groww', logo: 'groww_logo' },
 ];
 
